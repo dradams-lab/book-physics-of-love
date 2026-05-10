@@ -1,0 +1,119 @@
+% ============================================================
+%  The Physics of Love: Quantum Mechanics, Process Philosophy,
+%  and the Bahá'í Framework of Reality
+%
+%  Target presses: Oxford UP · Cambridge UP · MIT Press · SUNY
+%  Compiler: pdflatex (Overleaf)
+%  Dr. Joshua Adams | 2026
+% ============================================================
+
+\documentclass[12pt]{book}
+
+% ── Encoding & fonts ──────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ── Page geometry ─────────────────────────────────────────
+\usepackage[margin=1.25in, top=1.25in, bottom=1.25in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ── Mathematics ───────────────────────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{braket}
+
+% ── Tables & figures ──────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\graphicspath{{figures/}}
+
+% ── Chapter and section formatting ────────────────────────
+\usepackage{titlesec}
+\usepackage{epigraph}        % chapter epigraphs
+
+% ── Bibliography (author-year for trade/academic books) ───
+\usepackage[authoryear, round, sort]{natbib}
+\bibliographystyle{apalike}
+
+% ── Hyperlinks & PDF metadata ─────────────────────────────
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black,
+  citecolor  = black,
+  urlcolor   = blue,
+  pdftitle   = {The Physics of Love},
+  pdfauthor  = {Joshua Adams}
+}
+
+% ── Bahá'í typesetting helpers ────────────────────────────
+\usepackage{xspace}
+\newcommand{\bahai}{Bah\'a\'{\i}\xspace}
+\newcommand{\Bahai}{Bah\'a\'{\i}\xspace}
+\newcommand{\Bahaullah}{Bah\'a'u'll\'ah\xspace}
+\newcommand{\AbdulBaha}{'Abdu'l-Bah\'a\xspace}
+\newcommand{\mahabbat}{\textit{mahabbat}\xspace}
+
+% ── Custom commands ───────────────────────────────────────
+\newcommand{\RCT}{\textsc{rct}}
+\newcommand{\URA}{U_{\!\mathrm{RA}}}
+
+% ── Convergence moment box ────────────────────────────────
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\newtcolorbox{convergencemoment}[1]{
+  title={Convergence Moment: #1},
+  colback=blue!5!white,
+  colframe=blue!50!black,
+  fonttitle=\bfseries,
+  breakable
+}
+
+% =============================================================
+\begin{document}
+% =============================================================
+
+% ── Front matter ──────────────────────────────────────────
+\frontmatter
+\input{frontmatter/titlepage}
+\input{frontmatter/dedication}
+\input{frontmatter/preface}
+\tableofcontents
+
+% ── Main matter ───────────────────────────────────────────
+\mainmatter
+
+%% PART I — THREE PATHS
+\part{Three Paths}
+\input{chapters/part1/ch01-physics}
+\input{chapters/part1/ch02-philosophy}
+\input{chapters/part1/ch03-bahai}
+
+%% PART II — THE PROCESS BRIDGE
+\part{The Process Bridge}
+\input{chapters/part2/ch04-what-is-process}
+\input{chapters/part2/ch05-qm-requires-process}
+\input{chapters/part2/ch06-bahai-prior}
+
+%% PART III — THE SIX CONVERGENCES
+\part{The Six Convergences}
+\input{chapters/part3/ch07-relational-ontology}
+\input{chapters/part3/ch08-nonlocal}
+\input{chapters/part3/ch09-observer}
+\input{chapters/part3/ch10-decoherence}
+\input{chapters/part3/ch11-holographic}
+\input{chapters/part3/ch12-motion-life}
+
+%% PART IV — THE MATHEMATICS AND WHAT IT MEANS
+\part{The Mathematics and What It Means}
+\input{chapters/part4/ch13-rct}
+\input{chapters/part4/ch14-love-physics}
+\input{chapters/part4/ch15-what-it-means}
+
+% ── Back matter ───────────────────────────────────────────
+\backmatter
+\bibliography{references}
+
+\end{document}

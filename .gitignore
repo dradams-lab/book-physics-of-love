@@ -1,0 +1,34 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+# Build PDF (gitignored)
+*.pdf
+
+# But track figure assets
+!figures/*.pdf
+*.dvi
+*.ps
+*.eps
+
+# Overleaf
+.overleaf/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+figures/.venv/
