@@ -1,0 +1,53 @@
+{
+  "title": "The Physics of Love: Quantum Mechanics, Process Philosophy, and the Bahá'í Framework of Reality",
+  "description": "<p><em>The Physics of Love</em> is a long-form treatment of the convergence between three intellectual traditions — modern quantum physics, the process philosophy of Alfred North Whitehead, and the Bahá'í writings of Bahá'u'lláh and 'Abdu'l-Bahá — on a single structural description of reality: existence as constituted by relationship, properties as emergent through relational interaction, and the relational principle that sustains integrated being identified, in each tradition's vocabulary, as love.</p><p>The book extends the formal arguments of two companion papers (a physics paper introducing the Relational Coherence Theorem and a philosophy paper documenting the triadic convergence) into a sustained treatment for a broader scholarly and general readership. It is structured in four parts: foundations (physics, philosophy, and Bahá'í writings each presented on their own terms), the convergence (six structural isomorphisms developed in detail), the formalism (the Relational Coherence Theorem and its testable predictions), and what it all means (implications for science–religion dialogue, consciousness, and human meaning).</p>",
+  "creators": [
+    {
+      "name": "Adams, Joshua",
+      "affiliation": "Independent Researcher",
+      "orcid": "0000-0002-7185-9125"
+    }
+  ],
+  "keywords": [
+    "quantum mechanics",
+    "process philosophy",
+    "Whitehead",
+    "Bahá'í Faith",
+    "mahabbat",
+    "relational ontology",
+    "Bell's theorem",
+    "decoherence",
+    "entanglement",
+    "philosophy of physics",
+    "science and religion",
+    "Relational Coherence Theorem",
+    "Affinity Tensor",
+    "consciousness"
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/adams-research/book-physics-of-love",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/adams-research/pub1-physics-rct",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/adams-research/pub2-philosophy",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/adams-research/pub3-bahai-studies",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}
