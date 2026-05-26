@@ -53,8 +53,9 @@
 \graphicspath{{figures/}}
 
 % ── TikZ illustrations ────────────────────────────────────
-% standalone: lets \input{figures/tikz/fig-*.tex} work in this document
-% (the standalone package strips the outer \documentclass from sub-files)
+% standalone: lets \input{figures/tikz/fig-*.tex} work in this document.
+% IMPORTANT: \definecolor commands in standalone sub-files are stripped when
+% \input'd — all shared colours must be declared HERE in the parent preamble.
 \usepackage{standalone}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -74,6 +75,14 @@
   shadings,
   hobby
 }
+% Shared colour palette for all figures/tikz/fig-*.tex
+\definecolor{substblue}{RGB}{70,130,180}    % steel blue  — substance/classical
+\definecolor{procamber}{RGB}{180,110,30}    % amber       — process/relational
+\definecolor{feltgreen}{RGB}{0,110,55}      % dark green  — billiard felt
+\definecolor{bgcream}{RGB}{252,248,240}     % warm cream  — panel backgrounds
+\definecolor{atomblue}{RGB}{100,160,210}    % light blue  — quantum/atomic
+\definecolor{emphred}{RGB}{160,40,40}       % dark red    — emphasis labels
+\definecolor{panelborder}{RGB}{180,170,155} % warm gray   — panel borders
 
 % ── Lists & multi-column ──────────────────────────────────
 \usepackage{enumitem}
