@@ -41,8 +41,8 @@
 
   % Five film frames showing a simple arrow-shape at slightly different positions
   % Frame width ≈ 2.10, height ≈ 1.50, starting at x=0.20
-  \foreach \fi/\arrowx in {0/0.65, 1/0.90, 2/1.15, 3/1.40, 4/1.65}{
-    \pgfmathsetmacro{\fx}{0.35 + \fi*2.50}
+  \foreach \fn/\arrowx in {0/0.65, 1/0.90, 2/1.15, 3/1.40, 4/1.65}{
+    \pgfmathsetmacro{\fx}{0.35 + \fn*2.50}
     % Frame rectangle
     \fill[gray!20] (\fx,0.60) rectangle (\fx+2.10,2.10);
     \draw[gray!40, line width=0.4pt] (\fx,0.60) rectangle (\fx+2.10,2.10);
