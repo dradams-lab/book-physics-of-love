@@ -2,141 +2,800 @@
 \chapter{Why Quantum Mechanics Requires Process Ontology}
 \label{ch:qm-requires-process}
 
-% STATUS: TODO
-% TARGET: ~8,000 words
-% PRIMARY SOURCES:
-%   pub2/sections/02-against-substance.tex  — four-step argument (academic)
-%   pub2/sections/03-whitehead-process.tex  — process ontology as the answer
-% SECONDARY: Bell1964, Aspect1982, Rovelli1996, Whitehead1929, Bohm1980,
-%            NielsenChuang2000, Schlosshauer2005 (decoherence)
-% NOTE: This is the central argument of Part II. The four-step argument from
-%       pub2 §2 is the spine. The chapter ends with the STRONG conclusion:
-%       not merely "consistent with" but "arguably required by" quantum mechanics.
-% REGISTER: More argumentative than Ch. 4. Walk reader through each step clearly.
-%           Respond to the main objection (Bohm interpretation).
+\epigraph{What is proved by impossibility proofs is lack of imagination.}{John Bell}
 
-% \epigraph{What is proved by impossibility proofs is lack of imagination.}
-%   {John Bell}
+There is a temptation, when first encountering quantum mechanics, to treat it as
+a collection of paradoxes: the cat that is simultaneously alive and dead, the
+particle that goes through both slits at once, the measurement that seems to
+disturb what it observes.
+This temptation should be resisted.
+Quantum mechanics is not primarily a collection of puzzles awaiting a future
+resolution.
+It is a completed physical theory with a precise mathematical structure and an
+experimental record spanning eight decades without a single anomaly.
+Its puzzling features are not failures of the theory.
+They are accurate descriptions of how nature actually behaves.
+
+The philosophical challenge is not to explain away the puzzles but to ask what
+kind of world makes a theory like this true.
+That is the question this chapter pursues.
+Its answer has a precise logical structure.
+
+The argument runs in four steps.
+First, Bell's theorem, confirmed experimentally from Aspect's 1982 tests through
+the 2022 Nobel Prize, eliminates a specific and fundamental class of theories:
+those that assign definite local properties to quantum systems before measurement.
+Second, if particles have no definite local properties before measurement, the
+positive implication follows: what they have instead are relational properties ---
+properties that come into being through interaction rather than being possessed
+independently.
+Third, substance ontology --- the framework that has governed Western metaphysics
+from Aristotle through Newton and beyond --- requires exactly what Bell eliminates.
+Substance ontology is therefore not merely challenged or complicated by quantum
+mechanics; it is formally ruled out by a mathematical theorem and its experimental
+confirmation.
+Fourth, process ontology --- the framework Whitehead developed in 1929 and that
+has been extended by philosophers of physics ever since --- is the most fully
+developed alternative.
+The structural alignment between process ontology and quantum mechanics is not
+accidental: it is point-by-point, covering the four features of quantum mechanics
+that are hardest to explain within any framework.
+
+I want to be careful about the strength of the claim.
+The argument is not that process ontology has been proven true.
+It is that substance ontology has been formally ruled out, and that among the
+surviving frameworks, process ontology has the strongest systematic claim.
+That asymmetry is philosophically significant even in the absence of proof.
+By the end of this chapter, the reader will have the conceptual tools to understand
+why the following conclusion is not an overstatement: quantum mechanics does not
+merely \emph{suggest} process ontology.
+Given the experimental record, it \emph{requires} something like it.
+
 
 % ─────────────────────────────────────────────────────────────────────────────
-%  OPENING (~600 words)
-% ─────────────────────────────────────────────────────────────────────────────
-% TODO: State the chapter's thesis clearly. This is not a claim that process
-% ontology is true or that Whitehead had the right metaphysics. It is a claim
-% that the standard default — substance ontology — is formally ruled out, and
-% process ontology is the best-developed framework that survives. That is a
-% significant asymmetry worth establishing carefully.
-
-% ─────────────────────────────────────────────────────────────────────────────
-\section{Step 1: Bell's Theorem — What It Actually Proves}
+\section{Step 1: Bell's Theorem --- What It Actually Proves}
 \label{sec:ch5-step1}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: The most careful treatment of Bell's theorem in the book. Build on Ch. 1
-%       but go deeper on the philosophical implication.
-% KEY POINTS:
-%   - Bell proves: no LOCAL theory assigning definite values BEFORE measurement
-%     can reproduce QM predictions
-%   - The key word is LOCAL — Bell closes local hidden variables, not all
-%     determinism
-%   - But local intrinsic properties are exactly what substance ontology requires
-%   - Experimental closure (Aspect, loophole-free tests, 2022 Nobel)
-%   - What it feels like to understand what Bell proved (the "click" moment)
-% SOURCE: pub2 §2.2 (Step 1); translate from academic.
-% CITE: Bell1964, CHSH1969, Aspect1982, Hensen2015, Zeilinger2023Nobel
+
+To understand what Bell's theorem proves, it helps to begin with what Einstein,
+Podolsky, and Rosen thought they had established in 1935.
+
+Their paper~\citep{Einstein1935EPR} made the following argument.
+Quantum mechanics predicts that two particles, once they have interacted,
+can remain correlated in a way that seems to transcend distance: measuring the
+spin of one particle immediately determines what the spin of the other would
+be, even if the two particles are on opposite sides of the galaxy.
+Einstein, Podolsky, and Rosen found this deeply objectionable.
+No signal can travel faster than light; and yet the correlation exists.
+Their proposed explanation was that quantum mechanics is simply incomplete.
+The particles carried some additional, hidden information all along --- a
+predetermined plan for how they would respond to any measurement --- and the
+apparent mystery dissolves when you accept that the theory is just missing those
+hidden variables.
+
+This was not an unreasonable position.
+It was, in fact, the commonsense scientific position: when a theory produces
+surprising correlations, look for an underlying mechanism.
+The correlations between entangled particles are surprising; therefore, there
+must be a hidden mechanism --- some prior agreement encoded in the particles
+themselves --- that accounts for them.
+
+In 1964, John Stewart Bell asked a question that had not been asked before:
+could this proposal --- that particles carry hidden local properties that
+predetermine their measurement outcomes --- actually reproduce the statistical
+predictions of quantum mechanics?
+The answer, he showed, was no~\citep{Bell1964}.
+
+Bell's theorem is a mathematical result.
+Its premises are two.
+The first is \emph{locality}: the idea that what happens to one particle cannot
+depend on what happens to a distant, spacelike-separated particle.
+More precisely, the value that a measurement reveals for particle A cannot depend
+on which measurement setting was chosen for particle B, if B is so far away that
+no signal could have traveled between them in time to influence the outcome.
+This is not a radical assumption.
+It is the foundation of all classical physics and of special relativity.
+The second premise is \emph{realism} in a specific, technical sense: the idea that
+the particles have definite values for the measured properties \emph{before} the
+measurements are performed.
+Not that we know those values, but that they exist.
+That the particle has, say, a definite spin orientation from the moment it is
+created, waiting to be revealed when we look.
+
+Bell proved that any theory satisfying both premises --- locality and prior definite
+values --- must obey certain inequalities.
+These inequalities place upper bounds on the statistical correlations that can
+exist between measurements on distant particles.
+They are the CHSH inequalities, named for \citet{CHSH1969}, who put Bell's
+original argument into the form most directly testable by experiment.
+
+Quantum mechanics predicts that these inequalities are violated.
+The correlations between entangled particles, according to the quantum formalism,
+are stronger than anything a locally realistic theory can produce.
+Experiment has consistently confirmed the quantum prediction.
+
+\citet{Aspect1982} performed the first decisive experimental test.
+Working in Paris with entangled photons and rapidly switched measurement settings
+--- a design specifically intended to close the loophole of any signal traveling
+between measurement stations --- Aspect, Grangier, and Roger found clear, unambiguous
+violations of the Bell inequalities, precisely as quantum mechanics predicted.
+
+For two decades after Aspect, skeptics noted that various technical loopholes
+remained: perhaps the detector efficiency was low enough that the sample of detected
+particles was not representative; perhaps the random settings were not truly
+independent of the hidden variables.
+These objections were not unreasonable, and the experimental community took them
+seriously.
+Between 2015 and 2017, a series of loophole-free experiments simultaneously
+closed both the locality loophole and the detection efficiency loophole for the
+first time, reporting Bell violations at statistical significance levels that put
+the question definitively to rest.
+The 2022 Nobel Prize in Physics was awarded jointly to Alain Aspect, John F.
+Clauser, and Anton Zeilinger for this body of experimental work~\citep{Zeilinger2023Nobel}.
+
+What does the experimental record actually prove?
+
+It proves that no theory satisfying both locality and prior definite values can
+reproduce the predictions of quantum mechanics.
+In other words: either quantum particles do not have definite values before
+measurement, or those values are not local.
+One of the two premises must be abandoned.
+
+Most working physicists and philosophers of physics accept the first horn.
+Quantum particles do not carry definite values for their observables prior to
+measurement.
+The measurement is not the passive reading of a pre-existing fact.
+Something genuinely new comes into being through the act of measurement.
+
+I want to dwell on the word ``local'' because it carries more philosophical weight
+than is often appreciated.
+Locality, in the precise sense Bell uses, means: the value is \emph{carried by
+the particle alone, independently of what happens elsewhere}.
+A locally possessed property is one that the particle has in virtue of what it
+is, in its own right, at its own location.
+It does not depend on distant circumstances.
+It does not depend on what measuring apparatus is chosen a light-year away.
+It is intrinsic to the particle.
+
+This is exactly the kind of property that classical physics attributed to matter:
+the position, momentum, and spin of a particle are properties the particle has,
+regardless of what anyone does with it.
+Bell's theorem, confirmed by experiment, eliminates this picture at the fundamental
+level.
+
+There is a moment, for many people who study this argument carefully, when it
+really lands.
+I remember mine.
+I had understood the theorem technically for years before I understood it
+philosophically.
+The click came when I realized that Bell was not saying the particles are
+mysterious or unknowable.
+He was not saying that our measurements disturb a reality that was already there.
+He was saying that the kind of reality we had assumed --- the kind in which each
+particle carries its own definite properties, independent of what happens
+elsewhere --- simply does not exist.
+Not that it is hidden from us.
+Not that it is too small to see.
+But that it is not there.
+
+The EPR program is formally closed.
+The particles were never carrying a predetermined answer.
+The question of what \emph{was} there before measurement is precisely the question
+that the rest of this chapter addresses.
+
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Step 2: If No Intrinsic Properties, Then What?}
 \label{sec:ch5-step2}
-% (~1,200 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: From the negative result to the positive implication.
-% KEY POINTS:
-%   - If particles have no definite local properties before measurement, what
-%     do they have?
-%   - Answer: RELATIONAL properties — properties that emerge through interaction
-%   - Rovelli's relational QM: quantum states are facts relative to interacting
-%     systems, not absolute facts about the world
-%   - The measurement event is not a disturbance of a pre-existing property;
-%     it is the constitutive event through which the property comes to be
-%   - This is precisely what process ontology predicts: properties are
-%     constituted through relational events, not prior to them
-% SOURCE: pub2 §2.3 (Step 2); pub2 §3 (process ontology as answer).
-% CITE: Rovelli1996, Whitehead1929
+
+Bell's theorem tells us what quantum particles \emph{do not} have: definite,
+locally possessed properties prior to measurement.
+What, then, do they have?
+
+This question has a precise positive answer, and it comes from looking carefully
+at what happens when a measurement \emph{is} performed.
+
+When a particle interacts with a measuring apparatus, an outcome occurs.
+The particle registers as spin-up or spin-down; it lands at one location or another
+on the detector screen; it triggers a click in one detector and not the other.
+The outcome is definite.
+It is real.
+After the measurement, there is a fact: \emph{this particle, in this interaction,
+with this apparatus, had this result}.
+
+The philosophical weight rests on the italicized structure.
+The outcome exists \emph{as a relational fact}: it is a fact about this particle
+in this interaction, not a fact about the particle in isolation.
+Before the interaction, there was no fact about what the outcome would be ---
+not because we did not know, but because the fact did not yet exist.
+The measurement event is not the reading of a pre-written text.
+It is the event through which the text comes to be written.
+
+This is what Carlo Rovelli calls relational quantum mechanics~\citep{Rovelli1996}.
+The central proposal is this: quantum states are always states \emph{relative to}
+some system.
+There is no absolute, observer-independent quantum state of the universe.
+There are only states of physical systems relative to other physical systems.
+A particle does not simply \emph{have} spin-up.
+It has spin-up \emph{relative to this detector, in this interaction, from the
+perspective of this measurement event}.
+
+This might sound like a retreat into subjectivism, but it is not.
+The outcome is real.
+If I measure a particle's spin and get spin-up, and then you compare notes with me,
+you will find that I got spin-up.
+The relational fact is as robust and intersubjectively verifiable as any fact in
+classical physics.
+What it is not is a fact about the particle considered in isolation from any
+interaction.
+The definiteness belongs to the relational event, not to the isolated particle.
+
+Two implications of this picture deserve emphasis.
+
+The first is that the measurement event is \emph{constitutive} rather than
+\emph{revelatory}.
+In classical physics, measurement reveals a pre-existing fact.
+The speedometer does not create the car's velocity; it reads what is already
+there.
+In quantum mechanics, on the relational picture, measurement is different in kind.
+It is the event through which the property comes into being.
+The measurement event \emph{constitutes} the outcome rather than reading it off
+from something pre-existing.
+
+The second implication is about entanglement.
+When two particles interact and become entangled, the correlations between them
+are not the result of information passing between them.
+They are not the result of a pre-agreed hidden plan.
+They are the result of a shared relational history: the two systems' states are
+defined partly in terms of each other, because they entered into a relational event
+that bound their subsequent behavior together.
+Entanglement, on the relational picture, is the persistence of relational
+constitution across space and time.
+Two particles that once interacted remain part of the same relational network,
+and measurements on them will reflect that relatedness --- not because any signal
+travels between them, but because their states are, at a fundamental level,
+defined in terms of each other.
+
+The wave function, on this reading, is not a hidden description of an absolute
+reality.
+It is a compact specification of the relational possibilities of a quantum system:
+the set of outcomes that can come about when the system enters various kinds of
+interactions.
+Heisenberg's uncertainty principle~\citep{Heisenberg1927} is not, on this reading,
+a limitation imposed on us by our large and clumsy measurement instruments.
+It is a statement about the ontological structure of quantum systems: properties
+that are jointly definite are constrained, because definiteness is not intrinsic
+but relational, and different relational contexts actualize different aspects of
+the system's potential.
+
+What is emerging here is a picture of the quantum world that is fundamentally
+different from the classical one.
+In the classical picture, the world is composed of things with properties.
+Properties are intrinsic: they belong to the things that have them, regardless of
+their relations to other things.
+In the emerging quantum picture, the world is composed of relational events.
+Properties are relational: they come into being through interaction and exist only
+within specific relational contexts.
+What we call a ``particle'' is better understood as a node in a network of
+relational potentials, a locus of possible interactions, each of which will
+actualize some definite aspect of the system's behavior.
+
+There is a philosophical tradition that independently arrived at exactly this picture.
+It did not arrive at it through quantum mechanics.
+It arrived at it through a different route, from first principles of metaphysics,
+in the first decades of the twentieth century.
+Its name is process philosophy, and its founder was Alfred North Whitehead.
+Before I can explain why process ontology is the best-developed framework for
+understanding what quantum mechanics has discovered, I need to establish something
+more precise: that the framework it replaces --- substance ontology --- is not
+merely inadequate but formally incompatible with the quantum world.
+
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Step 3: Why Substance Ontology Is Formally Incompatible}
 \label{sec:ch5-step3}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Make the incompatibility explicit and airtight.
-% KEY POINTS:
-%   - Substance ontology REQUIRES intrinsic properties (possessed independently)
-%   - Bell's theorem EXCLUDES local intrinsic properties
-%   - Therefore substance ontology is incompatible with quantum mechanics
-%   - This is not a philosophical preference — it is a deduction from a
-%     mathematical theorem and its experimental confirmation
-%   - The intuition that things must have definite properties is a bias from
-%     living at the macroscopic scale (where decoherence creates apparent
-%     definiteness)
-% OBJECTION: What about Bohmian mechanics?
-%   - Bohm restores definiteness by making the wave function global and
-%     dynamically active — but the wave function is non-local; it's not a
-%     local substance
-%   - Bohm doesn't restore substance ontology; it formalizes one version of
-%     process ontology (the wave function as the primary relational field)
-% SOURCE: pub2 §2.4–2.5 (Steps 3–4, objections); translate.
-% CITE: Bell1964, Bohm1980
+
+The word ``formally'' in this section's title carries the full weight of the
+argument.
+I am not claiming that substance ontology is philosophically unfashionable,
+or that it sits uneasily with modern physics, or that a process-oriented
+metaphysician finds it aesthetically unappealing.
+I am claiming that there is a valid deductive argument from the experimental
+confirmation of Bell inequality violations to the conclusion that substance
+ontology, in its classical local form, has no instantiation in the physical world.
+
+Let me state the argument explicitly.
+
+\emph{Premise 1:} Substance ontology requires that fundamental physical entities
+possess intrinsic properties --- properties they hold independently of their
+relations to other things.
+This is not an arbitrary requirement; it is what the word ``substance'' means.
+A substance, in the classical philosophical tradition from Aristotle through
+Descartes to Newton, is something that exists in its own right, with its own
+definite characteristics.
+The billiard ball has mass, charge, and position.
+These are properties of the ball.
+They belong to it whether or not anyone measures it, whether or not it is
+interacting with anything else.
+A substance that had no properties in isolation would not be a substance in any
+recognizable sense; it would be an empty grammatical subject without predicates.
+
+\emph{Premise 2:} Bell's theorem, confirmed by experiment across six decades,
+proves that no local theory can attribute definite properties to quantum particles
+prior to measurement.
+More precisely: no theory in which each particle's outcome is determined by
+locally possessed hidden variables can reproduce the statistical correlations
+that quantum mechanics predicts and experiment confirms.
+
+\emph{Conclusion:} Therefore, the fundamental physical entities of quantum
+mechanics cannot be substances in the classical sense.
+They do not possess intrinsic, locally held properties.
+Substance ontology --- understood as the claim that reality is fundamentally
+composed of entities with intrinsic local properties --- is formally ruled out
+by quantum mechanics.
+
+The logic is valid.
+If you accept both premises, you must accept the conclusion.
+And the premises are not controversial.
+Premise 1 is a definition.
+Premise 2 is one of the most experimentally confirmed results in the history
+of science.
+
+The conclusion is stark: the metaphysical picture that Western philosophy and
+science have operated with for two millennia, the picture of a world composed
+of things with their own definite properties, is not merely challenged by quantum
+mechanics.
+It is \emph{ruled out} by it.
+
+Let me address the two most common ways of resisting this conclusion.
+
+\subsection*{The Bohmian Objection}
+
+The most direct challenge to the conclusion comes from Bohmian mechanics, also
+called the pilot-wave interpretation~\citep{Bohm1980}.
+In Bohm's framework, quantum particles do have definite positions at all times.
+The wave function does not collapse; it guides the particles along definite
+trajectories through a globally defined pilot wave.
+Measurement outcomes are definite because the particles were at definite
+locations throughout; the uncertainty of quantum mechanics reflects our ignorance
+of the precise initial conditions, not a genuine ontological indefiniteness.
+
+If Bohmian mechanics is right, has substance ontology been saved?
+
+No.
+And the reason reveals something important about the structure of the problem.
+
+Bell's theorem eliminates local hidden variables, not hidden variables as such.
+Bohmian mechanics survives Bell precisely by abandoning locality: the pilot wave
+is defined on the full configuration space of the system, not on three-dimensional
+physical space.
+The trajectory of any single particle is determined, at every instant, by the
+global wave function --- which is instantaneously sensitive to the positions of
+every other particle in the universe.
+When you measure particle A, the pilot wave immediately adjusts to reflect that
+fact, and this adjustment influences particle B's subsequent behavior, regardless
+of how far away B is.
+
+This is not a local theory.
+It is, in fact, an explicitly nonlocal one.
+The defining feature of substance ontology --- that each substance carries its own
+properties independently of its relations to other things --- is precisely what
+Bohmian mechanics abandons.
+Particle A's trajectory is not determined by what particle A is, in isolation.
+It is determined by the global pilot wave, which encodes the relational structure
+of the entire system.
+
+The supposedly intrinsic position of a Bohmian particle is, at every moment, the
+output of a holistic, nonlocally coupled field.
+The particle does not \emph{have} its trajectory in virtue of what it is.
+It follows its trajectory in virtue of what everything else is --- specifically,
+in virtue of the global wave function that registers the configuration of the
+universe as a whole.
+
+This is substance ontology in vocabulary only.
+The substantive content is a nonlocal relational field that governs particle
+behavior holistically.
+A committed Bohmian has, in effect, accepted that the fundamental physical
+object is a nonlocal relational structure.
+That is the content of the process-ontological claim.
+The Bohmian dress it in different terminology and add point particles whose
+positions do not contribute any explanatory work that the wave function does not
+already do.
+
+The Bohmian objection does not defeat the argument.
+It illustrates it.
+The only way to preserve definite particle properties within quantum mechanics
+is to make those properties dependent on a global, nonlocal relational field ---
+which means they are not intrinsic properties at all.
+
+\subsection*{The Macroscopic-Scale Intuition}
+
+A different resistance comes not from physics but from everyday experience.
+The table I am writing on has definite mass, a definite location, a definite
+surface area.
+These seem like paradigm cases of intrinsic properties.
+If substance ontology is formally ruled out, how do we explain the table?
+
+The answer comes from decoherence~\citep{Zurek2003}.
+
+In quantum mechanics, a system becomes classical-appearing when it interacts
+strongly with its environment.
+The environment --- air molecules, photons, gravitational fluctuations ---
+continuously entangles with the system, and this entanglement very rapidly
+destroys the quantum coherence (the ability to be in superpositions of distinct
+classical states) that distinguishes quantum behavior from classical behavior.
+For a macroscopic object like a table, the decoherence process happens so fast
+and so thoroughly that no quantum superposition survives long enough to be
+observable.
+The table \emph{appears} to have a definite location and mass because the
+interaction with its environment has effectively frozen it into a single
+classical-appearing state.
+
+But decoherence does not restore substance ontology.
+The table's apparent definiteness is a consequence of its interactions, not
+evidence that it has intrinsic properties independent of interaction.
+The definiteness is emergent and relational: it arises from the table's
+immersion in an environment of interacting quantum systems.
+The table does not have definite properties because it is a substance; it
+appears to have definite properties because it is deeply embedded in a network
+of relational interactions that prevent quantum behavior from manifesting at
+the macroscopic scale.
+
+Our intuition that reality is made of things with definite properties is not
+wrong.
+It is a very accurate representation of how reality behaves at the scales we
+evolved to perceive.
+But it is not a description of the fundamental structure of reality.
+It is what a relational quantum world looks like when viewed through the
+decoherence filter of macroscopic observation.
+The intuition is reliable at our scale.
+At the quantum scale, it fails completely --- and Bell's theorem tells us why.
+
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Step 4: Process Ontology as the Required Framework}
 \label{sec:ch5-step4}
-% (~2,000 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: The positive case. Process ontology is not just "not ruled out" — it
-%       is the most systematically developed framework that accommodates the
-%       QM results.
-% KEY POINTS:
-%   - Four features of QM that process ontology naturally explains:
-%     (1) Property indefiniteness before measurement: actual occasions
-%         are constituted by relational events, not prior to them
-%     (2) Non-separability (entanglement): universal prehension — each
-%         occasion grasps the entire past
-%     (3) Observer-dependence: each prehension is a perspective; no view
-%         from nowhere
-%     (4) Decoherence: actual occasions perish and contribute to the
-%         objective past; coherence dissolves into the record of prior occasions
-%   - This is not a perfect fit — QM and Whitehead were not designed for each other
-%   - But the structural alignment is too precise to be coincidental
-% SOURCE: pub2 §§3, 5 (convergence argument); translate.
-% CITE: Whitehead1929, Epperson2004, Stapp2007, Rovelli1996
+
+With substance ontology formally ruled out, the question becomes: what framework
+takes its place?
+
+This is not merely a question about philosophical terminology.
+It is a question about what kind of thing the universe fundamentally is.
+If the world is not composed of substances with intrinsic properties, then it is
+composed of something else.
+What?
+
+Process ontology, most fully developed by Alfred North Whitehead in
+\textit{Process and Reality}~\citep{Whitehead1929} and extended by subsequent
+philosophers of physics including \citet{Epperson2004} and
+\citet{Stapp2007}, provides the most systematic answer that has so far
+been developed.
+
+The central inversion of process ontology is this: not things, but events.
+Not persistent objects with properties, but relational events through which
+properties come to be.
+What we call ``things'' are, in Whitehead's framework, patterns of recurring
+relational events --- high-frequency societies of ``actual occasions'' that
+maintain a recognizable structure over time.
+The stone, the electron, the organism, the mind: each is a pattern of relational
+becoming, not an independent substance.
+
+To understand why this framework is not merely an alternative to substance
+ontology, but the most accurate philosophical description of what quantum
+mechanics has discovered, I want to map the four features of quantum mechanics
+that have proven most resistant to classical interpretation onto the four central
+categories of Whitehead's framework.
+
+\subsection*{First Alignment: Property Indefiniteness and Actual Occasions}
+
+The hardest feature of quantum mechanics to swallow for anyone trained in classical
+physics is property indefiniteness: the fact that a quantum particle does not have
+a definite spin, position, or momentum before it is measured.
+This is not a limitation of our instruments.
+It is, Bell proved, a feature of reality.
+
+Substance ontology has no place for this.
+If reality is composed of substances with intrinsic properties, every substance
+has its properties at every moment.
+The question ``what is the particle's spin before measurement?'' must have an
+answer.
+Bell showed it doesn't.
+
+Process ontology, by contrast, has exactly the right structure to accommodate
+property indefiniteness.
+An actual occasion, in Whitehead's account, begins as pure potentiality.
+It is not yet definite.
+It is in the process of \emph{becoming} --- of constituting itself through its
+relational grasping of what came before.
+Definiteness is not given; it is achieved.
+The occasion achieves its definite character through \emph{concrescence}, the
+process by which potential is converted into actuality through relational
+engagement.
+
+The quantum particle before measurement maps onto the actual occasion in its
+pre-concrescence phase.
+It is not indefinite because of our ignorance.
+It is indefinite because definiteness is not the ontological ground state of
+relational events --- it is the outcome of a relational process.
+The wave function, on this reading, is not a description of ignorance.
+It is a precise description of what a pre-concrescence quantum occasion actually
+is: a structured distribution of relational potentials, waiting to be actualized
+through interaction.
+
+This identification was developed in formal detail by \citet{Epperson2004} and
+constitutes one of the strongest specific alignments between the two frameworks.
+It is not an analogy.
+It is a claim that the structure of actual occasions --- potential, process,
+actualization --- is the correct description of the ontological structure that
+quantum mechanics has experimentally revealed.
+
+\subsection*{Second Alignment: Entanglement and Universal Prehension}
+
+Entanglement is the most striking feature of quantum mechanics and the one that
+most decisively breaks the classical picture.
+Two particles, once they have interacted, share a quantum state that cannot be
+written as a simple product of their individual states.
+Measuring one particle instantaneously affects what outcomes are possible for
+the other, regardless of the distance between them.
+The correlations, Bell proved, cannot be explained by any prior agreement or
+local hidden variable.
+They are a feature of the relational structure of the quantum world itself.
+
+Substance ontology has no adequate account of entanglement.
+If each particle is a substance with its own intrinsic properties, its state
+should be fully specifiable independently of any other particle.
+Entanglement says otherwise: the state of each particle is, in part, defined by
+its relational history with the other.
+The particles are not separable substances; they are aspects of a single
+relational structure.
+
+Process ontology built this feature into its foundations.
+The central act in Whitehead's ontology is \emph{prehension}: the relational
+grasping by which each actual occasion incorporates prior occasions into its own
+becoming.
+Prehension is not perception in the human sense.
+It is the most fundamental form of relational responsiveness in the universe,
+operative at every scale.
+And it is \emph{universal}: every actual occasion prehends, to some degree, every
+prior occasion.
+There is no quantum event that is fully isolated from its relational history.
+
+Entanglement, on the process-ontological reading, is the quantum formalism's
+expression of what universal prehension looks like at the subatomic scale.
+Two particles that once interacted have entered into a prehensive relationship;
+their subsequent states are defined partly by that relationship.
+The correlations that Bell proved cannot be explained by local hidden variables
+are, on this reading, the expected consequence of a world in which relations
+are ontologically prior to relata --- in which things do not first exist and then
+relate, but rather come into being through their relational constitution.
+
+\subsection*{Third Alignment: Observer-Dependence and Perspectival Prehension}
+
+Quantum states are, on Rovelli's relational interpretation, always relative to
+some observer or system.
+There is no absolute quantum state of the universe, no view from nowhere.
+Two observers who have not compared notes may, with perfect theoretical legitimacy,
+assign different states to the same system.
+This is not a contradiction.
+It is a consequence of the fact that quantum states are facts about relations,
+and different observers stand in different relational contexts.
+
+This feature of quantum mechanics has seemed deeply uncomfortable to many
+physicists, because it appears to threaten objectivity.
+If the state is always relative to an observer, is there any objective reality?
+
+Process ontology dissolves the discomfort without sacrificing objectivity.
+In Whitehead's framework, every actual occasion is irreducibly \emph{perspectival}.
+It prehends the world from its own particular location in the relational network,
+incorporating those prior occasions that are relevant to its own becoming.
+There is no God's-eye view, no perspective-free vantage point from which the
+entire network of occasions is simultaneously visible.
+Every prehension is a view from somewhere.
+
+And yet the results are objective.
+Once an occasion has achieved its definite character through concrescence, it
+becomes part of the objective past available for prehension by all subsequent
+occasions.
+The definiteness of the past is absolute; only the perspectives of observers in
+the present are multiple.
+Rovelli's relational quantum mechanics has exactly this structure: the relational
+facts about measurement outcomes are as real as any facts can be; the quantum
+states that precede those outcomes are perspectival.
+
+Observer-dependence in quantum mechanics is not a feature requiring apology.
+It is the quantum signature of what a perspectival, relational universe looks like
+when described mathematically.
+
+\subsection*{Fourth Alignment: Decoherence and the Objective Past}
+
+The transition from quantum to classical behavior --- the process by which quantum
+systems apparently lose their quantum character and come to behave classically ---
+is described by the theory of decoherence~\citep{Zurek2003}.
+When a quantum system interacts with a large environment, the quantum correlations
+between system and environment become extremely complex and spread into the
+environment in a way that is practically irreversible.
+From the perspective of any local observer, the system appears to have acquired
+a definite classical state.
+The quantum coherence has not been destroyed; it has been distributed throughout
+the environment beyond any practical possibility of recovery.
+
+Substance ontology finds decoherence puzzling.
+If particles always had definite properties, why does quantum coherence seem to
+``collapse'' at all?
+Why is there a transition from quantum to classical behavior?
+The measurement problem --- the question of how a definite outcome emerges from
+a superposition --- is precisely the problem that arises when you try to graft
+quantum mechanics onto a substance-ontological framework.
+
+Process ontology has the natural account.
+In Whitehead's framework, each actual occasion undergoes concrescence --- the
+process of achieving its definite character through relational engagement --- and
+then \emph{perishes}.
+It passes from the subject of experience to the superject: the completed fact
+that is now available for prehension by subsequent occasions.
+The perished occasion enters the objective past.
+It is no longer in process; it is finished, definite, fixed.
+
+Decoherence, on the process-ontological reading, is what the perishing of actual
+occasions looks like from the perspective of quantum mechanics.
+As a quantum system interacts with its environment, the complexity of its
+relational entanglement grows until the system effectively completes its
+concrescence: it becomes a finished fact, a fixed element of the relational past,
+no longer exhibiting the superposition behavior characteristic of pre-concrescence
+occasions.
+The transition from quantum to classical is not mysterious.
+It is the transition from the potentiality phase to the fixed objective past.
+
+\citet{Epperson2004} develops this mapping in technical detail, showing that
+Whitehead's categories of potential phase, concrescence, and superjecthood
+correspond naturally to the quantum-mechanical description of pre-measurement,
+measurement, and post-measurement phases.
+The alignment is not approximate; it is structural.
+
+\subsection*{The Overall Picture}
+
+The four alignments are not independent.
+They all flow from the same fundamental inversion: process ontology puts events
+and relations where substance ontology put things and properties.
+This single inversion explains property indefiniteness (definiteness is the
+outcome of relational process, not a given), entanglement (relations are
+ontologically prior to relata), observer-dependence (every prehension is
+perspectival), and the quantum-to-classical transition (occasions perish into
+a fixed objective past).
+
+\citet{Stapp2007} approaches the same convergence from the direction of quantum
+mechanics itself, arguing that the structure of quantum events --- with their
+abrupt transitions from potential to actual --- requires exactly the ontological
+framework that Whitehead developed.
+\citet{Griffin2000} extends this analysis to consciousness and experience,
+arguing that the same relational structure that quantum mechanics requires at
+the physical level is the structure that makes consciousness intelligible at
+the biological level.
+
+The convergence is not accidental, and it is not forced.
+Process ontology was not developed by reading quantum mechanics and working
+backward to a metaphysics.
+It was developed from first principles by a philosopher-mathematician who saw
+the inadequacy of substance ontology well before quantum mechanics had made
+that inadequacy experimentally precise.
+The fact that Whitehead's framework anticipates the quantum picture with this
+degree of structural precision is itself philosophically significant.
+It suggests that both the physics and the philosophy were detecting the same
+underlying feature of reality, by different methods.
+
+I will return to this point --- the question of independent detection of the
+same structure --- at length in the next chapter.
+For now, I want to collect the argument of this chapter into a precise conclusion.
+
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{The Strong Conclusion}
 \label{sec:ch5-conclusion}
-% (~800 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: State the conclusion with appropriate precision.
-% KEY POINTS:
-%   - The claim is not that process ontology IS true, or that Whitehead had
-%     the complete picture
-%   - The claim is: (a) substance ontology is formally ruled out; (b) process
-%     ontology is the most fully developed alternative; (c) six structural
-%     features of quantum mechanics align precisely with process ontological
-%     predictions
-%   - This asymmetry is epistemically significant even without proof
-%   - And then: the same framework was independently instantiated by the
-%     Bahá'í writings a generation before Whitehead
-% TRANSITION: Ch. 6 establishes that priority; Ch. 7–12 document the six
-%             structural convergences in detail.
+
+Let me be as precise as possible about what has been established and what has not.
+
+\textbf{What has been established:}
+
+\emph{First}, the experimental record of Bell inequality violations, culminating in
+the loophole-free tests of 2015--2017 and recognized by the 2022 Nobel Prize,
+confirms that no local hidden-variable theory can reproduce the predictions of
+quantum mechanics.
+This is not a philosophical preference or an interpretation.
+It is an experimentally confirmed mathematical theorem.
+
+\emph{Second}, substance ontology requires exactly what Bell eliminates: intrinsic,
+locally possessed properties.
+A substance without intrinsic properties is not a substance in any recognizable
+philosophical sense.
+Therefore local substance ontology is formally incompatible with quantum mechanics.
+This conclusion follows by deduction from the definition of substance and the
+experimental confirmation of Bell's theorem.
+
+\emph{Third}, the surviving alternatives to local substance ontology are all
+relational in structure.
+The Bohmian interpretation preserves definiteness only by making particle
+trajectories dependent on a global, nonlocal wave function --- which is a
+relational structure, not a substance.
+The relational interpretation makes this explicit: quantum states are facts about
+relations between systems.
+Process ontology provides the most fully developed metaphysical framework for this
+relational picture.
+
+\emph{Fourth}, four central features of quantum mechanics --- property indefiniteness,
+entanglement, observer-dependence, and the quantum-to-classical transition via
+decoherence --- align structurally with the four central categories of process
+ontology: the potentiality phase of actual occasions, universal prehension,
+perspectival concrescence, and the perishability of occasions into the objective
+past.
+These alignments are not analogies; they are claims of structural isomorphism,
+developed in technical detail by Epperson and Stapp, that process ontology
+correctly describes the ontological architecture that quantum mechanics requires.
+
+\textbf{What has not been established:}
+
+I have not proven that process ontology is true.
+No argument of this kind can do that.
+What has been established is an asymmetry: one framework has been formally ruled
+out, and the remaining frameworks share a relational structure that process
+ontology most fully develops.
+This asymmetry is epistemically significant even in the absence of proof.
+
+I have also not claimed that Whitehead had the complete picture.
+Process ontology as Whitehead developed it was not designed with quantum mechanics
+in mind, and there are technical aspects of quantum field theory and the
+measurement problem that require further philosophical work.
+What I am claiming is structural: the architecture of process ontology maps onto
+the architecture of quantum reality with a precision that no other fully developed
+metaphysical framework matches.
+
+Finally, I have not resolved the full measurement problem --- the precise account
+of how a single definite outcome emerges from a superposition in any given
+measurement event.
+That remains one of the deepest open questions in the foundations of physics.
+What process ontology provides is not a solution to the measurement problem but
+a metaphysical framework in which the problem takes a natural form.
+The question ``how does potential become actual through relational engagement?''
+is not an embarrassment within process ontology.
+It is precisely the question that the framework was built to ask.
+
+The conclusion of this chapter, stated as precisely as I can manage: substance
+ontology is formally ruled out by quantum mechanics.
+Process ontology is the most fully developed alternative.
+Six structural features of the quantum world align precisely with process
+ontological predictions.
+That is a powerful asymmetry, and it has a direct implication for the
+conversations that occupy the rest of this book.
+
+There is, it turns out, a third tradition that arrived at the same relational
+picture of reality.
+It did not arrive through mathematics, and it did not arrive through experiment.
+It arrived through a method of its own, in writings composed between the 1860s and
+1921 --- decades before Whitehead named the framework and half a century before
+Bell proved the theorem that ruled out the alternative.
+That is the subject of the next chapter.
 
 \begin{convergencemoment}{Why Quantum Mechanics Requires Process Ontology}
-% TODO: Fill in all three traditions' perspectives.
-% From the quantum side: Bell closes local substance ontology; relational
-%   constitution of properties is the required alternative.
-% From the process-philosophical side: actual occasions, prehension,
-%   concrescence — Whitehead's framework maps onto the QM structure point-by-point.
-% From the Bahá'í side: the three core passages articulate process ontological
-%   claims independent of and prior to both Whitehead and quantum physics.
-% One sentence statement: [write when drafting]
+The experimental record of Bell inequality violations, confirmed from Aspect's
+1982 tests through the 2022 Nobel Prize, formally rules out local substance
+ontology: the classical picture of particles with intrinsic, locally possessed
+properties has no instantiation in the quantum world.
+
+Process philosophy, developed by Whitehead independently in 1929, offers the
+most fully developed alternative: a framework in which reality consists not of
+things with properties but of relational events through which properties come to
+be.
+The four central features of quantum mechanics that resist classical explanation
+--- property indefiniteness, entanglement, observer-dependence, and the
+quantum-to-classical transition --- map onto the four central categories of
+process ontology with structural precision that goes beyond coincidence.
+
+From the \bahai side: three texts composed between the 1860s and 1921 articulate
+a process ontological picture of reality --- existence as relational affinity,
+creation as relational event, process as the fundamental mode of being ---
+independently of and prior to both Whitehead and quantum mechanics.
+Three independent instruments; one structure.
 \end{convergencemoment}

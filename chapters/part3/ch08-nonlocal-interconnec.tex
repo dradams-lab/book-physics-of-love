@@ -2,85 +2,188 @@
 \chapter{Nonlocal Interconnection: The Bond That Ignores Distance}
 \label{ch:nonlocal-interconnection}
 
-% STATUS: TODO
-% TARGET: ~6,000 words
-% CONVERGENCE: 2 of 6 — Nonlocal Interconnection
-% PRIMARY SOURCES:
-%   pub2/sections/05-six-convergences.tex §§Convergence2  — QM + process paragraphs
-%   pub3/sections/03-six-convergences.tex §§Convergence2  — Bahá'í paragraph
-% KEY CITATIONS: Bell1964, Aspect1982, Zeilinger2023Nobel, Whitehead1929,
-%               SelectionsAbdul, Wootters1998
-% NOTE: Most vivid convergence for general readers. Entanglement is in popular
-%   culture; connect it to philosophical and spiritual parallels with precision.
-
 % \epigraph{Spooky action at a distance.}{Albert Einstein (dismissively, 1935)}
 
-% ─────────────────────────────────────────────────────────────────────────────
-%  OPENING (~500 words)
-% ─────────────────────────────────────────────────────────────────────────────
-% TODO: Introduce entanglement for a general reader. The basic fact: two particles
-% that have interacted remain connected — measuring one instantly affects what we
-% know about the other, regardless of distance. Einstein dismissed it; Bell proved
-% him right to be bothered but wrong to dismiss it. The spookiness is real.
+In 1935, Albert Einstein co-authored a paper designed to prove that quantum mechanics was incomplete \citep{Bell1964}. The argument, later called the EPR argument after its authors (Einstein, Podolsky, and Rosen), rested on a thought experiment. Imagine two particles that interact and then fly apart in opposite directions. Quantum mechanics predicts that measuring the spin of one particle will instantly determine what result you will get if you measure the spin of the other, no matter how far apart the particles are. Einstein found this intolerable. If no signal can travel faster than light --- and Einstein had spent his career establishing this --- then the second particle's measurement outcome cannot be caused by what happens to the first. Therefore, Einstein argued, the outcomes must have been determined in advance. The particles must carry ``hidden variables'' --- pre-set instructions --- that tell them what outcome to produce when measured. Quantum mechanics, by failing to include these variables, was incomplete.
+
+Einstein was right to be disturbed. He was right that the quantum mechanical prediction is genuinely strange. He was right that something is going on that has no classical precedent. Where he was wrong --- and where the situation becomes far more interesting than he perhaps wanted it to be --- was in the conclusion. The hidden variables do not save him. In 1964, John Bell proved mathematically that any theory with the kind of pre-existing local hidden variables Einstein was imagining would have to satisfy certain statistical constraints. In 1982, Alain Aspect and his colleagues performed the decisive experiments \citep{Aspect1982}. The constraints are violated. The correlations between entangled particles are stronger than any pre-set instructions could produce. Einstein's intuition that something is going on was correct. His proposed remedy was not.
+
+What is going on is entanglement. And the thing to understand about entanglement is that it is not a weak or metaphorical kind of connection. It is a genuine feature of physical reality --- confirmed by sixty years of experiments, honored with a Nobel Prize in 2022 \citep{Zeilinger2023Nobel}, and now put to practical use in quantum cryptography and quantum computing. The spookiness is not a bug in the theory to be explained away. It is a real feature of how the universe works.
+
+The second convergence is about this feature. Three traditions of inquiry --- quantum physics, process philosophy, and the \bahai writings --- each describe, in their own terms, a kind of bond that persists between things regardless of spatial separation. And each describes this bond in the same structural way: not as a signal sent from one place to another, not as a causal influence transmitted through space, but as a fact about the constitution of reality itself --- a relational unity that is not destroyed by distance because it was never a matter of distance in the first place.
+
+That is the convergence I want to demonstrate in this chapter. But to do it properly, I need to begin with what entanglement actually is --- not the popular version, which is often either oversimplified or mystified, but the actual physical and mathematical structure that the formalism describes and the experiments confirm.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{The Physics: Entanglement and the Nonlocal Bond}
 \label{sec:ch8-physics}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Narrative treatment of entanglement.
-% KEY POINTS: Two particles share a single quantum state; bond persists across
-%   distance; not FTL information transfer; ontological (not epistemic) unity.
-%   Bell: correlation exceeds any local-hidden-variable account.
-% ANALOGY: Twins who share a dream — not twins who phone each other.
-% SOURCE: pub2 §5.2 QM paragraph; pub1 §1 (entanglement context)
-% CITE: Bell1964, Aspect1982, Zeilinger2023Nobel, Wootters1998
+
+Start with what entanglement is, stated carefully.
+
+Two particles are entangled when their joint quantum state cannot be written as the product of two separate individual states. This sounds like a technical point, but its implications are enormous. It means the two particles are not, ontologically speaking, two separate things that happen to be correlated. They are one composite system, and that composite system has a definite quantum state even though neither particle, considered alone, has a definite quantum state.
+
+An analogy that is sometimes used, though it is imperfect: imagine two gloves. If you send one glove to Paris and one to Tokyo, then the moment you open the Paris box and discover a left glove, you instantly know the Tokyo glove is right. But this is a classical correlation, not entanglement. The gloves had their handedness from the beginning; the measurement just revealed it. Einstein's hidden-variable intuition was, essentially, that entangled particles are like the gloves.
+
+Bell's theorem proves they are not. The quantum correlations between entangled particles are not of the glove type. They are not explainable by any pre-set property the particles carry. The most vivid way to see this: if you measure both particles in the same direction, the quantum correlations are perfect. But if you rotate the measurement axes for the two particles by various angles, the patterns of correlation and anti-correlation follow a curve that no pre-existing set of instructions could reproduce. The particles ``know'' what angle was chosen for the other particle's measurement in a way that no locally carried information could explain.
+
+The key clarification --- and it matters enormously for the philosophical discussion --- is that this nonlocal connection does not allow faster-than-light communication. This point is worth dwelling on because it is sometimes misunderstood, and the misunderstanding can lead to either dismissing entanglement as philosophically irrelevant (if it cannot be used for communication, it cannot be ``real'' connection) or overclaiming for it (``quantum nonlocality means we can influence things instantly across any distance''). Neither conclusion is right.
+
+The reason entanglement does not allow faster-than-light communication is subtle but important. When you measure an entangled particle, you get a random outcome --- spin-up or spin-down with equal probability. The other particle's measurement is correlated with yours, but you cannot control what outcome you get, and the person measuring the other particle gets an equally random outcome from their side. Neither of you can send the other a message by choosing your measurement outcome; you do not choose it. What you choose is which direction to measure, and that choice does affect the correlations, but in a way that only becomes apparent when you compare results afterward --- an act that requires ordinary, sub-light-speed communication. No information travels faster than light. The nonlocal connection is real, but it is not a communication channel.
+
+What, then, is it?
+
+The physicist William Wootters, who has worked at the foundations of quantum information theory for decades, has argued that entanglement is best understood as a new kind of resource --- something the universe has that classical physics lacks, a nonlocal correlation that can be quantified, manipulated, and put to work \citep{Wootters1998}. This is the perspective of quantum information theory, and it is enormously useful for practical purposes. But for philosophical purposes I want to press a bit deeper.
+
+What the formalism is telling us, in the most ontologically direct interpretation, is that entangled particles constitute a single composite system whose unity is not diminished by spatial separation. This is an ontological claim, not merely a claim about what information we can extract. The individual particles, considered alone, do not have definite states. The composite system does. The unity is real; the individuality is what is incomplete or derivative.
+
+Consider what this means for our picture of the world. Classical physics assumed that the world is made up of locally separate things that interact when they are close together and become independent when they are far apart. Distance severs connection. Space separates. This is the intuitive picture, and for most everyday purposes it is exactly right.
+
+Entanglement tells us this picture is wrong at the fundamental level. Once two quantum systems have interacted and become entangled, they remain a single composite system no matter how far apart they subsequently travel. The bond is not transmitted through space; it is not a field that weakens with distance. It is a fact about the joint quantum state, and the joint quantum state persists regardless of spatial separation. Measuring one system does not send a signal to the other; it resolves the state of the composite system, and that resolution is instantly reflected in what the other system will show if measured.
+
+The physicist Alain Aspect's 1982 experiments, performed with entangled photons whose detectors were separated by a distance large enough that no light-speed signal could have traveled between the measurements, confirmed Bell's prediction with extraordinary precision \citep{Aspect1982}. The correlations were there. The local hidden variables were ruled out. In 2022, the Nobel Prize in Physics was awarded to Aspect, John Clauser, and Anton Zeilinger for this line of work \citep{Zeilinger2023Nobel} --- recognition that the experimental confirmation of quantum nonlocality is among the most important results in twentieth-century physics.
+
+The popular analogy that I find most helpful for conveying the ontological point is this: entangled particles are not like twins who telephone each other when something important happens. They are like twins who share a single dream. In the first case, there are two separate people with their own experiences, and one communicates news to the other across the distance between them. In the second case, there are not two separate dreamers who happen to be dreaming the same dream. There is one dream, and both twins are in it. Their apparently separate experiences of the dream are aspects of a single reality, not two separate realities that happen to match. Separating the twins spatially does not split the dream, because the dream is not located in either twin; it is the unified reality of which both twins are aspects.
+
+This analogy should not be taken too literally --- dreams are not quantum states, and the relevant physics is precise where analogies are imprecise. But the ontological point the analogy captures is the right one: the unity of entangled particles is not a correlation between separately existing things; it is the irreducible oneness of a composite system, and spatial separation is simply not a variable in the definition of that oneness.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{The Process-Philosophical View: Universal Prehension}
 \label{sec:ch8-process}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Whitehead's universal prehension as process-philosophical parallel.
-% KEY POINTS: Every actual occasion prehends ALL prior occasions — web of
-%   universal inheritance. "Every actual entity is present in every other
-%   actual entity." Nonlocality is not an anomaly; it is basic to prehension.
-% SOURCE: pub2 §5.2 process paragraph + pub2 §3.2 (prehension)
-% CITE: Whitehead1929
+
+Whitehead's philosophy of nature was not constructed in response to quantum mechanics, though Whitehead was aware of the early quantum theory. It was constructed in response to a more general problem: how to understand a universe that, on every scientific account available by the early twentieth century, turned out to be not a collection of locally independent substances but a web of interconnected processes.
+
+The aspect of Whitehead's framework that is directly relevant here is his account of prehension as universal. In the previous chapter, I described prehension as the relational act through which each actual occasion grasps prior occasions and incorporates them into its own becoming. The point I want to develop now is the scope of this prehension: it is not limited by spatial proximity.
+
+In Whitehead's formulation, every actual occasion prehends all prior occasions \citep{Whitehead1929}. Not just the spatially adjacent occasions. Not just the most recent occasions. The entire relevant causal past is, in principle, available for prehension by any new occasion as it comes into being. Whitehead states this with characteristic directness: every actual entity is present in every other actual entity, in the sense that the objective character of each past occasion is available to every subsequent occasion's becoming.
+
+What does it mean for a past occasion to be ``present in'' a subsequent occasion? It means that the definite character achieved by the past occasion --- what it was, what relational facts it established --- becomes part of the relational data out of which the new occasion constitutes itself. The new occasion inherits from the past, and the past is not merely local. A past event on the other side of the universe is, in principle, part of the relational field from which any new occasion emerges.
+
+Of course, in practice, the prehension of very distant past occasions will be extremely weak --- attenuated by the structure of the causal past, which is organized by spacetime geometry. What Whitehead means is not that every past occasion has equal weight in every subsequent occasion's constitution, but that no past occasion is in principle sealed off from prehension by spatial distance alone. Distance affects the intensity of prehension; it does not determine whether prehension is possible at all.
+
+This is a significant structural claim. It means that nonlocality is not, in Whitehead's framework, an anomaly requiring special explanation. It is a basic feature of how reality works. Every new event of becoming is constituted by a relational inheritance from the entire causal past, not merely from its spatial neighborhood.
+
+Think of a river carrying sediment. The water in any given reach of the river carries sediment from every upstream watershed it has passed through. A drop of water in the lower Mississippi is not constituted only by the geography of the last few miles; it carries within it the chemical signature of the Rockies, the Missouri River basin, the Tennessee watershed. The entire upstream history is present in the water, attenuated and mixed but genuinely there. The river does not forget where it has been. Each reach carries the whole upstream within it.
+
+Whitehead's prehension works similarly, except that the inheritance is not of chemical traces but of relational character. The events that came before --- all of them, in principle, though at widely varying intensities --- are prehended by the new event and incorporated into its becoming. The new event is not an isolated point in space; it is a condensation of the entire relevant relational past. Its ``location'' is a feature of its most intense prehensions, not a boundary of the prehension relation itself.
+
+This framework was developed a generation before Bell's theorem and the experimental confirmation of quantum nonlocality. It is therefore striking that it provides exactly the ontological structure that quantum nonlocality requires: a picture of reality in which relational bonds persist independently of spatial separation, because the bonds are constitutive facts about the becoming of occasions rather than transmitted effects propagating through space.
+
+In the Whiteheadian picture, when two particles interact --- when they become entangled, in the quantum mechanical language --- each prehends the other, and the prehensive relation is established as an objective fact. This fact does not subsequently travel anywhere; it is not carried in the particles as they move apart; it is not transmitted between them when one is measured. It is a standing feature of the relational constitution of both particles, present in the objective past from which any subsequent occasion draws its inheritance. When the entanglement is tested by measuring one particle, the result is not caused by the measurement event traveling across space to influence the other particle. Rather, both measurement events draw on the same relational heritage --- the objective fact of the past interaction that constituted both particles as aspects of a single relational whole.
+
+This is not the same as saying that Whitehead's philosophy predicts quantum entanglement, or that the technical quantum mechanical formalism can be derived from process ontological principles. It cannot; the empirical content of quantum mechanics requires the formalism. What process ontology offers is a conceptual framework in which nonlocality is not paradoxical or in need of special explanation, because the framework was built around the insight that relational bonds are constitutive facts rather than transmitted effects. Quantum nonlocality is, on this reading, the formal quantum mechanical expression of the universal prehensive character of actual occasions.
+
+Whitehead's great successor in the dialogue between process philosophy and physics was Michael Epperson, who demonstrated at length that Whitehead's categories provide a coherent ontological interpretation of quantum mechanics, including its nonlocal features. But I am making a stronger claim than compatibility here. I am arguing that the structure of process ontology's account of nonlocality and the structure of quantum mechanics' account of entanglement are the same at the level of logical form. Both deny that relational bonds are transmitted through space, and both affirm that relational bonds are constitutive facts that persist independently of spatial separation.
+
+There is a passage in \textit{Process and Reality} that is worth quoting at length here because it expresses, in Whitehead's own terms, the ontological picture I am trying to convey:
+
+\begin{quote}
+``The extensive continuum is one relational complex in which all potential objectifications find their niche. It underlies the whole world, past, present, and future.''
+\citep[pp.~79--80]{Whitehead1929}
+\end{quote}
+
+The extensive continuum is not space as a container; it is the relational field of all potential connections. Every actual occasion exists within this universal relational field, which is why no occasion is ever in principle disconnected from any other. The field is one; its nodes are many; and the many are constituted by their patterned positions within the one field. Spatial separation is a feature of the extensive continuum, not a barrier to the relational connections that the continuum makes possible.
 
 % ─────────────────────────────────────────────────────────────────────────────
-\section{The Bahá'í View: The Complete and Perfect Linkage}
+\section{The \bahai View: The Complete and Perfect Linkage}
 \label{sec:ch8-bahai}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Primary source treatment.
-% KEY QUOTE: "All created things are connected one to another by a linkage
-%   complete and perfect, even as are the members of the human body."
-%   ['Abdu'l-Bahá, Selections §21] — ontological, universal, not metaphorical.
-% SOURCE: pub3 §3.2 Bahá'í paragraph; pub3 §2.2 (second core passage)
-% CITE: SelectionsAbdul, PUP
+
+Among all the passages in the \bahai writings that bear on the structural questions of this book, there is one that strikes me as the most philosophically precise and the most directly relevant to the phenomenon of quantum nonlocality. It comes from \AbdulBaha, in the compilation of his writings and talks that was published under the title \emph{Selections from the Writings of \AbdulBaha}:
+
+\begin{quote}
+``All created things are connected one to another by a linkage complete and perfect, even, for example, as are the members of the human body.''
+\citep[\S 21]{SelectionsAbdul}
+\end{quote}
+
+I want to read this passage slowly and with philosophical care, because there are several features of it that matter for the convergence argument.
+
+First, the scope: \emph{all created things}. Not some created things, not things in a particular spiritual domain, not human beings in their spiritual life. All created things. The claim is universal. Whatever it is that links all created things together, it links them all.
+
+Second, the character of the linkage: \emph{complete and perfect}. Not approximate, not partial, not effective over short distances but attenuated over long ones. Complete and perfect. This is a strong claim, and I do not think it should be softened in the interest of making it seem more modest. \AbdulBaha is asserting something that most people, in the absence of quantum mechanics, would find implausible: that the linkage among all created things is not diminished by spatial separation, not weakened by time, not rendered incomplete by scale or circumstance. Complete and perfect.
+
+Third, the analogy used to clarify the nature of this linkage: the members of the human body. This analogy is philosophically precise, and I want to explain why.
+
+The members of a body are not merely causally connected in the sense that they can influence one another through transmitted signals. They are \emph{constitutively unified}. The heart is not a separate organ that happens to affect the lungs by pumping blood through them; the heart-lung system is a single integrated physiological unit in which the health of each part is intrinsic to the health of the whole, and the health of the whole is intrinsic to the health of each part. What happens to the heart is not merely an external event that subsequently causes effects in the lungs. It is a change in the state of the whole organism, of which the lungs are an intrinsic part. The members of the body are unified at the level of constitution, not merely at the level of causal interaction.
+
+This is precisely the distinction I want to make between two ways of reading the nonlocal bond. The weaker reading would say: all created things influence one another at a distance, the way the sun's gravity influences the earth from ninety-three million miles away. This is causal connection at a distance --- real, but transmittable in principle through the structure of the gravitational field. The stronger reading --- and the one the body analogy indicates --- says something different. The linkage is constitutive, not merely causal. The things that are connected are not prior independent substances that subsequently affect one another through a transmitted influence. They are aspects of a single reality whose unity is not transmitted but inherent.
+
+The body analogy makes this precise: what the heart does is not separate from what the lungs do in the way that what the sun does is separate from what the earth does. The heart and lungs are members of one body. Their connection is not causal in the straightforward transmitted-influence sense; it is the connection of parts within a whole whose unity is prior to and more fundamental than the identities of the parts.
+
+If this reading is correct, then the \bahai claim is not merely that things are connected across distance. It is that things are constitutively unified across distance --- that the unity among created things is of the same logical type as the unity among the members of a body, not merely the same logical type as the gravitational attraction between planets. This is a claim about ontological structure, not about the mechanism of influence.
+
+\AbdulBaha returns to this theme in a number of different contexts in his talks and writings. In one of his talks collected in \emph{The Promulgation of Universal Peace}, he elaborates what the \emph{universality} of this linkage means:
+
+\begin{quote}
+``The human world is one world. Through the power of love and unity it has become a world. Through disunity it has become as nothing.''
+\citep[Talk 35]{PUP}
+\end{quote}
+
+Here the ontological dimension is explicit: unity --- the maintenance of the relational bond --- is not merely desirable; it is constitutive of the existence of an integrated world. Disunity does not merely make the world worse; it makes it, in a specific sense, ``as nothing'' --- dissolves the integrated reality that the relational bond constitutes. This parallels precisely the claim from the previous chapter about relational constitution of existence: without affinity, there is no integrated being; without the relational linkage, the integrated whole dissolves.
+
+The universal scope of the \bahai claim also resonates with a passage from \Bahaullah himself, about the nature of the relationship between all things and the divine ground of existence:
+
+\begin{quote}
+``Every created thing in the whole universe is but a door leading into His knowledge, a sign of His sovereignty, a revelation of His names.''
+\citep[Gleanings LXXXII]{GleaningsBahaullah}
+\end{quote}
+
+This is not directly a statement about nonlocal connection between created things. But it is a statement about the relational structure of created existence: every created thing is constituted by its relationship to the creative ground, and it is through that shared relational constitution that all things are connected. The linkage among all created things is not a network of direct bilateral connections; it is a consequence of their common constitution through relation to one and the same reality. The linkage is complete and perfect because the ground from which all things emerge is one.
+
+I want to be careful here not to reduce the theological content of these passages to a physics-flavored paraphrase. The \bahai texts are engaged in a set of claims about divine reality, spiritual development, and the nature of creation that go far beyond what I am using them to establish here. My claim is only that, within that larger theological and spiritual context, there is a structural claim about the nature of existence --- about the constitutive character of relational bonds, and about the universality of those bonds --- that is the same, at the level of logical form, as the claim that quantum mechanics and process philosophy are making.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{One Phenomenon, Three Descriptions}
 \label{sec:ch8-convergence}
-% (~700 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: State the structural isomorphism. All three: relational bonds persist
-%   beyond spatial separation. DISTINGUISH FROM ANALOGY: structural agreement
-%   is in what the bond DOES, not just its emotional register.
+
+Let me now make the structural isomorphism precise.
+
+The popular version of this convergence would say something like: ``physics shows that things are connected, and religions have always said the same thing.'' That is an analogy. It works by pointing to a shared theme --- connectedness --- without specifying the logical structure of the claim being made. An analogy at this level of generality can be found between almost any physical phenomenon and almost any spiritual tradition. It proves nothing and illuminates little.
+
+The structural isomorphism I am arguing for is more specific and more demanding.
+
+All three traditions make a claim about nonlocal connection that has the following structure:
+
+\begin{enumerate}
+\item Two or more entities that have been in relational contact share a bond.
+\item This bond persists regardless of spatial separation.
+\item The bond is ontological, not merely epistemic: it is a fact about what the entities are, not merely about what we know about them.
+\item The bond is constitutive: it is not a signal sent between the entities, nor an influence transmitted through space, but a fact about the relational constitution of the entities themselves.
+\item The individual states of the separated entities are not complete: each entity's full description requires reference to the bond.
+\end{enumerate}
+
+Check each tradition against this structure.
+
+\emph{Quantum mechanics}: Entangled particles share a joint quantum state that persists regardless of spatial separation \citep{Bell1964,Aspect1982,Zeilinger2023Nobel}. The bond is ontological: the individual particles do not have definite states; the composite system does. The bond is not transmitted through space; no signal passes between the particles. The individual descriptions are incomplete: a full description of either particle requires reference to the entangled pair state \citep{Wootters1998}. Points 1 through 5: check.
+
+\emph{Process philosophy}: Every actual occasion prehends all prior occasions, establishing relational bonds that persist in the objective past regardless of subsequent spatial separation \citep{Whitehead1929}. The bonds are ontological: they are constitutive facts about the occasions' character, not merely facts about what observers know. They are not transmitted through space; they are standing features of the relational constitution of occasions. The individual occasions' descriptions are incomplete without reference to their prehensive inheritance. Points 1 through 5: check.
+
+\emph{\bahai writings}: All created things are connected by a linkage ``complete and perfect'' \citep[\S 21]{SelectionsAbdul}, of the same type as the constitutive unity of the members of a body. The linkage is ontological: it is a claim about the structure of created existence, not merely about how things seem. It is not a transmitted influence but a constitutive bond. The individual things' descriptions are incomplete without reference to the whole of which they are aspects. Points 1 through 5: check.
+
+Now I want to say clearly what makes this a structural isomorphism rather than an analogy.
+
+An analogy would say: quantum entanglement and the \bahai concept of universal linkage both involve the idea of connection, and both suggest that the universe is in some sense unified. This is true, but it is not very informative, because many things share the theme of connection without being structurally the same. A conversation and a chemical bond both involve connection; they are not structurally isomorphic.
+
+The structural isomorphism here goes deeper. It is not merely that all three traditions talk about connection. It is that all three describe the same abstract structure: a constitutive relational bond, established through prior interaction, that persists without spatial attenuation, that is ontologically real (not merely epistemic), and that is not transmitted through space but is a standing fact about the constitution of the related entities. This five-point structure is the same in all three traditions. Different vocabularies; identical logical form.
+
+This convergence is worth examining from the perspective of how each tradition arrived at it.
+
+Quantum mechanics arrived here through experiment and mathematics. Bell's theorem is a mathematical proof. Aspect's experiments are laboratory results. No prior philosophical commitment to nonlocality drove the physics to this conclusion; the physics was forced there by the evidence. The nonlocal bond was discovered, not chosen.
+
+Process philosophy arrived here through conceptual analysis. Whitehead was analyzing what it would mean for an event of becoming to be genuinely constituted by its relational inheritance from the past. The universality of prehension follows from the nature of the analysis: if becoming is constituted by relational inheritance, and if the causal past is structured by the entire history of the universe and not merely by spatial adjacency, then prehension is universal. The nonlocal bond was derived, not discovered empirically.
+
+The \bahai writings arrived here through a different path again: a theology of divine unity working out its implications for the structure of created existence. If all things are created by and through one divine reality, and if the diversity of things is a diversity of relational expressions of that one reality rather than a plurality of independent substances, then all things share a constitutive bond that is not a matter of spatial proximity. The linkage is complete and perfect because the ground is one. The nonlocal bond was articulated, from within a tradition of revealed and interpreted spiritual understanding.
+
+Three routes. Three vocabularies. One structure. This is the second convergence.
 
 \begin{convergencemoment}{Nonlocal Interconnection: The Bond That Ignores Distance}
-% TODO: Fill in when drafting.
-% From the quantum side: entanglement — single quantum state across any distance.
-% From the process-philosophical side: universal prehension — every occasion
-%   inherits from all prior occasions regardless of spatial location.
-% From the Bahá'í side: "linkage complete and perfect" (Selections §21).
-% One structure: the relational bond persists independently of spatial separation.
-\end{convergencemoment}
+\textbf{From the quantum side.} Quantum entanglement establishes that two particles which have interacted share a single joint quantum state that persists regardless of spatial separation \citep{Bell1964,Aspect1982,Zeilinger2023Nobel}. The bond is ontological: it is not that we cannot determine the individual states; it is that the individual states do not exist as complete descriptions. The composite state is real; the individual states are derivative. This bond is not transmitted through space; it does not attenuate with distance; it is not a signal but a constitutive fact about the relational structure of the composite system. Measuring one particle resolves the composite state, and this is reflected instantly in what the other particle will show --- not because a signal traveled, but because the composite state was one \citep{Wootters1998}.
 
-% TODO (6,000 words): Convergence 2: Nonlocal Interconnection. Three columns: quantum mechanics / process philosophy / \bahai writings. Advance all three theses simultaneously. End with a Convergence Moment box summarizing the structural isomorphism.
-%
-% Remember: each chapter ends with a Convergence Moment box.
-% \begin{convergencemoment}{Nonlocal Interconnection: The web of all things}
-%   Summarize how this chapter's argument looks from all three traditions.
-% \end{convergencemoment}
+\textbf{From the process-philosophical side.} Whitehead's universal prehension means that every actual occasion inherits from the entire relevant causal past, not merely from spatially adjacent events \citep{Whitehead1929}. Two occasions that have shared a relational event remain connected through the objective fact of that shared event, which persists in the relational past from which all subsequent occasions draw their inheritance. The nonlocal bond is not transmitted between occasions; it is a standing feature of the objective past from which both occasions are constituted. Spatial separation does not dissolve the prehensive relation; it may attenuate it, but the relation remains as a constitutive fact.
+
+\textbf{From the \bahai side.} ``All created things are connected one to another by a linkage complete and perfect, even as are the members of the human body'' \citep[\S 21]{SelectionsAbdul}. The body analogy specifies the \emph{type} of connection: constitutive unity, not merely causal influence transmitted at a distance. Members of a body are not separate things that happen to affect each other; they are intrinsic parts of a whole whose unity is prior to their individuality. The linkage among all created things is of this type: complete, perfect, and constitutive of the existence of the whole of which every created thing is an intrinsic part.
+
+\textbf{The structural isomorphism.} All three traditions describe the same abstract structure: a constitutive relational bond, established through prior relational contact, that persists independently of spatial separation, that is ontologically real rather than merely epistemic, and that cannot be reduced to a transmitted signal because it is not a transmitted signal but a standing fact about the constitution of the related entities. This is not the general observation that things are connected; it is a specific claim about the \emph{type} of connection --- constitutive, universal, and spatially indifferent. Three independent traditions of inquiry, using three independent methods, have detected and described this same structural feature of reality. \emph{The bond that connects related things is not a thread that stretches between them across space. It is a fact about what they jointly are.}
+\end{convergencemoment}

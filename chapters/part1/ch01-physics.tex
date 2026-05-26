@@ -1,142 +1,172 @@
-% ── CHAPTER 1: FROM NEWTON TO BELL: WHAT QUANTUM MECHANICS DISCOVERED (~8,000 words) ──
+% ── CHAPTER 1: FROM NEWTON TO BELL: WHAT QUANTUM MECHANICS DISCOVERED (~6,000 words) ──
 \chapter{From Newton to Bell: What Quantum Mechanics Discovered}
 \label{ch:newton-bell}
 
-% STATUS: TODO
-% TARGET: ~8,000 words
-% PRIMARY SOURCES:
-%   pub2/sections/02-against-substance.tex  — Bell story (§§Step 1–4), EPR,
-%                                              experimental violations; academic level
-%   pub1/sections/01-introduction.tex       — RQM context, scalar affinity overview
-%   pub1/sections/02-background.tex         — pointer basis, einselection (technical)
-% SECONDARY SOURCES: Bell1964, Aspect1982, Zeilinger2023Nobel, Einstein1935EPR,
-%                    CHSH1969, Rovelli1996, Rovelli2021, NielsenChuang2000
-% HARD RULES: See BOOK_SHELL.md
-% REGISTER: Narrative/accessible. No math beyond the idea of probabilities.
-%           Technical terms introduced before use. Billiard-ball analogies throughout.
-
 % \epigraph{God does not play dice.}{Albert Einstein, letter to Max Born, 1926}
 
-% ─────────────────────────────────────────────────────────────────────────────
-%  OPENING (~600 words) — No section heading; flows into §1
-% ─────────────────────────────────────────────────────────────────────────────
-% TODO: Hook. Start with the question the chapter will answer: what did
-% physics discover in the 20th century, and why does it matter beyond physics?
-% Introduce the idea that physics broke something it didn't intend to break.
+In 1935, Albert Einstein co-authored what he expected to be a decisive refutation of quantum mechanics. He was wrong. But the paper he wrote --- along with two colleagues, Boris Podolsky and Nathan Rosen --- set in motion a chain of reasoning that would take fifty years to complete, culminating in an experimental result that permanently changed what physics could say about the nature of reality itself. The result did not vindicate Einstein. It vindicated something far stranger than even he had feared.
+
+This chapter tells that story. It begins with Newton's universe --- the clockwork cosmos of mass and motion that served Western science for nearly three centuries --- and ends with a set of laboratory experiments that dismantled the metaphysical foundation Newton's universe had always depended on. The finding is not that physics has gotten harder to understand, though it has. The finding is that the universe, at its most fundamental level, is not made of things. It is made of relationships.
+
+That is not a metaphor. It is a result.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Newton's Universe and the Compositionist Dream}
 \label{sec:ch1-newton}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: The billiard-ball universe. Mass, position, force.
-% KEY POINTS:
-%   - Newton's three laws as the template for understanding everything
-%   - The ideal of Laplace's demon: complete knowledge of parts = complete
-%     knowledge of whole
-%   - This is not just a scientific method — it is an ONTOLOGY (a claim about
-%     what kinds of things are ultimately real)
-%   - The doctrine of intrinsic properties: things have properties prior to
-%     and independent of their relations
-% ANALOGY: Solar system as the paradigm case. Clockwork metaphor.
-% SOURCE: Write fresh; pub2 §2.1 (substance ontology) provides the
-%         philosophical framing at academic level — translate to narrative.
-% CITE: None strictly needed; can proceed without citations for this section.
+
+Picture a billiard ball sitting on a table. It has a mass --- say, 170 grams. It sits at a particular position on the felt, and if struck by a cue it will travel in a direction that follows predictably from the angle and force of the strike. If you know everything about the ball --- its mass, its position, the forces acting on it --- you can calculate exactly where it will be ten seconds from now. Twenty seconds. An hour. A year, in principle, though friction would complicate matters.
+
+This is Newton's world. And for roughly three hundred years, beginning with \textit{Principia Mathematica} in 1687, it was the world that physics described with extraordinary success. Planets move around the sun in ellipses that Newton's equations predict to ten decimal places. Cannonballs follow parabolic arcs. Tides rise and fall with the moon's gravity. The universe behaves, in this picture, like an enormous machine operating according to fixed mathematical laws, and the mathematician who knows the state of every part knows the state of the whole.
+
+The philosopher's name for this picture is \emph{substance ontology}. A substance, in the classical philosophical sense going back to Aristotle, is an entity that possesses properties --- mass, position, charge, momentum --- and that exists independently of any relations it might happen to enter into. The billiard ball is a substance. Its mass is its own, prior to and independent of any other billiard ball in the universe. Its position is a fact about it alone, not a fact about its relation to anything else. Things come first; relations between things are secondary, derivative, almost incidental.
+
+Newton's physics encoded this philosophical assumption so deeply that it became nearly invisible. The basic quantities of Newtonian mechanics --- mass, position, velocity, momentum --- are all properties of individual objects, located \emph{in} those objects rather than \emph{between} them. Force is the one relational quantity, but even force acts through objects, changing the intrinsic properties (position, velocity) that already belonged to them. The universe, on this picture, is a collection of self-contained things interacting with each other. Understand each thing in isolation, and you can reconstruct the whole from the parts.
+
+This is what I will call the \emph{compositionist dream}: the ambition to explain the complex by decomposing it into simples, and to explain the simples by cataloguing their intrinsic properties. The dream achieved extraordinary results. It gave us thermodynamics, celestial mechanics, the industrial revolution, and the engineering of every machine made before the twentieth century. The Marquis de Laplace, writing in 1814, captured the dream in its most ambitious form: suppose an intelligence that knew the position and velocity of every particle in the universe. It could calculate the entire future of the cosmos as easily as predicting tomorrow's sunrise. The future is contained, completely, in the present state of all its parts --- and the state of each part is its own possession, held independently, waiting to be read off.
+
+The dream is elegant, powerful, and --- as the twentieth century would discover --- wrong.
+
+Not wrong as an approximation, the way Newtonian gravity is wrong when speeds approach the speed of light and general relativity is needed. Wrong as a description of what kinds of things the universe is ultimately made of. Wrong at the level of ontology --- the philosophical term for the study of what, most fundamentally, exists.
+
+The first cracks appeared well before quantum mechanics. Maxwell's electromagnetic theory in the 1860s required \emph{fields} --- entities that exist not at points but spread through space, carrying energy without being locatable in any particular particle. A field is not a substance in Aristotle's sense. It has no single location. Its properties are not possessed at a point; they are relational all the way down. But Maxwell's fields could be read, somewhat uncomfortably, as the properties of a medium --- the ``ether'' that Victorian physicists tried desperately to detect. When Einstein showed in 1905 that there was no ether, the field was left floating free of any substance that could carry it.
+
+Then came the quantum.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{The First Cracks: Maxwell, Einstein, and the End of Newtonian Intuition}
 \label{sec:ch1-cracks}
-% (~1,200 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Brief history of the quantum revolution as narrative.
-% KEY POINTS:
-%   - Maxwell's electromagnetic waves: the first non-particle thing
-%   - Photoelectric effect: light is also particles (Einstein 1905)
-%   - Wave-particle duality: the first sign that classical intuitions break
-%   - The double-slit experiment as a dramatic example
-%   - Bohr's Copenhagen interpretation as an attempt to contain the damage
-% ANALOGY: The interference pattern that shouldn't exist.
-% SOURCE: Write fresh — general physics history. No specific pub section.
-% CITE: Heisenberg1927 for uncertainty principle
+
+The quantum revolution did not arrive as a single discovery. It accumulated, between roughly 1900 and 1930, as a series of experimental results that refused to fit the classical picture, until the only honest response was to build a new picture from the ground up.
+
+It began with light. Classical physics described light as a wave --- a continuous oscillation of electromagnetic fields spreading outward from a source, the way ripples spread from a stone dropped in still water. This was well-confirmed. Waves explain why light bends around corners, why soap bubbles show interference patterns, why a prism splits white light into a spectrum. But in 1905, Einstein proposed that light also behaves as a stream of discrete particles --- packets of energy he called \emph{quanta} --- to explain a puzzling experimental result called the photoelectric effect.
+
+When ultraviolet light hits a metal surface, it knocks electrons out of the metal. The classical wave picture predicted that brighter light (more intense waves) would knock out electrons with more energy. What experimenters found was the opposite: \emph{frequency} matters, not intensity. Dim ultraviolet light knocks out electrons; bright red light does not, no matter how intense. This made no sense if light were a continuous wave whose energy accumulated gradually. It made perfect sense if light arrived in discrete packets, and each packet either had enough energy to knock out an electron (because its frequency was high enough) or it didn't.
+
+Einstein's insight won him the Nobel Prize in 1921. It also created the central puzzle of quantum mechanics: light is both a wave and a particle, depending on how you look at it.
+
+The double-slit experiment makes this puzzle vivid. The setup is simple: a barrier with two narrow slits, a source of light (or electrons, or atoms --- it works with anything quantum), and a screen on the far side to record what arrives. If light were purely a particle, you would expect to see two bright bands on the screen, directly behind each slit. If light were purely a wave, you would expect to see an \emph{interference pattern} --- an alternating series of bright and dark bands produced by the wave from one slit interfering with the wave from the other, the way two sets of ripples in a pond create a complicated pattern of peaks and troughs where they meet.
+
+What you actually see, when you send light through two slits, is the interference pattern. This is exactly what the wave picture predicts. But here is where the strangeness begins: if you reduce the intensity of the light source until you are sending just one photon at a time, and you wait, the photons accumulate on the screen one by one --- and the accumulated pattern is still the interference pattern. Each individual photon, a single particle, somehow ``goes through both slits'' and interferes with itself.
+
+Now add a detector at one of the slits, to determine which slit the photon went through. The interference pattern disappears. The photons now behave like particles, each going through one slit or the other, landing in one of two bands. The act of \emph{finding out} which path the photon took destroys the interference --- retroactively, as it were, as if the photon knows it is being watched and decides to behave differently.
+
+This is not a quirk of light. Electrons do it. Atoms do it. Molecules made of sixty carbon atoms --- ``buckyballs'' the size of a small virus, the largest objects for which interference has been demonstrated --- do it. The quantum world has a systematic refusal to behave like classical particles.
+
+The physicist Werner Heisenberg gave the puzzle its mathematical form in 1927 \citep{Heisenberg1927}. His uncertainty principle says that certain pairs of properties --- position and momentum are the canonical example --- cannot both be definite at the same time. The more precisely you know a particle's position, the less precisely its momentum can be defined, and vice versa. This is not a statement about the limits of our instruments. It is not saying that our measuring devices are clumsy and disturb the particle. It is a statement about the particle itself: a particle does not \emph{possess} simultaneously definite position and simultaneously definite momentum. These are not hidden facts we are ignorant of. They are properties that, in a precise mathematical sense, do not simultaneously exist.
+
+For a Newtonian physicist, this is incomprehensible. A billiard ball obviously has both a position and a momentum at every moment. How can a particle fail to have them? The standard answer offered by the Copenhagen interpretation of quantum mechanics --- the interpretation developed by Niels Bohr and his colleagues in the 1920s and still the one most physics textbooks present --- was essentially: don't ask. Quantum mechanics gives us a calculation tool that makes predictions with extraordinary accuracy; the question of what is ``really'' happening is not a scientific question.
+
+This answer worked as a practical matter. Quantum mechanics became the foundation of all modern technology: transistors, lasers, MRI machines, solar panels, the computer on which these words are being read. The calculation tool was spectacularly successful. But the philosophical question it refused to answer did not go away. What is the quantum world \emph{actually like}? What exists between measurements?
+
+Albert Einstein, who had helped invent quantum mechanics and then spent decades arguing with it, had a very particular answer to that question. He was sure that quantum mechanics was incomplete. He was sure that there was a deeper reality underneath the quantum description --- a classical reality in which things had definite properties even when no one was measuring them. He was wrong. And the proof of his error is one of the most remarkable intellectual achievements of the twentieth century.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Einstein's Objection and Bell's Answer}
 \label{sec:ch1-bell}
-% (~2,000 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: The EPR argument and Bell's theorem. Narrative form.
-% KEY POINTS:
-%   - Einstein, Podolsky, Rosen (1935): QM must be incomplete — there must be
-%     "hidden variables" that determine outcomes in advance
-%   - This is the substance-ontologist's instinct: things must have definite
-%     properties even when we don't know them
-%   - Bell (1964): any hidden-variable theory must satisfy a mathematical
-%     constraint (Bell inequality). QM predicts violations.
-%   - Experimental tests: Aspect (1982), closing loopholes, 2022 Nobel Prize
-%   - The result: no local hidden variables. Quantum particles do NOT have
-%     definite properties before measurement.
-% ANALOGY: The gloves in separate boxes analogy — then show why QM breaks it.
-%          (Classical correlation vs. quantum correlation.)
-% SOURCE: pub2/sections/02-against-substance.tex §§Step1–2 for the argument;
-%         translate from academic to narrative.
-% CITE: Einstein1935EPR, Bell1964, CHSH1969, Aspect1982, Hensen2015,
-%       Zeilinger2023Nobel
+
+In 1935, Einstein and his colleagues Podolsky and Rosen published a paper --- known ever since as the EPR paper --- that posed what they believed to be a decisive challenge to quantum mechanics \citep{Einstein1935EPR}. The argument was subtle and elegant, and it took three decades to answer.
+
+The setup involves two particles that interact briefly and then fly apart in opposite directions. Quantum mechanics predicts that these particles are \emph{entangled}: they share a single quantum description, and a measurement on one instantly determines the outcome that would be found for the other, no matter how far apart they are. If you measure the spin of particle A and find it pointing up, then particle B will, when measured, be found pointing down --- even if B is on the other side of the galaxy.
+
+Einstein found this intolerable. The reason is locality: the principle that nothing travels faster than light, and that therefore an event at one location cannot instantly affect what happens somewhere else. The EPR argument went like this: since measuring A instantly determines B, and since this determination cannot be a real physical influence traveling faster than light (which Einstein's own relativity forbids), the outcome for B must have been determined \emph{all along} --- before the measurement, carried as a hidden property of the particle B from the moment it left the interaction region. Quantum mechanics does not describe this hidden property; that is why quantum mechanics is incomplete. There must be a deeper theory --- a ``hidden variable'' theory --- that describes the actual, pre-existing states of the particles.
+
+This is the substance-ontologist's instinct given its sharpest formulation. Particles must have definite properties --- Einstein called them ``elements of physical reality'' --- prior to and independent of any measurement. If quantum mechanics says they don't, then quantum mechanics must be missing something.
+
+For twenty-nine years, this remained a debate about philosophical preferences. Then, in 1964, the Irish physicist John Bell did something extraordinary: he proved a mathematical theorem that turned Einstein's assumption into a testable prediction \citep{Bell1964}.
+
+Bell's theorem is, at its core, a constraint. If particles carry hidden variables --- if they have pre-existing, locally-possessed properties that determine the outcome of measurements --- then the statistical correlations between measurements on distant particles must satisfy a certain mathematical inequality. The inequality sets a limit on how strongly correlated the outcomes can be, a limit that follows necessarily from the assumption that each particle is carrying its own pre-determined answers.
+
+Quantum mechanics predicts correlations that violate Bell's inequality. Not just slightly --- the violations are substantial, and they are a specific, unambiguous signature of quantum entanglement rather than classical correlation.
+
+The glove analogy helps here. Imagine I put a left glove in one box and a right glove in another, shuffle the boxes, and send you one. When you open yours and find a left glove, you instantly know mine is a right glove, no matter how far away I am. That correlation looks, superficially, like quantum entanglement. But it is entirely classical: the handedness was determined when I packed the boxes. No hidden variable is hidden; the property was always there.
+
+Bell's theorem says that quantum entanglement is not like this. The correlations between entangled particles are \emph{stronger} than any ``gloves-in-boxes'' explanation can produce. To match the actual predictions of quantum mechanics, the particles would need to be coordinating their answers in real time across arbitrary distances --- which locality forbids --- or they would need to not have had definite answers until the moment of measurement. Those are the only two options. The first violates relativity. The second means Einstein was wrong: there are no hidden local properties.
+
+When Bell published this result, it was still a theorem about what experiment could test, not about what experiment had found. Experiments were needed. The first decisive experimental test was performed by Alain Aspect and his colleagues in Paris in 1982 \citep{Aspect1982}. Aspect used pairs of entangled photons, measured their polarizations in different orientations, and found exactly the violations of Bell's inequality that quantum mechanics predicted. The correlations were stronger than any local hidden-variable theory could explain.
+
+Over the following four decades, the experiments were refined to close every possible loophole. The locality loophole: perhaps the detectors are close enough that a signal traveling at light speed could carry information between them. Closed. The detection loophole: perhaps the particles that were detected are a biased sample, not representative of all the pairs. Closed. In 2015, three independent experiments in Delft, Vienna, and Boulder simultaneously closed both loopholes at once \citep[see][]{Zeilinger2023Nobel}. The result was unambiguous: Bell's inequality is violated, in exactly the way quantum mechanics predicts, under conditions that leave no classical local explanation available.
+
+In 2022, the Nobel Prize in Physics was awarded jointly to Aspect, Clauser, and Zeilinger for this experimental program \citep{Zeilinger2023Nobel}. The Nobel committee's citation was unusually philosophical. The experiments, it noted, had established that quantum mechanics describes a world in which ``entangled particles exhibit correlations that cannot be explained by classical physics.'' What it did not say, but what follows from Bell's theorem, is the philosophical punchline: those correlations cannot be explained by \emph{any} theory in which particles have locally-possessed, pre-determined properties. Einstein's hidden variables --- the ``elements of physical reality'' that he was certain existed --- do not exist, at least not in any local sense.
+
+I want to be precise about what this means, because it is the pivot on which this entire book turns.
+
+Bell's theorem is not a claim about our ignorance. It is not saying that there are hidden local properties that we happen not to be able to measure. It is saying that no local theory that assigns definite pre-existing values to quantum particles can reproduce what the experiments find. The EPR program --- the hypothesis that quantum mechanics is an incomplete description of a classical underlying reality --- is formally closed. Quantum particles do not have intrinsic, locally-instantiated properties prior to measurement. What they have is something different, and it requires a different vocabulary.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{What It Means: Relational Reality}
 \label{sec:ch1-relational}
-% (~1,500 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Draw out the philosophical implication.
-% KEY POINTS:
-%   - If quantum particles have no intrinsic properties, then "intrinsic
-%     property" is not a feature of the fundamental level of reality
-%   - Properties emerge through relational interactions (measurement events)
-%   - Rovelli's relational quantum mechanics: properties are facts relative
-%     to interacting systems, not absolute
-%   - This is not a human limitation; it is a feature of reality itself
-%   - The universe, at its most fundamental level, is relational — not a
-%     collection of things-with-properties, but a web of relational events
-% SOURCE: pub2 §2.3 (relational determination), pub1 §1 (RQM framing);
-%         translate from academic prose.
-% CITE: Rovelli1996, Rovelli2021, Bohm1980 (for contrast)
-% NOTE: This section is the bridge into Chapter 2 (philosophy) and Ch. 3 (Bahá'í).
-%       End with: "This is the discovery. Three traditions had already arrived
-%       at its implications — by different routes, decades earlier."
+
+If particles do not have intrinsic, pre-existing, locally-possessed properties, what do they have?
+
+The answer that I find most honest, and that has been developed with the greatest philosophical care by Carlo Rovelli, is this: they have \emph{relational potential} \citep{Rovelli1996,Rovelli2021}. A quantum particle does not have spin-up. It has the potential to exhibit spin-up \emph{relative to a particular measurement apparatus, in a particular measurement interaction}. Before that interaction occurs, the spin is not merely unknown --- it is, in a precise mathematical sense, undefined.
+
+This is the framework Rovelli calls \emph{relational quantum mechanics}, and it resolves the puzzles of quantum measurement in a strikingly direct way. The measurement problem --- the question of what ``really happens'' when a quantum superposition resolves into a definite outcome --- is dissolved rather than solved. On Rovelli's reading, there is no moment when the quantum world becomes classical. There is only an ongoing web of relational interactions, each of which establishes definite facts relative to the systems involved in that interaction. A particle does not have properties; it has properties-relative-to-some-other-system.
+
+This is not subjectivism. The outcome of a measurement is real. Once particle A has been measured and found spin-up relative to detector D, that is a definite fact about the relationship between A and D. It cannot be unmeasured. But it is not a fact about A alone, independent of all context. It is a fact about A-as-encountered-by-D. The definiteness is real; the independence is the illusion.
+
+Notice what Rovelli's framework requires us to give up: the idea of \emph{absolute} properties. A mass is not a property of a particle alone; it is a property of a particle's interaction with a measuring system. A position is not a location the particle possesses; it is a location that becomes definite relative to a spatial measurement context. And spin, the most counterintuitive case, is not an intrinsic orientation of the particle; it is a relational fact that comes into being only when the particle interacts with something else.
+
+At first this seems merely technical --- a physicist's redescription of the measurement process. But the ontological implication runs deep. If \emph{no} particle has absolute intrinsic properties, if every property is a relational property, then the fundamental furniture of the universe is not things-with-properties but \emph{relationships}. Relations are not secondary, derivative appendages to a prior world of self-contained substances. Relations are the primary reality. Things are what emerges from a web of relational interactions when those interactions are sufficiently stable and regular.
+
+This is not what Newton assumed. It is, in fact, the precise negation of what Newton assumed. Newton's universe was made of substances first, with relations following. The universe that Bell's theorem forces us to inhabit is made of relations first, with apparent substances following. The substrate of reality is not a collection of independently existing things. It is a web of relational events in which properties come into being through interaction.
+
+This claim is not restricted to the exotic world of subatomic particles in laboratory settings. It is a claim about the fundamental level of physical reality --- the level at which everything else is composed. Chairs and mountains and galaxies are all, at bottom, composed of quantum particles. If the properties of those particles are relational rather than intrinsic, then the relational constitution of properties is not a quirk of the quantum world but the deepest fact about the physical world as such. The billiard ball's mass, position, and velocity are sufficiently stable relational facts to be treated as intrinsic in everyday life. But they are not intrinsic. They are relational stabilities built on a relational foundation.
+
+David Bohm's interpretation of quantum mechanics offers an apparent escape from this conclusion \citep{Bohm1980}. Bohm proposed a ``pilot wave'' theory in which particles do have definite positions at all times, guided by a wave that propagates through configuration space. On Bohm's picture, there is something like a classical substance --- the particle with its definite trajectory --- underlying the quantum description. Einstein would have found this congenial.
+
+But Bohm's escape turns out to be only apparent. The pilot wave is defined not on ordinary three-dimensional space but on the \emph{configuration space} of the entire system --- an abstract space whose dimensionality increases with the number of particles in the system. A single particle moves in a three-dimensional space; two entangled particles move in a six-dimensional configuration space; a system of ten particles moves in thirty-dimensional configuration space. The ``intrinsic position'' of a Bohmian particle is, at every moment, dynamically determined by a global, nonlocal field that encodes the relations among every particle in the system. What looks like an intrinsic property of the particle is actually the output of a thoroughly holistic, relational calculation. Bohm preserves the language of substance, but only by making the substance's properties depend on everything else at once. That is not what substance ontology meant. It is, in effect, a relational ontology in particle vocabulary.
+
+The conclusion stands. Quantum mechanics, on every interpretation that survives the experimental record, is a physics of relations. Properties are not intrinsic; they are relational. The world is not made of things-in-themselves; it is made of events-in-relation.
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{The Entanglement Problem and the Non-Separable World}
 \label{sec:ch1-entanglement}
-% (~1,200 words)
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Entanglement as the positive face of what Bell's theorem shows.
-% KEY POINTS:
-%   - Entangled particles share a single quantum state — they are not two
-%     things that happen to be correlated, but one thing extended across space
-%   - Schrödinger's term for the central feature of QM
-%   - Non-separability: the whole has properties that cannot be decomposed
-%     into properties of the parts
-%   - This is physics' first formal encounter with holism
-% ANALOGY: A waltz — two dancers; one motion. Cannot describe either dancer's
-%          movement without describing their relationship.
-% SOURCE: Write fresh building on §1.3 above.
-% CITE: Aspect1982, Wootters1998
+
+Bell's theorem shows us what the quantum world is \emph{not}: a collection of locally self-contained things with pre-existing intrinsic properties. Entanglement shows us what it \emph{is}: a web of non-separable relational connections that cannot be decomposed into facts about individual parts.
+
+Erwin Schrödinger, who contributed as much as anyone to the mathematics of quantum mechanics, identified entanglement in 1935 as ``the characteristic trait of quantum mechanics, the one that enforces its entire departure from classical lines of thought.'' Not superposition. Not the uncertainty principle. Entanglement. The two particles that Einstein and Podolsky and Rosen used to challenge quantum mechanics are not two independent particles that happen to be correlated. They are, in a mathematically precise sense, \emph{one system} extended across space. Their quantum state cannot be factored into a state for particle A and a state for particle B independently. The state is inherently, irreducibly bipartite.
+
+An analogy helps here, though like all analogies it is imperfect. Consider two dancers performing a waltz. You can describe each dancer's position at each moment. But if you try to describe the dance by describing each dancer independently --- dancer A does this, then dancer B does that --- you will miss the essential thing. The dance is not in the dancers; it is in the relationship between them. The movement of each makes sense only in terms of its relation to the movement of the other. A waltz is, in a deep sense, one thing, not two things.
+
+Entangled particles are like this, except that the connection is not merely descriptive --- it is a feature of the physical state itself. The quantum state of two entangled particles is a single mathematical object that cannot be split in two without losing something essential. Measure the spin of one and the other's spin is instantly constrained, not because information travels faster than light, but because they were never two separate spin-bearing things to begin with. They were one entangled system.
+
+The philosophical name for this feature is \emph{holism}: the whole has properties that cannot be decomposed into properties of the parts. Newtonian science was fundamentally anti-holistic. The whole was always, in principle, decomposable into its parts; understanding the parts was sufficient to understand the whole. Entanglement is physics' first formal encounter with genuine holism --- a case where the whole is not just the sum of its parts but possesses a character that the parts, considered separately, simply do not have.
+
+This is not a limitation of our ability to analyze the system. It is a feature of the system itself. Two entangled particles are not two things; they are two aspects of one relational reality. When we measure one of them, we are not learning a fact about a self-contained particle; we are learning a fact about the relationship --- the entanglement relation that constitutes the system as a whole.
+
+The non-separability of entangled systems is directly connected to the structure that Bell's theorem probes. Bell's inequalities test whether the correlations between distant measurements can be explained by properties the particles carried from the moment of their interaction. The violations of those inequalities tell us not just that the particles didn't carry classical properties, but that they remain connected in a way that defies spatial separation. The connection is not a force traveling through space. It is not a signal. It is the persistence of a relational structure that was established when the particles interacted and that continues to constitute both particles as aspects of a single, extended whole.
+
+As entanglement is scaled up --- from two particles to three, four, many --- the holistic character of quantum reality becomes more pronounced. The experimental program inspired by Bell's theorem has spent decades demonstrating entanglement's persistence across larger and larger distances, in more and more complex systems. The technology that has emerged from this work --- quantum computing, quantum cryptography, quantum teleportation --- depends on maintaining and manipulating entanglement, on treating non-separable relational structures as the fundamental computational resource of a new kind of physics.
+
+What this means for our picture of the world is both simple and radical: the universe is not a collection of separate things that happen to be related. It is a web of relations in which what we call ``things'' are relatively stable patterns --- nodes, perhaps, in a network that has no ultimate node-free substrate beneath it. The separateness we perceive is real, in the same way the apparent solidity of matter is real: an emergent, macroscale regularity built on a quantum foundation where separateness, at the most fundamental level, does not hold.
 
 % ─────────────────────────────────────────────────────────────────────────────
-%  CLOSING (~500 words)
+%  CLOSING
 % ─────────────────────────────────────────────────────────────────────────────
-% TODO: Restate the discovery. Transition to the question: if this is what
-% physics found, what kind of metaphysics can accommodate it? That question
-% is the subject of the next two chapters.
+
+Here, then, is what physics discovered in the twentieth century. Not merely that matter is strange at small scales, though it is. Not merely that our measurement instruments disturb what they measure, though that is true too. Physics discovered that the most fundamental level of physical reality --- the level at which all else is constituted --- is a level at which things do not have intrinsic, pre-existing, locally-possessed properties. Properties are constituted through relational interaction. Entities are aspects of entangled wholes rather than genuinely separable parts. The universe, at its foundation, is not made of substances. It is made of relations.
+
+This is a momentous finding. And it raises, immediately, a question that physics by itself cannot answer. If reality is fundamentally relational, what kind of framework is adequate to that? Newton's physics carried with it, implicitly, an entire metaphysical picture: the doctrine of substance, the assumption that things are prior to relations, the compositionist dream of explaining wholes through independently-characterized parts. That picture is now experimentally refuted. It needs to be replaced.
+
+The question of replacement is not a scientific question. It is a philosophical one. And it has an answer --- a rigorous, technically developed answer that the philosopher Alfred North Whitehead began constructing in 1929, three years before Aspect's experiments and thirty-five years before Bell's theorem. It is also an answer that, I will argue, three separate intellectual traditions arrived at independently, by different methods, across a span of more than a century.
+
+The next chapter begins the philosophical work. This is the discovery. Three traditions had already arrived at its implications --- by different routes, decades earlier.
 
 \begin{convergencemoment}{From Newton to Bell: What Quantum Mechanics Discovered}
-% TODO: Fill in all three traditions' perspectives on the relational discovery.
-% From the quantum side: Bell's theorem closes the EPR program; no local
-%   intrinsic properties; relational interaction constitutes definite outcomes.
-% From the process-philosophical side: Whitehead's process ontology was
-%   already built around this insight — actual occasions constitute their
-%   properties through prehension.
-% From the Bahá'í side: existence as the affinity and cohesion of elementary
-%   substances (PUP Talk 48) — ontological agreement, arrived at independently.
-% One sentence statement: [write when drafting]
+The experimental closure of Bell's inequality violations --- confirmed across six decades of increasingly rigorous tests, crowned by the 2022 Nobel Prize --- establishes a single finding about the physical world: at the most fundamental level, reality is not made of locally self-contained things with intrinsic properties. It is made of relational events in which properties come into being through interaction, and wholes cannot be decomposed into independently-characterized parts.
+
+Three traditions had arrived at the logical architecture of this finding before the physics was complete.
+
+From quantum mechanics, the finding arrives through Bell's theorem and the experimental record: no local hidden-variable theory can reproduce quantum statistics; quantum particles have no intrinsic local properties prior to measurement; entanglement is non-separable holism at the foundation of nature.
+
+From process philosophy, the finding arrives through Whitehead's architecture of actual occasions and prehension: things do not first exist and then relate; they come into being \emph{through} relational process, and what we call substances are patterns of relational events recurring with sufficient regularity to appear stable. Whitehead built this framework in 1929 without access to Bell's theorem; its structure is, as the next chapter will show, precisely what the physics requires.
+
+From the \bahai writings, the finding arrives in a different register but with the same logical shape: existence is constituted by the affinity and cohesion of elementary substances~\citep{PUP}; motion, relation, and love are not secondary features of things that already exist but the very condition of existence itself. This tradition arrived at its conclusions not through laboratory experiments or philosophical analysis but through spiritual insight of a different epistemic character --- and it arrived there first.
+
+The convergence of three independent methods on the same structural conclusion is what this book is about.
 \end{convergencemoment}
