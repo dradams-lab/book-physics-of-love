@@ -1,9 +1,143 @@
 % ── CHAPTER 13: THE MATHEMATICS OF RELATIONSHIP: THE RELATIONAL COHERENCE THEOREM (~8,000 words) ──
 \chapter{The Mathematics of Relationship: The Relational Coherence Theorem}
+\label{ch:rct}
 
-% TODO (8,000 words): Accessible presentation of the RCT for a general educated reader. No prior quantum mechanics assumed. Build up the Affinity Tensor α through analogy and intuition before stating it formally. The U_RA gate explained as a coherence-preserving operation. Include a box with the mathematics for readers who want it.
+% STATUS: TODO
+% TARGET: ~8,000 words
+% DIFFICULTY: High — pub1 is highly technical; requires significant
+%   translation work to make accessible without distortion
+% PRIMARY SOURCES:
+%   pub1/sections/00-abstract.tex   — overview, Allocation Theorem, fidelity results
+%   pub1/sections/01-introduction.tex — Bell → RQM → scalar affinity ᾱ
+%   pub1/sections/03-rct.tex        — four propositions (formal)
+%   pub1/sections/04-ura-gate.tex   — U_RA gate
+%   pub1/sections/06-discussion.tex — Allocation Theorem
+%   pub2/sections/06b-rct-philosophical.tex — philosophical framing
+% KEY CITATIONS: AdamsRCT, Rovelli1996, Zurek2003, Bell1964, NielsenChuang2000,
+%               Whitehead1929
+% REGISTER: This is the book's most technical chapter. Strategy:
+%   - Main text: conceptual and accessible (~6,000 words, no equations)
+%   - Sidebar/box: formal mathematics for readers who want it (~2,000 words)
+%   - Build up the Affinity Tensor through analogy BEFORE stating it formally
+%   - The U_RA gate explained as a coherence-preserving operation
+% HARD RULES: See BOOK_SHELL.md
+
+% \epigraph{God used beautiful mathematics in creating the world.}{Paul Dirac}
+
+%  OPENING (~600 words)
+% TODO: Bridge from ch13a (The Paradigm Required). That chapter named the
+% paradigm shift. This chapter provides one formal piece of what it would
+% require. Introduce the question: is there a mathematical framework in which
+% love — understood as the force sustaining relational coherence — has a
+% formal representation?
+
+\section{What Is the Affinity Tensor?}
+\label{sec:ch13-affinity}
+% (~1,500 words)
+% TODO: Build up to the Affinity Tensor through analogy.
+% KEY POINTS:
+%   - Start with the everyday meaning: affinity = tendency to form a bond
+%   - In chemistry: atomic affinity predicts which elements form compounds
+%   - In QM: two systems in a coherent superposition have "affinity" in a
+%     precise sense — they are relationally coupled in a way that resists
+%     environmental disruption
+%   - The Affinity Tensor α(S,E) quantifies this: it measures the coherence
+%     of a system S in its preferred relational basis (the pointer basis)
+%   - ᾱ ∈ [0,1]: 0 = fully decohered (no affinity with environment), 1 = full
+%     quantum coherence (maximum affinity)
+%   - This is not a metaphor — it is a computable quantity
+% ANALOGY: Think of ᾱ as the "temperature" of the relational bond. At ᾱ = 1,
+%   the bond is fully "alive" (quantum coherent). At ᾱ = 0, it has "dissolved"
+%   (fully decohered).
+% SOURCE: pub1 §3 (definitions); pub1 §1 (conceptual framing); translate.
+% CITE: AdamsRCT, Zurek2003
+
+\section{The Four Propositions}
+\label{sec:ch13-propositions}
+% (~2,000 words)
+% TODO: The four propositions of the RCF, explained accessibly.
 %
-% Remember: each chapter ends with a Convergence Moment box.
-% \begin{convergencemoment}{The Mathematics of Relationship: The Relational Coherence Theorem}
-%   Summarize how this chapter's argument looks from all three traditions.
-% \end{convergencemoment}
+% PROPOSITION I: Property Indefiniteness (~500 words)
+%   A nonzero ᾱ means S has no definite pointer-basis property.
+%   Accessible: if the affinity is alive (ᾱ > 0), the system hasn't yet
+%   settled into a definite classical state. It is still in a superposition
+%   of relational possibilities.
+%
+% PROPOSITION II: Relational Determination (~500 words)
+%   Under Markovian dephasing, ᾱ decays exponentially toward 0.
+%   Accessible: environmental interaction causes the affinity to drain away
+%   over time. The "noise" of the environment gradually resolves the quantum
+%   possibilities into classical definiteness.
+%
+% PROPOSITION III: Coherence-Affinity Correspondence (~500 words)
+%   ᾱ ranges continuously over [0,1] — analogy to a spectrum of "aliveness."
+%
+% PROPOSITION IV: Coherence Redistribution (~500 words)
+%   Under closed unitary evolution, ᾱ is not destroyed but redistributed
+%   into system-environment correlations (purity conservation).
+%   Accessible: affinity doesn't disappear; it spreads out from the local
+%   system into the wider relational field.
+%
+% SOURCE: pub1 §3 (propositions); translate from formal to accessible.
+% CITE: AdamsRCT, Zurek2003
+
+\section{The U\textsubscript{RA} Gate: Engineering Love}
+\label{sec:ch13-gate}
+% (~1,500 words)
+% TODO: The U_RA gate explained without equations.
+% KEY POINTS:
+%   - The U_RA gate is a two-qubit quantum gate designed to create entanglement
+%     while minimizing decoherence cost
+%   - The "exchange angle" θ controls how much entanglement is created
+%   - Optimizing θ across multiple gate layers is equivalent to optimizing
+%     the distribution of "affinity" across a quantum circuit
+%   - The Coherence-Budget Allocation Theorem: the optimal schedule routes
+%     more entanglement onto quieter (less noisy) layers
+%   - This is "engineering" relational coherence — the practical application
+%     of the philosophical framework to real quantum hardware
+% ANALOGY: Like a marriage counselor who routes "vulnerable conversations"
+%   to moments when both partners are well-rested and emotionally available.
+% SOURCE: pub1 §§3–4 (U_RA gate, exchange angle); translate.
+% CITE: AdamsRCT, LossDiVincenzo1998
+
+\section{What This Means Philosophically}
+\label{sec:ch13-philosophical}
+% (~1,500 words)
+% TODO: Bridge back to the book's central argument.
+% KEY POINTS:
+%   - The Affinity Tensor gives formal content to the claim that "love" is a
+%     structural property of reality, not a metaphor
+%   - ᾱ measures the degree to which a system's existence is constituted by
+%     its relational coherence — the formal version of mahabbat
+%   - The decay of ᾱ to zero under decoherence is the formal version of
+%     "when dissension and repulsion arise, disintegration follows" (PUP)
+%   - The redistribution of affinity under unitary evolution (Prop. IV) is
+%     the formal version of "total annihilation is impossible" (PUP)
+% SOURCE: pub2 §6b (RCT philosophical framing); translate.
+% CITE: AdamsRCT, AdamsThreePaths, Whitehead1929, PUP
+
+% ─────────────────────────────────────────────────────────────────────────────
+% MATHEMATICS BOX (for readers who want the formal content)
+% ─────────────────────────────────────────────────────────────────────────────
+% TODO: Write a tcolorbox or similar containing the formal mathematical content.
+%   Include:
+%   - Definition: ᾱ(S,E) = ‖ρ_S - diag(ρ_S)‖_HS / ‖ρ_S^pure‖_HS
+%   - The four propositions stated formally (one equation each)
+%   - The U_RA gate formula
+%   - The Allocation Theorem statement
+%   SOURCE: pub1 §§1, 3–4; copy/adapt the formal content directly.
+
+\begin{convergencemoment}{The Mathematics of Relationship: The Relational Coherence Theorem}
+% TODO: Fill in when drafting.
+% From the quantum side: the RCF provides a computable scalar quantity ᾱ that
+%   measures relational coherence; its dynamics under decoherence formalize
+%   what it means for a relational bond to dissolve.
+% From the process-philosophical side: ᾱ is the formal version of prehensive
+%   integration — a quantitative measure of how "alive" (fully becoming) a
+%   relational event is.
+% From the Bahá'í side: the decay of ᾱ → 0 formalizes "when affinity
+%   dissipates, the form perishes" (PUP). Prop. IV formalizes "total
+%   annihilation is impossible" (PUP).
+% One structure: love, understood as the force sustaining relational coherence,
+%   has a formal mathematical representation in the Affinity Tensor.
+\end{convergencemoment}
