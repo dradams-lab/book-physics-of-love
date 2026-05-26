@@ -5,40 +5,88 @@
 %  Target presses: Oxford UP · Cambridge UP · MIT Press · SUNY
 %  Compiler: pdflatex (Overleaf)
 %  Dr. Joshua Adams | 2026
+%
+%  Based on the Physics Book Template:
+%  https://www.overleaf.com/latex/templates/physics-book-template/ncpnbrqpttwv
 % ============================================================
 
-\documentclass[12pt]{book}
+\documentclass[titlepage]{book}
+
+% ── Font size (13pt — book class only natively supports 10/11/12pt) ──
+\usepackage[fontsize=13pt]{fontsize}
 
 % ── Encoding & fonts ──────────────────────────────────────
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{cfr-lm}            % Classical LM: old-style figures, elegant serif
 
 % ── Page geometry ─────────────────────────────────────────
-\usepackage[margin=1.25in, top=1.25in, bottom=1.25in]{geometry}
+\usepackage[margin=1.25in, top=1.25in, bottom=1.5in]{geometry}
 \usepackage{setspace}
 \onehalfspacing
 
 % ── Mathematics ───────────────────────────────────────────
 \usepackage{amsmath,amssymb}
+\usepackage{mathtools}
 \usepackage{braket}
+
+% ── Old-style figures in math (matches cfr-lm text style) ─
+\DeclareMathSymbol{0}{\mathalpha}{letters}{`0}
+\DeclareMathSymbol{1}{\mathalpha}{letters}{`1}
+\DeclareMathSymbol{2}{\mathalpha}{letters}{`2}
+\DeclareMathSymbol{3}{\mathalpha}{letters}{`3}
+\DeclareMathSymbol{4}{\mathalpha}{letters}{`4}
+\DeclareMathSymbol{5}{\mathalpha}{letters}{`5}
+\DeclareMathSymbol{6}{\mathalpha}{letters}{`6}
+\DeclareMathSymbol{7}{\mathalpha}{letters}{`7}
+\DeclareMathSymbol{8}{\mathalpha}{letters}{`8}
+\DeclareMathSymbol{9}{\mathalpha}{letters}{`9}
 
 % ── Tables & figures ──────────────────────────────────────
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{longtable}
+\usepackage{wrapfig}
 \graphicspath{{figures/}}
 
-% ── Chapter and section formatting ────────────────────────
-\usepackage{titlesec}
-\usepackage{epigraph}        % chapter epigraphs
+% ── Lists & multi-column ──────────────────────────────────
+\usepackage{enumitem}
+\usepackage{multicol}
 
-% ── Bibliography (author-year for trade/academic books) ───
+% ── Typography ────────────────────────────────────────────
+\usepackage{lettrine}                     % drop-cap first letter
+\usepackage[defaultlines=4,all]{nowidow}  % widow/orphan control
+\usepackage{gensymb}                      % \degree, \celsius, etc.
+\usepackage[labelsep=space]{caption}
+
+% ── Chapter/section headings ──────────────────────────────
+\usepackage{titlesec}
+\usepackage{epigraph}
+
+% ── Counter setup ─────────────────────────────────────────
+\usepackage{chngcntr}
+\counterwithin*{footnote}{page}   % reset footnote counter each page
+
+% ── Table of contents (load BEFORE hyperref) ──────────────
+\usepackage{tocloft}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\fontsize{15pt}{0pt}\selectfont}
+\setlength{\cftbeforetoctitleskip}{-3em}
+\setlength{\cftaftertoctitleskip}{1.5\baselineskip}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\addtolength{\cftchapnumwidth}{12pt}
+\addtolength{\cftsecnumwidth}{6pt}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+% ── Bibliography ──────────────────────────────────────────
 \usepackage[authoryear, round, sort]{natbib}
 \bibliographystyle{apalike}
 
-% ── Hyperlinks & PDF metadata ─────────────────────────────
-\usepackage{hyperref}
+% ── Hyperlinks & PDF metadata (load AFTER tocloft) ────────
+\usepackage[hyperfootnotes=false,linktoc=page]{hyperref}
 \hypersetup{
   colorlinks = true,
   linkcolor  = black,
@@ -63,18 +111,52 @@
 \newcommand{\RCT}{\textsc{rct}}
 \newcommand{\URA}{U_{\!\mathrm{RA}}}
 
-% ── Convergence moment box ────────────────────────────────
-\usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}        % breakable required for the option below
-\newtcolorbox{convergencemoment}[1]{
-  title={Convergence Moment: #1},
-  colback=blue!5!white,
-  colframe=blue!50!black,
-  fonttitle=\bfseries,
-  breakable
-}
+% Inline equation shorthand (split environment)
+\newcommand{\eq}[1]{\begin{equation*}\begin{split}#1\end{split}\end{equation*}}
+\newcommand{\eqnum}[1]{\begin{equation}\begin{split}#1\end{split}\end{equation}}
 
-% ── Running headers (prevent overcross on long chapter titles) ─
+% Lettered list: (a), (b), (c) …
+\newcommand{\letlist}[1]{%
+  \begin{enumerate}[label=(\emph{\alph*})]#1\end{enumerate}}
+
+% Drop-cap first word of a chapter opening
+\newcommand{\firstword}[2]{%
+  \lettrine[lines=3,nindent=0em,findent=0.5em,realheight]{#1}{#2}}
+
+% ── Roman numeral chapter numbers ─────────────────────────
+\renewcommand{\thechapter}{\Roman{chapter}}
+
+% ── Title formatting (Physics Book Template style) ────────
+
+% Parts: large centred label + title
+\titleformat{\part}[display]
+  {\Huge\bfseries\filcenter}
+  {\Large\partname~\thepart}
+  {1em}{}
+\titlespacing*{\part}{0pt}{*6}{*4}
+
+% Chapters: centred label above centred title, no rule
+\titleformat{\chapter}[display]
+  {\Large\bfseries\filcenter}
+  {\normalsize\MakeUppercase{\chaptername}~\thechapter}
+  {0.5em}{}
+\titlespacing*{\chapter}{0pt}{*4}{*3}
+
+% Sections: bold, left-aligned, numbered
+\titleformat{\section}
+  {\large\bfseries}
+  {\thesection}
+  {1em}{}
+\titlespacing*{\section}{0pt}{*3}{*1}
+
+% Subsections: medium-weight, left-aligned
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {\thesubsection}
+  {1em}{}
+\titlespacing*{\subsection}{0pt}{*2}{*0.5}
+
+% ── Running headers (no rule — template style) ────────────
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -82,12 +164,23 @@
 \fancyhead[RE]{\nouppercase{\leftmark}}
 \fancyhead[LO]{\nouppercase{\rightmark}}
 \fancyhead[RO]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-% Plain style for chapter-opening pages (just centred page number)
+\renewcommand{\headrulewidth}{0pt}
+% Chapter-opening pages: just centred page number at foot
 \fancypagestyle{plain}{%
   \fancyhf{}%
   \fancyfoot[C]{\thepage}%
   \renewcommand{\headrulewidth}{0pt}%
+}
+
+% ── Convergence moment box ────────────────────────────────
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{convergencemoment}[1]{
+  title={Convergence Moment: #1},
+  colback=blue!5!white,
+  colframe=blue!50!black,
+  fonttitle=\bfseries,
+  breakable
 }
 
 % =============================================================
