@@ -140,6 +140,9 @@
 % Note: realheight removed — it triggers a warning when arg2 is empty (ch06)
 \newcommand{\firstword}[2]{%
   \lettrine[lines=3,nindent=0em,findent=0.5em]{#1}{#2}}
+% Two-line variant for short opening paragraphs (< ~3 lines of text)
+\newcommand{\firstwordtwo}[2]{%
+  \lettrine[lines=2,nindent=0em,findent=0.5em]{#1}{#2}}
 
 % ── Roman numeral chapter numbers ─────────────────────────
 \renewcommand{\thechapter}{\Roman{chapter}}
