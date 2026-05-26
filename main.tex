@@ -72,14 +72,27 @@
 \usepackage{tocloft}
 \renewcommand{\contentsname}{Table of Contents}
 \renewcommand{\cfttoctitlefont}{\hfil\bfseries\fontsize{15pt}{0pt}\selectfont}
+\renewcommand{\cftaftertoctitle}{\hfil}          % centre the title
 \setlength{\cftbeforetoctitleskip}{-3em}
-\setlength{\cftaftertoctitleskip}{1.5\baselineskip}
+\setlength{\cftaftertoctitleskip}{2\baselineskip}
+
+% Parts in TOC — bold, no page number (standard for parts)
+\renewcommand{\cftpartfont}{\bfseries\large}
+\renewcommand{\cftpartpagefont}{\bfseries}
+\setlength{\cftbeforepartskip}{1.2\baselineskip}
+
+% Chapters — bold; widen number column for Roman numerals (up to "XV" = ~24pt)
 \renewcommand{\cftchapfont}{\bfseries}
 \renewcommand{\cftchappagefont}{\bfseries}
-\addtolength{\cftchapnumwidth}{12pt}
-\addtolength{\cftsecnumwidth}{6pt}
-\setcounter{tocdepth}{2}
-\setcounter{secnumdepth}{3}
+\setlength{\cftchapnumwidth}{2.8em}              % was ~1.5em; Roman "XIII" needs ~2.5em
+\setlength{\cftchapindent}{0pt}
+
+% Sections — indent under chapters, normal weight
+\setlength{\cftsecindent}{2.8em}                 % align with chapter text
+\setlength{\cftsecnumwidth}{2.4em}
+
+\setcounter{tocdepth}{2}          % show: parts, chapters, sections
+\setcounter{secnumdepth}{3}       % number: chapters, sections, subsections
 
 % ── Bibliography ──────────────────────────────────────────
 \usepackage[authoryear, round, sort]{natbib}
