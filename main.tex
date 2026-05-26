@@ -63,6 +63,8 @@
 % ── Chapter/section headings ──────────────────────────────
 \usepackage{titlesec}
 \usepackage{epigraph}
+\setlength{\epigraphwidth}{0.65\textwidth}   % default 0.4 is too narrow
+\renewcommand{\epigraphrule}{0.4pt}          % keep the hairline attribution rule
 
 % ── Counter setup ─────────────────────────────────────────
 \usepackage{chngcntr}
@@ -89,7 +91,7 @@
 
 % Sections — indent under chapters, normal weight
 \setlength{\cftsecindent}{2.8em}                 % align with chapter text
-\setlength{\cftsecnumwidth}{2.4em}
+\setlength{\cftsecnumwidth}{3.2em}               % Roman chap nums: "XIII.4" needs ~3em
 
 \setcounter{tocdepth}{2}          % show: parts, chapters, sections
 \setcounter{secnumdepth}{3}       % number: chapters, sections, subsections
@@ -141,19 +143,21 @@
 
 % ── Title formatting (Physics Book Template style) ────────
 
-% Parts: large centred label + title
+% Parts: smaller "Part I" label, huge title
 \titleformat{\part}[display]
-  {\Huge\bfseries\filcenter}
-  {\Large\partname~\thepart}
-  {1em}{}
-\titlespacing*{\part}{0pt}{*6}{*4}
+  {\bfseries\filcenter}                      % overall: bold + centred (no fixed size here)
+  {\large\scshape\partname~\thepart}         % label: "Part I" in small-caps, large
+  {0.8em}
+  {\Huge}                                    % before-title: title gets Huge
+\titlespacing*{\part}{0pt}{*6}{*5}
 
-% Chapters: centred label above centred title, no rule
+% Chapters: small-caps label ("Chapter IV") over Large bold title
 \titleformat{\chapter}[display]
-  {\Large\bfseries\filcenter}
-  {\normalsize\MakeUppercase{\chaptername}~\thechapter}
-  {0.5em}{}
-\titlespacing*{\chapter}{0pt}{*4}{*3}
+  {\bfseries\filcenter}                      % overall: bold + centred
+  {\normalsize\scshape\chaptername~\thechapter}   % label: small-caps at normal size
+  {0pt}
+  {\vspace{0.4ex}\rule{\textwidth}{0.5pt}\vspace{0.8ex}\Large}  % thin rule, then Large title
+\titlespacing*{\chapter}{0pt}{*3}{*3}
 
 % Sections: bold, left-aligned, numbered
 \titleformat{\section}
