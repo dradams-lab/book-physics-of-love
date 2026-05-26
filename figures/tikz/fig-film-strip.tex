@@ -1,0 +1,122 @@
+% fig-film-strip.tex
+% "The Stone Is the Movie, Not the Frames"
+% Standalone TikZ figure — Ch. IV
+\documentclass[tikz,border=6mm]{standalone}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing,decorations.markings,shapes.geometric,positioning,backgrounds,fit,shadings,patterns}
+\definecolor{substblue}{RGB}{70,130,180}
+\definecolor{procamber}{RGB}{180,110,30}
+\definecolor{feltgreen}{RGB}{0,110,55}
+\definecolor{bgcream}{RGB}{252,248,240}
+\definecolor{atomblue}{RGB}{100,160,210}
+\definecolor{emphred}{RGB}{160,40,40}
+\definecolor{panelborder}{RGB}{180,170,155}
+
+% Helper to draw a film strip
+% Usage: \filmstrip{x}{y}{width}{height}{numframes}{framecontent-cmd}
+% We'll draw directly instead for clarity.
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+% ════════════════════════════════════════════════════════════════════════════
+% TOP ROW — "Film at 24 fps"
+% ════════════════════════════════════════════════════════════════════════════
+
+\node[anchor=south west, font=\normalsize\bfseries] at (0.0,8.90)
+  {Film at 24 frames/second};
+
+\begin{scope}[shift={(0,5.90)}]
+  % Outer strip body
+  \fill[black!85] (0,0) rectangle (13.0,2.70);
+
+  % Sprocket holes — top row and bottom row
+  \foreach \xh in {0.25,1.20,2.15,3.10,4.05,5.00,5.95,6.90,7.85,8.80,9.75,10.70,11.65,12.60}{
+    % Top holes
+    \fill[white] (\xh,2.25) rectangle (\xh+0.45,2.58);
+    % Bottom holes
+    \fill[white] (\xh,0.12) rectangle (\xh+0.45,0.45);
+  }
+
+  % Five film frames showing a simple arrow-shape at slightly different positions
+  % Frame width ≈ 2.10, height ≈ 1.50, starting at x=0.20
+  \foreach \fi/\arrowx in {0/0.65, 1/0.90, 2/1.15, 3/1.40, 4/1.65}{
+    \pgfmathsetmacro{\fx}{0.35 + \fi*2.50}
+    % Frame rectangle
+    \fill[gray!20] (\fx,0.60) rectangle (\fx+2.10,2.10);
+    \draw[gray!40, line width=0.4pt] (\fx,0.60) rectangle (\fx+2.10,2.10);
+    % Simple arrow silhouette to suggest motion (position shifts rightward each frame)
+    \fill[gray!55]
+      (\fx+\arrowx,1.20) -- (\fx+\arrowx+0.55,1.35) --
+      (\fx+\arrowx,1.50) -- (\fx+\arrowx+0.20,1.35) -- cycle;
+  }
+\end{scope}
+
+% Caption beneath top strip
+\node[anchor=north, text width=12.5cm, align=center] at (6.5,5.82)
+  {\small\textit{Individual frames visible \textrightarrow{} motion perceived as sequence}};
+
+% ════════════════════════════════════════════════════════════════════════════
+% ANALOGY ARROW between rows
+% ════════════════════════════════════════════════════════════════════════════
+\draw[procamber, ->, >=Stealth, line width=2.5pt]
+  (6.5,5.30) -- (6.5,4.40);
+\node[right=0.18cm, font=\small, align=left] at (6.5,4.85)
+  {\textit{analogous to}\\[2pt]\textit{(frame rate $\to \infty$)}};
+
+% ════════════════════════════════════════════════════════════════════════════
+% BOTTOM ROW — "A Stone at quantum timescales"
+% ════════════════════════════════════════════════════════════════════════════
+
+\node[anchor=south west, font=\normalsize\bfseries] at (0.0,4.25)
+  {A stone at quantum timescales};
+
+\begin{scope}[shift={(0,1.30)}]
+  % Strip body (same width)
+  \fill[black!85] (0,0) rectangle (13.0,2.70);
+
+  % Top and bottom sprocket holes (same spacing)
+  \foreach \xh in {0.25,1.20,2.15,3.10,4.05,5.00,5.95,6.90,7.85,8.80,9.75,10.70,11.65,12.60}{
+    \fill[white] (\xh,2.25) rectangle (\xh+0.45,2.58);
+    \fill[white] (\xh,0.12) rectangle (\xh+0.45,0.45);
+  }
+
+  % Many thin "frame" slices — indistinguishable — dense vertical lines
+  \foreach \xi in {0.35,0.55,...,12.65}{
+    \draw[gray!35, line width=0.25pt] (\xi,0.55) -- (\xi,2.15);
+  }
+  % Gray wash suggesting dense, unresolvable frames
+  \fill[gray!18, opacity=0.6] (0.30,0.55) rectangle (12.70,2.15);
+
+  % Strip label
+  \node[white, font=\small\itshape] at (6.5,1.35)
+    {$\sim\!10^{43}$ frames/second (Planck time)};
+\end{scope}
+
+% STONE above the bottom strip
+\begin{scope}[shift={(6.5,4.10)}]
+  % Rounded stone rectangle above strip
+  \draw[fill=gray!50, draw=gray!30, very thick, rounded corners=10pt]
+    (-2.0,-0.45) rectangle (2.0,0.45);
+  \node[font=\small\itshape, text=gray!25] at (0,0) {stone};
+
+  % Arrow from stone down to strip
+  \draw[gray!55, ->, >=Stealth, line width=1.0pt]
+    (0,-0.48) -- (0,-0.82);
+  \node[right=0.08cm, font=\small\itshape, text=gray!65] at (0.05,-0.65)
+    {$=$ this};
+\end{scope}
+
+% Caption beneath bottom strip
+\node[anchor=north, text width=12.5cm, align=center] at (6.5,1.22)
+  {\small\textit{Individual occasions invisible \textrightarrow{} stone perceived as stable ``thing''}};
+
+% ════════════════════════════════════════════════════════════════════════════
+% CAPTION below entire figure
+% ════════════════════════════════════════════════════════════════════════════
+\node[anchor=north, text width=13.0cm, align=center] at (6.5,0.40)
+  {\textit{``The stone is the movie, not the frames. But the frames are what make the movie.'' --- Ch.~IV}};
+
+\end{tikzpicture}
+\end{document}

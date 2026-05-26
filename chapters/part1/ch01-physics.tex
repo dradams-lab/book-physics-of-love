@@ -21,6 +21,13 @@ This is Newton's world. And for roughly three hundred years, beginning with \tex
 
 The philosopher's name for this picture is \emph{substance ontology}. A substance, in the classical philosophical sense going back to Aristotle, is an entity that possesses properties --- mass, position, charge, momentum --- and that exists independently of any relations it might happen to enter into. The billiard ball is a substance. Its mass is its own, prior to and independent of any other billiard ball in the universe. Its position is a fact about it alone, not a fact about its relation to anything else. Things come first; relations between things are secondary, derivative, almost incidental.
 
+\begin{figure}[htbp]
+  \centering
+  \input{figures/tikz/fig-billiard-intrinsic.tex}
+  \caption[Newton's ball: intrinsic properties]{In Newton's universe, the properties of a thing --- mass, position, velocity, momentum, charge --- belong \emph{to} the thing, independently of every other thing in the universe. The billiard ball is the paradigm case of a \emph{substance}: a self-contained entity whose nature is fixed before and apart from any relation it might enter.}
+  \label{fig:billiard-intrinsic}
+\end{figure}
+
 Newton's physics encoded this philosophical assumption so deeply that it became nearly invisible. The basic quantities of Newtonian mechanics --- mass, position, velocity, momentum --- are all properties of individual objects, located \emph{in} those objects rather than \emph{between} them. Force is the one relational quantity, but even force acts through objects, changing the intrinsic properties (position, velocity) that already belonged to them. The universe, on this picture, is a collection of self-contained things interacting with each other. Understand each thing in isolation, and you can reconstruct the whole from the parts.
 
 This is what I will call the \emph{compositionist dream}: the ambition to explain the complex by decomposing it into simples, and to explain the simples by cataloguing their intrinsic properties. The dream achieved extraordinary results. It gave us thermodynamics, celestial mechanics, the industrial revolution, and the engineering of every machine made before the twentieth century. The Marquis de Laplace, writing in 1814, captured the dream in its most ambitious form: suppose an intelligence that knew the position and velocity of every particle in the universe. It could calculate the entire future of the cosmos as easily as predicting tomorrow's sunrise. The future is contained, completely, in the present state of all its parts --- and the state of each part is its own possession, held independently, waiting to be read off.
@@ -54,6 +61,13 @@ Now add a detector at one of the slits, to determine which slit the photon went 
 
 This is not a quirk of light. Electrons do it. Atoms do it. Molecules made of sixty carbon atoms --- ``buckyballs'' the size of a small virus, the largest objects for which interference has been demonstrated --- do it. The quantum world has a systematic refusal to behave like classical particles.
 
+\begin{figure}[htbp]
+  \centering
+  \input{figures/tikz/fig-double-slit.tex}
+  \caption[The double-slit experiment]{The double-slit experiment. A quantum source fires particles (photons, electrons, atoms) at a barrier with two slits. Without a detector, an interference pattern builds up on the screen --- each particle ``goes through both slits'' and interferes with itself. Add a detector to determine which slit was used, and the interference disappears: the particle lands in one of two classical bands. \emph{Finding out} which path was taken changes what happens.}
+  \label{fig:double-slit}
+\end{figure}
+
 The physicist Werner Heisenberg gave the puzzle its mathematical form in 1927 \citep{Heisenberg1927}. His uncertainty principle says that certain pairs of properties --- position and momentum are the canonical example --- cannot both be definite at the same time. The more precisely you know a particle's position, the less precisely its momentum can be defined, and vice versa. This is not a statement about the limits of our instruments. It is not saying that our measuring devices are clumsy and disturb the particle. It is a statement about the particle itself: a particle does not \emph{possess} simultaneously definite position and simultaneously definite momentum. These are not hidden facts we are ignorant of. They are properties that, in a precise mathematical sense, do not simultaneously exist.
 
 For a Newtonian physicist, this is incomprehensible. A billiard ball obviously has both a position and a momentum at every moment. How can a particle fail to have them? The standard answer offered by the Copenhagen interpretation of quantum mechanics --- the interpretation developed by Niels Bohr and his colleagues in the 1920s and still the one most physics textbooks present --- was essentially: don't ask. Quantum mechanics gives us a calculation tool that makes predictions with extraordinary accuracy; the question of what is ``really'' happening is not a scientific question.
@@ -84,6 +98,13 @@ Quantum mechanics predicts correlations that violate Bell's inequality. Not just
 The glove analogy helps here. Imagine I put a left glove in one box and a right glove in another, shuffle the boxes, and send you one. When you open yours and find a left glove, you instantly know mine is a right glove, no matter how far away I am. That correlation looks, superficially, like quantum entanglement. But it is entirely classical: the handedness was determined when I packed the boxes. No hidden variable is hidden; the property was always there.
 
 Bell's theorem says that quantum entanglement is not like this. The correlations between entangled particles are \emph{stronger} than any ``gloves-in-boxes'' explanation can produce. To match the actual predictions of quantum mechanics, the particles would need to be coordinating their answers in real time across arbitrary distances --- which locality forbids --- or they would need to not have had definite answers until the moment of measurement. Those are the only two options. The first violates relativity. The second means Einstein was wrong: there are no hidden local properties.
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/tikz/fig-bell-gloves.tex}
+  \caption[Classical correlation vs.\ quantum entanglement]{Classical correlation (gloves in boxes) versus quantum entanglement. In the classical case, the outcome is predetermined: Alice's glove determines Bob's the moment they are packed. In the quantum case, no such pre-assignment exists. Bell's theorem proves that the quantum correlations are \emph{stronger} than any classical pre-determination can produce --- a mathematical boundary no local hidden-variable theory can cross.}
+  \label{fig:bell-gloves}
+\end{figure}
 
 When Bell published this result, it was still a theorem about what experiment could test, not about what experiment had found. Experiments were needed. The first decisive experimental test was performed by Alain Aspect and his colleagues in Paris in 1982 \citep{Aspect1982}. Aspect used pairs of entangled photons, measured their polarizations in different orientations, and found exactly the violations of Bell's inequality that quantum mechanics predicted. The correlations were stronger than any local hidden-variable theory could explain.
 
@@ -133,6 +154,13 @@ Erwin Schrödinger, who contributed as much as anyone to the mathematics of quan
 
 An analogy helps here, though like all analogies it is imperfect. Consider two dancers performing a waltz. You can describe each dancer's position at each moment. But if you try to describe the dance by describing each dancer independently --- dancer A does this, then dancer B does that --- you will miss the essential thing. The dance is not in the dancers; it is in the relationship between them. The movement of each makes sense only in terms of its relation to the movement of the other. A waltz is, in a deep sense, one thing, not two things.
 
+\begin{figure}[htbp]
+  \centering
+  \input{figures/tikz/fig-waltz-dancers.tex}
+  \caption[The dance is not in the dancers]{Two dancers, one dance. You can describe each dancer's position, but the dance exists only in the relationship between them --- in the space between, not in either individual. Entangled quantum particles are like this: not two things that happen to be correlated, but one relational system with two aspects.}
+  \label{fig:waltz-dancers}
+\end{figure}
+
 Entangled particles are like this, except that the connection is not merely descriptive --- it is a feature of the physical state itself. The quantum state of two entangled particles is a single mathematical object that cannot be split in two without losing something essential. Measure the spin of one and the other's spin is instantly constrained, not because information travels faster than light, but because they were never two separate spin-bearing things to begin with. They were one entangled system.
 
 The philosophical name for this feature is \emph{holism}: the whole has properties that cannot be decomposed into properties of the parts. Newtonian science was fundamentally anti-holistic. The whole was always, in principle, decomposable into its parts; understanding the parts was sufficient to understand the whole. Entanglement is physics' first formal encounter with genuine holism --- a case where the whole is not just the sum of its parts but possesses a character that the parts, considered separately, simply do not have.
@@ -142,6 +170,13 @@ This is not a limitation of our ability to analyze the system. It is a feature o
 The non-separability of entangled systems is directly connected to the structure that Bell's theorem probes. Bell's inequalities test whether the correlations between distant measurements can be explained by properties the particles carried from the moment of their interaction. The violations of those inequalities tell us not just that the particles didn't carry classical properties, but that they remain connected in a way that defies spatial separation. The connection is not a force traveling through space. It is not a signal. It is the persistence of a relational structure that was established when the particles interacted and that continues to constitute both particles as aspects of a single, extended whole.
 
 As entanglement is scaled up --- from two particles to three, four, many --- the holistic character of quantum reality becomes more pronounced. The experimental program inspired by Bell's theorem has spent decades demonstrating entanglement's persistence across larger and larger distances, in more and more complex systems. The technology that has emerged from this work --- quantum computing, quantum cryptography, quantum teleportation --- depends on maintaining and manipulating entanglement, on treating non-separable relational structures as the fundamental computational resource of a new kind of physics.
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/tikz/fig-entanglement-web.tex}
+  \caption[Non-separability: two particles, one system]{Entanglement as genuine holism. \emph{Left}: The classical picture --- two separate particles, describable independently. \emph{Centre}: Two entangled particles enclosed in one quantum state --- not two things but one system with two aspects. \emph{Right}: As entanglement scales to three, four, $n$ particles, the holistic character of reality becomes more pronounced. The universe is not a collection of self-contained things; it is a web of non-separable relational connections.}
+  \label{fig:entanglement-web}
+\end{figure}
 
 What this means for our picture of the world is both simple and radical: the universe is not a collection of separate things that happen to be related. It is a web of relations in which what we call ``things'' are relatively stable patterns --- nodes, perhaps, in a network that has no ultimate node-free substrate beneath it. The separateness we perceive is real, in the same way the apparent solidity of matter is real: an emergent, macroscale regularity built on a quantum foundation where separateness, at the most fundamental level, does not hold.
 
