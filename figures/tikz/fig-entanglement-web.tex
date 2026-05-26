@@ -41,9 +41,7 @@
 \draw[substblue!70,line width=0.6pt] (2.9,1.7) circle (17pt);
 \node[font=\bfseries\small,white] at (2.9,1.7) {B};
 
-%% no connection
-\node[font=\scriptsize\itshape,gray!60!black,align=center] at (1.8,0.3)
-  {Two separate things};
+%% (sub-label below each panel only — no duplicate inside panel)
 
 %% ── transition arrow 1 ───────────────────────────────────────────────────────
 \draw[->,gray!60,line width=1.0pt] (3.8,1.7) -- (5.0,1.7);
@@ -73,12 +71,9 @@
 %% wavy line between
 \draw[procamber!80,line width=0.8pt,wavy] (6.7,1.7) -- (8.3,1.7);
 
-%% oval label
+%% oval label — moved below particles, inside the panel, clear of title
 \node[procamber!80!black,font=\scriptsize\itshape,align=center]
-  at (7.5,2.95) {One entangled system};
-
-\node[font=\scriptsize\itshape,gray!60!black,align=center] at (7.5,0.3)
-  {One system --- two aspects};
+  at (7.5,0.45) {One entangled system};
 
 %% ── transition arrow 2 ───────────────────────────────────────────────────────
 \draw[->,gray!60,line width=1.0pt] (10.0,1.7) -- (11.2,1.7);
@@ -114,11 +109,8 @@
 \draw[procamber!70,line width=0.6pt,wavy] (12.4,2.15) -- (13.1,1.3);
 \draw[procamber!70,line width=0.6pt,wavy] (14.0,2.15) -- (13.3,1.3);
 
-%% ellipsis suggesting more
-\node[font=\normalsize,procamber!80!black] at (14.55,1.7) {$\ldots n$};
-
-\node[font=\scriptsize\itshape,gray!60!black,align=center] at (13.2,0.3)
-  {Holism scales};
+%% ellipsis suggesting more — anchored east, well inside panel right edge (x=15.0)
+\node[font=\small,procamber!80!black,anchor=east] at (14.85,1.7) {$\ldots n$};
 
 %% ── caption ──────────────────────────────────────────────────────────────────
 \node[font=\small\itshape,text width=13cm,align=center]

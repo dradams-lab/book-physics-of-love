@@ -14,9 +14,9 @@
 \begin{tikzpicture}[>=Stealth,font=\small]
 
 %% ── overall background ───────────────────────────────────────────────────────
-\fill[bgcream,rounded corners=5pt] (-0.5,-5.5) rectangle (14.5,5.2);
+\fill[bgcream,rounded corners=5pt] (-0.5,-6.2) rectangle (14.5,5.2);
 \draw[panelborder,rounded corners=5pt,line width=0.6pt]
-  (-0.5,-5.5) rectangle (14.5,5.2);
+  (-0.5,-6.2) rectangle (14.5,5.2);
 
 %% ════════════════════════════════════════════════════════════════════════════
 %%  UPPER ROW — Classical Correlation
@@ -55,9 +55,9 @@
 \node[font=\scriptsize\itshape,align=center] at (11.9,1.85)
   {Bob opens:\\[-2pt]knows \textbf{Right} (instantly)};
 
-%% local hidden property note
-\node[font=\small,substblue,anchor=east] at (14.1,3.0)
-  {\textcolor{substblue}{\small Local hidden property}};
+%% local hidden property note — placed below the row, clear of glove box
+\node[font=\small\itshape,substblue,align=right,anchor=east] at (14.1,0.95)
+  {\textcolor{substblue}{Local hidden property determines the outcome}};
 
 %% ════════════════════════════════════════════════════════════════════════════
 %%  DIVIDING LINE — Bell's Inequality
@@ -125,13 +125,13 @@
   {Bob measures: $\downarrow$\\[2pt]
    \tiny\itshape(not pre-determined)};
 
-%% no local hidden property
-\node[font=\small,emphred,anchor=east] at (14.1,-4.4)
-  {\textcolor{emphred}{\small\emph{No} local hidden property}};
+%% no local hidden property — placed below the quantum row, clear of detector boxes
+\node[font=\small\itshape,emphred,align=right,anchor=east] at (14.1,-4.55)
+  {\textcolor{emphred}{\emph{No} local hidden property --- outcome is co-constituted}};
 
-%% ── caption ──────────────────────────────────────────────────────────────────
-\node[font=\small\itshape,text width=12cm,align=center]
-  at (7.0,-5.25)
+%% ── caption (inside extended bgcream, outside both panel backgrounds) ───────
+\node[font=\small\itshape,text width=13cm,align=center]
+  at (7.0,-5.85)
   {Bell's theorem proves the quantum correlations cannot be explained classically.};
 
 \end{tikzpicture}

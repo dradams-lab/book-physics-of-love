@@ -18,83 +18,88 @@
 ]
 
 % ===== Overall dimensions =====
-% Left panel: x in [-8, -0.15], right panel: x in [0.15, 8], y in [-4, 4]
-% Caption strip below: y in [-5, -4.2]
+% Left panel:  x in [-9.5, -1.5], y in [-4.5, 4.5]   width 8, height 9
+% Right panel: x in [ 1.5,  9.5], y in [-4.5, 4.5]
+% Divider strip: x in [-1.5, 1.5] for the Bell's theorem label
 
 %% ---- LEFT PANEL: Substance Ontology ----
 \fill[bgcream, draw=panelborder, line width=0.7pt]
-  (-8.0,-4.0) rectangle (-0.15, 4.0);
+  (-9.5,-4.5) rectangle (-1.5, 4.5);
 
 % Panel title
-\node[substblue, font=\bfseries\large, align=center] at (-4.075, 3.3)
+\node[substblue, font=\bfseries\large, align=center] at (-5.5, 3.8)
   {Substance Ontology};
 
-% Billiard ball
+% Billiard ball (smaller, leaves room for labels)
 \fill[substblue!50, draw=substblue!70!black, line width=0.5pt]
-  (-4.075, 0) circle (1.1cm);
+  (-5.5, 0) circle (0.95cm);
 
-% Arrow: top → ball (from y=2.4 down to ball edge)
-\draw[inward] (-4.075, 2.3) -- (-4.075, 1.1);
-\node[align=center, font=\small] at (-4.075, 2.6)
-  {mass, position, velocity};
+% Top label: mass, position, velocity
+\draw[inward] (-5.5, 2.4) -- (-5.5, 0.95);
+\node[align=center, font=\small] at (-5.5, 2.85)
+  {\textbf{mass} $\cdot$ \textbf{position}\\[-2pt]\textbf{velocity}};
 
-% Arrow: right → ball
-\draw[inward] (-1.8, 0) -- ({-4.075+1.1}, 0);
-\node[align=center, font=\small] at (-1.35, 0)
-  {momentum $\mathbf{p}$};
+% Right label: momentum p  (well clear of divider at x=-1.5)
+\draw[inward] (-3.3, 0) -- (-4.55, 0);
+\node[align=center, font=\small, anchor=west] at (-3.25, 0)
+  {\textbf{momentum}\\[-2pt]$\mathbf{p}$};
 
-% Arrow: left → ball
-\draw[inward] (-6.35, 0) -- ({-4.075-1.1}, 0);
-\node[align=center, font=\small] at (-6.8, 0)
-  {charge $q$};
+% Left label: charge q  (well clear of left edge)
+\draw[inward] (-7.7, 0) -- (-6.45, 0);
+\node[align=center, font=\small, anchor=east] at (-7.75, 0)
+  {\textbf{charge}\\[-2pt]$q$};
 
 % Panel caption
-\node[font=\itshape\small, align=center] at (-4.075, -3.2)
-  {Properties reside \emph{in} the object};
+\node[font=\itshape\small, align=center, text width=6.5cm] at (-5.5, -3.8)
+  {Properties reside \emph{in} the object\\[-2pt]
+   --- intrinsic, locally possessed};
 
-%% ---- CENTER DIVIDER ----
-\draw[panelborder, line width=1.0pt] (0,-4.0) -- (0, 4.0);
+%% ---- CENTER DIVIDER (Bell's theorem strip) ----
+\draw[panelborder, line width=1.0pt, dashed] (-1.5,-4.5) -- (-1.5, 4.5);
+\draw[panelborder, line width=1.0pt, dashed] ( 1.5,-4.5) -- ( 1.5, 4.5);
 
-% Bell's theorem label on divider
-\node[draw=panelborder, fill=bgcream, font=\small, inner sep=3pt,
-      align=center] at (0, 0)
-  {Bell's\\theorem $\rightarrow$};
+% Bell's theorem callout (wider — fits the divider strip)
+\node[draw=panelborder, fill=bgcream, font=\small\bfseries,
+      inner sep=5pt, align=center, text width=2.4cm]
+  at (0, 0)
+  {Bell's\\theorem\\$\Longrightarrow$};
 
 %% ---- RIGHT PANEL: Relational Ontology ----
 \fill[bgcream!80!procamber!20, draw=panelborder, line width=0.7pt]
-  (0.15,-4.0) rectangle (8.0, 4.0);
+  (1.5,-4.5) rectangle (9.5, 4.5);
 
 % Panel title
-\node[procamber!80!black, font=\bfseries\large, align=center] at (4.075, 3.3)
+\node[procamber!80!black, font=\bfseries\large, align=center] at (5.5, 3.8)
   {Relational Ontology};
 
-% Particle circle (left side of right panel)
+% Particle circle (left side of right panel) — moved left, smaller
 \fill[atomblue!60, draw=atomblue!80!black, line width=0.5pt]
-  (1.9, 0) circle (0.8cm);
-\node[font=\tiny\bfseries, align=center] at (1.9, 0) {Particle};
+  (3.0, 0) circle (0.65cm);
+\node[font=\scriptsize\bfseries, white, align=center] at (3.0, 0) {Particle};
 
-% Detector rectangle (right side of right panel)
+% Detector rectangle (right side of right panel) — moved right
 \fill[gray!50, draw=gray!70, line width=0.5pt]
-  (5.6,-0.45) rectangle (7.2, 0.45);
-\node[font=\tiny\bfseries, align=center] at (6.4, 0) {Detector};
+  (7.4,-0.45) rectangle (8.6, 0.45);
+\node[font=\scriptsize\bfseries, white, align=center] at (8.0, 0) {Detector};
 
-% Double-headed arrow between particle edge and detector left edge
-\draw[relational] (2.7, 0) -- (5.6, 0);
+% Double-headed relational arrow — clean gap between particle and detector
+\draw[relational] (3.7, 0) -- (7.35, 0);
 
-% Label above arrow
-\node[procamber!80!black, font=\small\bfseries, align=center] at (4.15, 0.6)
+% Label above arrow — clear of both circle and detector box
+\node[procamber!80!black, font=\small\bfseries, align=center] at (5.5, 1.05)
   {spin (relative to D)};
 
 % Label below arrow
-\node[procamber!80!black, font=\small\bfseries, align=center] at (4.15,-0.6)
+\node[procamber!80!black, font=\small\bfseries, align=center] at (5.5,-1.05)
   {position (relative to context)};
 
 % Panel caption
-\node[font=\itshape\small, align=center] at (4.075,-3.2)
-  {Properties arise \emph{between} systems};
+\node[font=\itshape\small, align=center, text width=6.5cm] at (5.5, -3.8)
+  {Properties arise \emph{between} systems\\[-2pt]
+   --- constituted through interaction};
 
-%% ---- BOTTOM CAPTION (below whole figure) ----
-\node[font=\itshape, align=center] at (0,-4.75)
+%% ---- BOTTOM CAPTION (well outside both panels) ----
+\node[font=\itshape, align=center] at (0,-5.25)
   {``The universe is not made of things. It is made of relationships.'' --- Ch.\,I};
 
 \end{tikzpicture}
