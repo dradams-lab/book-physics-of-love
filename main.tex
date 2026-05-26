@@ -12,7 +12,8 @@
 
 \documentclass[titlepage]{book}
 
-% ── Font size (13pt — book class only natively supports 10/11/12pt) ──
+% ── Font size (13pt — CM fonts need fix-cm for non-standard sizes) ──
+\usepackage{fix-cm}                      % make CM fonts scalable at any size
 \usepackage[fontsize=13pt]{fontsize}
 
 % ── Encoding & fonts ──────────────────────────────────────
@@ -21,7 +22,8 @@
 \usepackage{cfr-lm}            % Classical LM: old-style figures, elegant serif
 
 % ── Page geometry ─────────────────────────────────────────
-\usepackage[margin=1.25in, top=1.25in, bottom=1.5in]{geometry}
+\usepackage[margin=1.25in, top=1.25in, bottom=1.5in, headheight=30pt]{geometry}
+% headheight=30pt: fancyhdr needs ≥29.18pt for two-line running heads
 \usepackage{setspace}
 \onehalfspacing
 
@@ -135,8 +137,9 @@
   \begin{enumerate}[label=(\emph{\alph*})]#1\end{enumerate}}
 
 % Drop-cap first word of a chapter opening
+% Note: realheight removed — it triggers a warning when arg2 is empty (ch06)
 \newcommand{\firstword}[2]{%
-  \lettrine[lines=3,nindent=0em,findent=0.5em,realheight]{#1}{#2}}
+  \lettrine[lines=3,nindent=0em,findent=0.5em]{#1}{#2}}
 
 % ── Roman numeral chapter numbers ─────────────────────────
 \renewcommand{\thechapter}{\Roman{chapter}}
