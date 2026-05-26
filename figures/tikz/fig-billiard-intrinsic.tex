@@ -18,7 +18,7 @@
 
 %% Background felt rectangle
 \fill[feltgreen!25, draw=panelborder, line width=0.6pt]
-  (-4.8,-3.5) rectangle (4.8,3.5);
+  (-4.8,-4.0) rectangle (4.8,3.5);
 
 %% Billiard ball with ball shading
 \shade[ball color=substblue!70!black] (0,0) circle (1.4cm);
@@ -57,8 +57,8 @@
 \node[align=center] at (-3.25, 0)
   {\textbf{charge}\\[1pt]\small $q$};
 
-%% Caption below ball
-\node[emphred, font=\itshape, align=center] at (0,-2.6)
+%% Caption below ball — positioned well below lower labels (~y=-2.37)
+\node[emphred, font=\itshape, align=center] at (0,-3.35)
   {Properties belong to the ball --- independent of everything else};
 
 \end{tikzpicture}
