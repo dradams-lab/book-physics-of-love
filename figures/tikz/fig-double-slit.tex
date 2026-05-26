@@ -14,9 +14,9 @@
 \begin{tikzpicture}[>=Stealth]
 
 %% ── background ──────────────────────────────────────────────────────────────
-\fill[bgcream,rounded corners=4pt] (-0.8,-4.2) rectangle (11.2,3.8);
+\fill[bgcream,rounded corners=4pt] (-0.8,-4.5) rectangle (11.2,3.8);
 \draw[panelborder,rounded corners=4pt,line width=0.6pt]
-  (-0.8,-4.2) rectangle (11.2,3.8);
+  (-0.8,-4.5) rectangle (11.2,3.8);
 
 %% ── concentric wave arcs from source ────────────────────────────────────────
 \foreach \r in {0.5,1.0,1.5,2.0}{%
@@ -101,9 +101,9 @@
   \draw[gray!50,line width=0.4pt] (0.30,-0.65) rectangle (1.70, 0.25);
 \end{scope}
 
-%% ── figure caption (below Barrier/Screen labels) ────────────────────────────
-\node[font=\small\itshape,text width=10cm,align=center]
-  at (5.2,-3.85)
+%% ── figure caption (single-line, well below Barrier/Screen labels) ─────────
+\node[font=\small\itshape,text width=13cm,align=center]
+  at (5.2,-4.1)
   {Each photon goes through both slits --- and interferes with itself.};
 
 \end{tikzpicture}
