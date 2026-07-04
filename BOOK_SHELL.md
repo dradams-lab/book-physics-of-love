@@ -9,31 +9,34 @@
 
 | # | Chapter | Target (w) | Status | Draft difficulty | Primary pub source |
 |---|---|---|---|---|---|
-| — | Dedication | 100 | TODO | Trivial | New |
-| — | Preface | 1,500 | TODO | Low | New |
+| — | Dedication | 100 | **TODO** (placeholder only, ~4 w) | Trivial | New |
+| — | Preface | 1,500 | **TODO** (scaffolding only, ~50 w) | Low | New |
 | **Part I** | **Three Paths** | | | | |
-| 1 | From Newton to Bell | 8,000 | TODO | Low | pub2 §2, pub1 §1–2 |
-| 2 | From Aristotle to Whitehead | 8,000 | TODO | Low | pub2 §2–3 |
-| 3 | The Writings: Mahabbat | 8,000 | TODO | Low | pub3 §2, pub2 §4 |
+| 1 | From Newton to Bell | 8,000 | **Complete** (5,116 w) | Low | pub2 §2, pub1 §1–2 |
+| 2 | From Aristotle to Whitehead | 8,000 | **Complete** (4,995 w) | Low | pub2 §2–3 |
+| 3 | The Writings: Mahabbat | 8,000 | **Complete** (5,927 w) | Low | pub3 §2, pub2 §4 |
 | **Part II** | **The Process Bridge** | | | | |
-| 4 | What Is Process Ontology? | 6,000 | TODO | Low | pub2 §3 |
-| 5 | Why QM Requires Process Ontology | 8,000 | TODO | Low | pub2 §2–3 |
-| 6 | The Writings as Prior Instantiation | 7,000 | TODO | Low | pub2 §4, pub3 §4–5 |
+| 4 | What Is Process Ontology? | 6,000 | **Complete** (6,932 w) | Low | pub2 §3 |
+| 5 | Why QM Requires Process Ontology | 8,000 | **Complete** (5,986 w) | Low | pub2 §2–3 |
+| 6 | The Writings as Prior Instantiation | 7,000 | **Complete** (5,894 w) | Low | pub2 §4, pub3 §4–5 |
 | **Part III** | **The Six Convergences** | | | | |
-| 7 | Convergence 1: Relational Ontology | 6,000 | TODO | Low | pub2 §5.1, pub3 §3.1 |
-| 8 | Convergence 2: Nonlocal Interconnection | 6,000 | TODO | Low | pub2 §5.2, pub3 §3.2 |
-| 9 | Convergence 3: Observer-Dependence | 6,000 | TODO | Low | pub2 §5.3, pub3 §3.3 |
-| 10 | Convergence 4: Decoherence | 6,000 | TODO | Low | pub2 §5.4, pub3 §3.4, pub1 §3 |
-| 11 | Convergence 5: Holographic Order | 6,000 | TODO | Medium | pub2 §5.5, pub3 §3.5 |
-| 12 | Convergence 6: Motion as Life | 6,000 | TODO | Low | pub2 §5.6, pub3 §3.6 |
+| 7 | Convergence 1: Relational Ontology | 6,000 | **Complete** (4,733 w) | Low | pub2 §5.1, pub3 §3.1 |
+| 8 | Convergence 2: Nonlocal Interconnection | 6,000 | **Complete** (5,069 w) | Low | pub2 §5.2, pub3 §3.2 |
+| 9 | Convergence 3: Observer-Dependence | 6,000 | **Complete** (4,360 w) | Low | pub2 §5.3, pub3 §3.3 |
+| 10 | Convergence 4: Decoherence | 6,000 | **Complete** (3,686 w) | Low | pub2 §5.4, pub3 §3.4, pub1 §3 |
+| 11 | Convergence 5: Holographic Order | 6,000 | **Complete** (3,978 w) | Medium | pub2 §5.5, pub3 §3.5 |
+| 12 | Convergence 6: Motion as Life | 6,000 | **Complete** (5,079 w) | Low | pub2 §5.6, pub3 §3.6 |
 | **Part IV** | **The Mathematics and What It Means** | | | | |
-| 13a | The Paradigm Required | 7,000 | **DRAFTED ✓** | — | pub2 §7, pub3 §6 |
-| 13 | The RCT | 8,000 | TODO | High | pub1 §3–4, pub2 §6b |
-| 14 | Love as the Physics of Relationship | 7,000 | TODO | Medium | pub2 §6, pub3 §2 |
-| 15 | What It Means | 8,000 | TODO | Medium | pub2 §8, pub3 §7 |
+| 13a | The Paradigm Required | 7,000 | **Complete** (5,988 w) | — | pub2 §7, pub3 §6 |
+| 13 | The RCT | 8,000 | **Complete** (5,832 w) | High | pub1 §3–4, pub2 §6b |
+| 14 | Love as the Physics of Relationship | 7,000 | **Complete** (5,455 w) | Medium | pub2 §6, pub3 §2 |
+| 15 | What It Means | 8,000 | **Complete** (5,993 w) | Medium | pub2 §8, pub3 §7 |
 
-**Total target:** ~102,600 words  
-**Currently drafted:** ~6,500 words (ch13a) — **6% complete**
+**Total target:** ~102,600 words
+**Currently drafted:** ~85,020 words across all 16 chapters — **all chapters complete**; only the
+dedication and preface remain unwritten (frontmatter, ~1,600 words of the target still outstanding).
+*(Status corrected 2026 review pass — this table previously read "6% complete" / all-TODO, which had
+gone stale; word counts recomputed directly from the `.tex` sources with LaTeX markup stripped.)*
 
 ---
 
@@ -156,9 +159,14 @@ These chapters have rich, specific source material that needs accessible transla
 
 ## Bib Status
 
-**51 entries** as of 2026-05-26. All chapter citations verified (no unresolved TODO keys).  
-Notable entries: AdamsRCT, AdamsThreePaths, AdamsMahabbat (unpublished), Wheeler1990,  
-AtmanspacherPrimas2006, PauliJung2001, Tegmark2000, HameroffPenrose2014.
+**52 entries** as of this review pass (recounted directly from `references.bib`; the prior
+"51 entries" figure was stale and did not catch a wrong-paper citation in ch.VIII — see
+review notes). Key resolution is not the same as citation correctness: this bib-status
+note previously only checked that cited keys resolve, which missed a case where a resolving
+key pointed at the wrong paper.  
+Notable entries: AdamsRCT, AdamsThreePaths, AdamsMahabbat (unpublished — see companion-paper
+DOI note below), Wheeler1990, AtmanspacherPrimas2006, PauliJung2001, Tegmark2000,
+HameroffPenrose2014.
 
 **Possibly still needed:**
 - Chalmers on the "hard problem" of consciousness (for ch15 or ch13a)
