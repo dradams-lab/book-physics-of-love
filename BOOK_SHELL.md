@@ -29,11 +29,11 @@
 | **Part IV** | **The Mathematics and What It Means** | | | | |
 | 13a | The Paradigm Required | 7,000 | **Complete** (7,111 w) | — | pub2 §7, pub3 §6 |
 | 13 | The RCT | 8,000 | **Complete** (8,077 w) | High | pub1 §3–4, pub2 §6b |
-| 14 | Love as the Physics of Relationship | 7,000 | **Complete** (7,109 w) | Medium | pub2 §6, pub3 §2 |
+| 14 | Love as the Physics of Relationship | 7,000 | **Complete** (7,232 w) | Medium | pub2 §6, pub3 §2 |
 | 15 | What It Means | 8,000 | **Complete** (8,098 w) | Medium | pub2 §8, pub3 §7 |
 
 **Total target:** ~102,600 words
-**Currently drafted:** ~113,817 words (by `wc -w`) across all 16 chapters — **all chapters complete**; only the
+**Currently drafted:** ~113,940 words (by `wc -w`) across all 16 chapters — **all chapters complete**; only the
 dedication and preface remain unwritten (frontmatter, ~1,600 words of the target still outstanding).
 *(Status corrected 2026 review pass — this table previously read "6% complete" / all-TODO, which had
 gone stale; word counts recomputed directly from the `.tex` sources with LaTeX markup stripped.)*
