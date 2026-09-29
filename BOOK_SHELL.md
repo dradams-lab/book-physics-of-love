@@ -13,12 +13,12 @@
 | — | Preface | 1,500 | **TODO** (scaffolding only, ~50 w) | Low | New |
 | **Part I** | **Three Paths** | | | | |
 | 1 | From Newton to Bell | 8,000 | **Complete** (8,135 w) | Low | pub2 §2, pub1 §1–2 |
-| 2 | From Aristotle to Whitehead | 8,000 | **Complete** (8,117 w) | Low | pub2 §2–3 |
+| 2 | From Aristotle to Whitehead | 8,000 | **Complete** (8,175 w) | Low | pub2 §2–3 |
 | 3 | The Writings: Mahabbat | 8,000 | **Complete** (8,114 w) | Low | pub3 §2, pub2 §4 |
 | **Part II** | **The Process Bridge** | | | | |
 | 4 | What Is Process Ontology? | 6,000 | **Complete** (7,212 w) | Low | pub2 §3 |
-| 5 | Why QM Requires Process Ontology | 8,000 | **Complete** (8,099 w) | Low | pub2 §2–3 |
-| 6 | The Writings as Prior Instantiation | 7,000 | **Complete** (7,124 w) | Low | pub2 §4, pub3 §4–5 |
+| 5 | Why QM Points to Process Ontology | 8,000 | **Complete** (8,098 w) | Low | pub2 §2–3 |
+| 6 | The Writings as Prior Instantiation | 7,000 | **Complete** (7,123 w) | Low | pub2 §4, pub3 §4–5 |
 | **Part III** | **The Six Convergences** | | | | |
 | 7 | Convergence 1: Relational Ontology | 6,000 | **Complete** (6,125 w) | Low | pub2 §5.1, pub3 §3.1 |
 | 8 | Convergence 2: Nonlocal Interconnection | 6,000 | **Complete** (6,049 w) | Low | pub2 §5.2, pub3 §3.2 |
@@ -33,7 +33,7 @@
 | 15 | What It Means | 8,000 | **Complete** (8,098 w) | Medium | pub2 §8, pub3 §7 |
 
 **Total target:** ~102,600 words
-**Currently drafted:** ~113,940 words (by `wc -w`) across all 16 chapters — **all chapters complete**; only the
+**Currently drafted:** ~113,996 words (by `wc -w`) across all 16 chapters — **all chapters complete**; only the
 dedication and preface remain unwritten (frontmatter, ~1,600 words of the target still outstanding).
 *(Status corrected 2026 review pass — this table previously read "6% complete" / all-TODO, which had
 gone stale; word counts recomputed directly from the `.tex` sources with LaTeX markup stripped.)*
@@ -123,7 +123,7 @@ These chapters have rich, specific source material that needs accessible transla
 10. **Ch. 14** — Love as Physics (pub2 §6 + pub3 §2; needs narrative bridge)
 11. **Ch. 11** — Holographic Order (pub2/pub3 §5 — needs development)
 12. **Ch. 1** — From Newton to Bell (pub2 §2 + pub1 §1; needs narrative arc)
-13. **Ch. 5** — Why QM Requires Process (pub2 §2–3; needs four-step argument expanded)
+13. **Ch. 5** — Why QM Points to Process (pub2 §2–3; needs four-step argument expanded)
 
 ### Tier 3 — High effort, draft last
 14. **Ch. 15** — What It Means (synthesis; needs all other chapters done)
