@@ -22,9 +22,9 @@
 | **Part III** | **The Six Convergences** | | | | |
 | 7 | Convergence 1: Relational Ontology | 6,000 | **Complete** (4,733 w) | Low | pub2 §5.1, pub3 §3.1 |
 | 8 | Convergence 2: Nonlocal Interconnection | 6,000 | **Complete** (5,069 w) | Low | pub2 §5.2, pub3 §3.2 |
-| 9 | Convergence 3: Observer-Dependence | 6,000 | **Complete** (4,360 w) | Low | pub2 §5.3, pub3 §3.3 |
-| 10 | Convergence 4: Decoherence | 6,000 | **Complete** (3,686 w) | Low | pub2 §5.4, pub3 §3.4, pub1 §3 |
-| 11 | Convergence 5: Holographic Order | 6,000 | **Complete** (3,978 w) | Medium | pub2 §5.5, pub3 §3.5 |
+| 9 | Convergence 3: Observer-Dependence | 6,000 | **Complete** (6,134 w) | Low | pub2 §5.3, pub3 §3.3 |
+| 10 | Convergence 4: Decoherence | 6,000 | **Complete** (6,063 w) | Low | pub2 §5.4, pub3 §3.4, pub1 §3 |
+| 11 | Convergence 5: Holographic Order | 6,000 | **Complete** (6,106 w) | Low | pub2 §5.5, pub3 §3.5 |
 | 12 | Convergence 6: Motion as Life | 6,000 | **Complete** (5,079 w) | Low | pub2 §5.6, pub3 §3.6 |
 | **Part IV** | **The Mathematics and What It Means** | | | | |
 | 13a | The Paradigm Required | 7,000 | **Complete** (5,988 w) | — | pub2 §7, pub3 §6 |

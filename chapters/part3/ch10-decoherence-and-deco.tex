@@ -63,7 +63,8 @@ The system now behaves as if it had been in one definite classical state all alo
 This is the quantum-to-classical transition, and decoherence explains it with remarkable quantitative precision~\citep{Zurek2003}.
 The transition from quantum to classical is not mysterious, not a matter of special measurement moments.
 It is the continuous, environmental process by which quantum coherence disperses from the local into the global.
-For macroscopic objects in ordinary environments, it is essentially instantaneous: a dust grain in sunlight decoheres in roughly $10^{-31}$ seconds~\citep{Zurek2003}.
+For macroscopic objects in ordinary environments, it is essentially instantaneous.
+Even a grain of dust, bathed in air and light, has the coherence between two of its possible locations suppressed so quickly that no conceivable instrument could catch the superposition before it is gone, and the rate grows steeply with the size of the object and the separation between the alternatives~\citep{Zurek2003}.
 This is why we do not see quantum superpositions of chairs and tables.
 The coherence leaks away before it can be observed.
 
@@ -78,22 +79,80 @@ It is the local coherence --- the bounded, accessible quantum form that made the
 The form perishes.
 The underlying information does not.
 
-In the framework of the Relational Coherence Framework that I have developed elsewhere~\citep{AdamsRCT}, this transition can be described in terms of the Affinity Operator.
-The Affinity Operator $\alpha$ captures the degree of quantum relational coherence between two systems --- the strength of their relational bond at the quantum level.
-As decoherence proceeds, $\alpha \to 0$ for the relevant degrees of freedom.
+In the Relational Coherence Framework that I have developed elsewhere~\citep{AdamsRCT}, this transition can be described in terms of the Affinity Operator.
+The Affinity Operator $\alpha$ is a matrix: it collects the off-diagonal entries of the system's density matrix, written in the pointer basis that the environment itself singles out.
+Its scalar summary, the scalar affinity $\bar{\alpha}$, compresses those entries into a single number between $0$ and $1$ --- the degree of quantum relational coherence the system still holds locally.
+As decoherence proceeds, $\bar{\alpha} \to 0$ for the relevant degrees of freedom.
 The quantum relational affinity between the system's internal degrees of freedom is extinguished; what remains is the classical-level relational landscape, without the richer quantum relational structure that superposition and entanglement enable.
 The relational bond dissolves, and with it, the quantum form that the bond sustained.
 
 Notice that the physical picture here is irreversible in practice, though not in principle.
 Quantum mechanics is, at the fundamental level, time-symmetric.
 Decoherence, however, is practically irreversible: recovering the distributed quantum coherence from the environment would require near-perfect knowledge of and control over an astronomical number of environmental degrees of freedom.
-This practical irreversibility is the basis of the thermodynamic arrow of time: the past is fixed not because physics forbids its reversal, but because the dispersal of coherence into the environment is so complete, so rapidly, that the path back is beyond any realistic reach.
+This practical irreversibility is closely bound up with the thermodynamic arrow of time, though it does not by itself explain that arrow; physicists generally trace both back to the very low-entropy state in which our universe began.
+Given that starting point, the past is fixed not because physics forbids its reversal, but because the dispersal of coherence into the environment is so complete, so rapidly, that the path back is beyond any realistic reach.
 The past is done.
 The relational coherence that constituted a past form has dispersed into the world, and while it is not annihilated, it is inaccessible.
 
 What exists now is the consequence: the environmental entanglements, the correlations written into the world by the system's quantum history.
 The form is gone.
 Its trace persists.
+
+\subsection*{A Worked Example: Watching Coherence Leak Away}
+
+Because so much of the argument of this chapter rests on the claim that decoherence moves coherence rather than destroying it, I want to walk through the simplest case slowly enough that the reader can see the bookkeeping for themselves.
+
+Take a single qubit, the basic unit of quantum information, and prepare it in an equal superposition of its two pointer states, which I will call $0$ and $1$.
+In the language of the companion paper, this state has scalar affinity $\bar{\alpha} = 1$: its coherence is as large as a qubit's coherence can be~\citep{AdamsRCT}.
+Now let the qubit interact with its surroundings in the gentlest possible way.
+The interaction does not flip the qubit from $0$ to $1$ or back; it does not add or remove energy.
+All it does is leave a small mark on the environment that depends on which pointer state the qubit is in.
+A stray photon scatters slightly differently, a nearby nuclear spin precesses slightly differently, a fluctuating field picks up a slightly different phase.
+Physicists call this pure dephasing, and it is the cleanest example of decoherence there is~\citep{NielsenChuang2000}.
+
+After the interaction, the joint state of qubit and environment is still a single, perfectly definite quantum state.
+It has the form: qubit in $0$ with the environment in some condition $E_0$, superposed with qubit in $1$ with the environment in some slightly different condition $E_1$.
+If I now ask what the qubit looks like on its own, ignoring the environment, the answer turns on a single quantity: how distinguishable $E_0$ is from $E_1$.
+For a qubit, the scalar affinity turns out to equal the overlap between those two environmental conditions.
+If the environment's two versions are identical, the environment has recorded nothing, and $\bar{\alpha}$ stays at $1$.
+If they are perfectly distinguishable, the environment holds a complete record of which pointer state the qubit is in, and $\bar{\alpha}$ falls to $0$.
+In between, $\bar{\alpha}$ tracks how much of the ``which-state'' question the world has not yet answered.
+
+As more and more environmental degrees of freedom are touched, each adding its own small mark, the overlap shrinks, and in the standard models of dephasing it shrinks exponentially in time.
+The rate is set by the strength of the coupling.
+For a well-isolated qubit in a modern laboratory the coherence may survive for a small fraction of a second; for anything large and warm it is gone almost at once.
+
+Three features of this example matter for everything that follows.
+The first is that the probabilities of finding the qubit in $0$ or $1$ never change.
+The diagonal entries of the density matrix, which carry those probabilities, are untouched by pure dephasing.
+What changes is only the relation between the two alternatives, the phase relationship that allowed them to interfere.
+The ``material'' of the state, if I may use that word loosely, stays where it was; its relational organization is what dissolves.
+
+The second feature is that nothing has been lost from the universe as a whole.
+If the qubit and its environment start out in a pure joint state, they remain in one at every moment, which is the technical way of saying that the whole contains the maximum possible information and none of it has leaked anywhere.
+(When the environment starts out mixed, as real environments do, the corresponding statement is that the total entropy of the whole never changes under this evolution.)
+In the pure case, once decoherence is complete, the qubit on its own has gained exactly one bit of entropy, and that bit is matched by exactly one bit of entanglement between qubit and environment.
+The bookkeeping balances.
+Local coherence has been converted, entry for entry, into system--environment correlation.
+
+The third feature is that the environment now knows something.
+The record of which pointer state the qubit occupies is written into the world.
+Zurek and his collaborators have pushed this observation into a program known as quantum Darwinism: in realistic settings the environment does not hold one record of a system's pointer state but many redundant copies, spread through countless photons and molecules, and this redundancy is why many independent observers can each intercept a small fragment of the environment and agree about what they see~\citep{Zurek2003}.
+When I look at a chair, I do not measure the chair directly.
+I intercept a tiny fraction of the light it has scattered, one fragment of a record the world has already made many times over.
+
+This redundancy also explains, more precisely than I did above, why decoherence is irreversible in practice.
+There is a laboratory technique called the spin echo, in which a carefully timed pulse causes spins that have drifted out of phase to drift back into phase, and the lost coherence reappears.
+The echo works when the dephasing came from something static and known, such as a fixed variation in the magnetic field across a sample.
+It cannot undo genuine environmental decoherence, because the record is no longer in the system to be reversed.
+It is in the environment, copied many times, and each copy would have to be retrieved and unwound together.
+Reversal is forbidden by no law, but it would require control over the whole of the world that has taken note.
+
+Decoherence has also been watched happening.
+Experimental groups in Vienna have sent large carbon molecules, fullerenes of sixty or seventy atoms, through interference gratings and observed the fringes that only coherent superposition can produce.
+When they let a little background gas into the apparatus, so that the molecules suffered occasional collisions, or when they heated the molecules so that they emitted thermal radiation on the way through, the fringes faded.
+In each case the fading tracked how much which-path information the collisions or the emitted light could carry away.
+Decoherence here is a measured, controllable effect: the more the world learns about the path, the less the molecule can interfere with itself.
 
 \section{The Process-Philosophical View: Perishing and the Objective Past}
 \label{sec:ch10-process}
@@ -164,11 +223,32 @@ In process ontology, what persists is the prehended character of past occasions:
 In both cases, what is preserved is the relational record.
 The form is gone, but the relational consequence of the form --- the change the form made in its world --- remains.
 
+I should mark two places where the parallel is looser than it first appears.
+The first concerns scope.
+In Whitehead's scheme every actual occasion perishes; perishing is simply what completion is, and there are no exceptions.
+Decoherence, by contrast, is one physical process among others.
+A well-isolated quantum system can evolve coherently for a long time without decohering at all, and the whole enterprise of quantum computing depends on that being so.
+The closer physical counterpart to Whitehead's universal perishing is the settling of a definite relational fact through interaction, which is the correspondence Michael Epperson has worked out in detail between the phases of concrescence and the decoherence-based account of quantum measurement~\citep{Epperson2004}.
+What I am comparing in this chapter is narrower: the dissolution of a society, an enduring pattern, when the relations that reproduce it fail.
+That comparison holds up well.
+The comparison between decoherence and the perishing of each individual occasion is a separate claim, and I do not rest anything on it here.
+
+The second concerns what the past does.
+For Whitehead the perished occasion is not merely stored; it is causally effective.
+Every new occasion must take account of its past, and the past enters into what the new occasion becomes.
+Physics splits the corresponding question in two.
+The redundant records of a system's pointer state are consulted all the time; that, as quantum Darwinism shows, is how we come to see anything at all.
+But the coherence itself, the phase relation that made the superposition a superposition, ends up spread through correlations involving so many degrees of freedom at once that in most cases it plays no identifiable role in what happens next.
+The two frameworks agree that the past is conserved and fixed.
+They differ in how much work they assign to it.
+Whitehead's past is an active inheritance; the dispersed coherence is, for most practical purposes, an archive no one consults.
+I take this difference to be real, and I will return to it when I ask what the convergence can and cannot bear.
+
 \section{The Bahá'í View: Dissension, Disintegration, and What Persists}
 \label{sec:ch10-bahai}
 
 The \bahai writings approach the dissolution of forms from a perspective that is neither physics nor technical philosophy, but that makes the same structural distinction with remarkable precision.
-\AbdulBaha, in a talk given in New York in 1912, offers what is perhaps the clearest single statement of the principle:
+\AbdulBaha, in a talk given at All-Souls Church in Chicago on 5 May 1912, offers what is perhaps the clearest single statement of the principle:
 
 \begin{quote}
 Every contingent and phenomenal being is a composition of distinct elements.
@@ -194,11 +274,8 @@ The constituent degrees of freedom do not disappear.
 But the affinity among them, the particular relational organization that constituted the quantum form, is gone.
 The form perishes, even though the elements remain.
 
-\AbdulBaha adds a qualification in another talk, and it is the qualification that makes the convergence formally precise:
-
-\begin{quote}
-Total annihilation is impossible.~\citep[Talk 38]{PUP}
-\end{quote}
+\AbdulBaha adds a qualification in another talk, given the day before to the Theosophical Society at Northwestern University in Evanston, and it is the qualification that makes the convergence formally precise.
+Some people, he observes, imagine that death is annihilation, and he calls this a mistaken idea, for, in his words, ``total annihilation is an impossibility''~\citep[Talk 38]{PUP}.
 
 Read in context, this is a structural claim with sharp technical content.
 It is not merely a consoling assurance that nothing is truly lost.
@@ -220,25 +297,52 @@ Relational affinities fail.
 And when they do, the being that was organized by those affinities does not vanish into nothing.
 It disperses, transforms, enters into new relations.
 
-\AbdulBaha also makes a related claim that connects to the temporal asymmetry we saw in physics and process philosophy.
-He speaks in several places of the direction of existence toward greater relational integration, toward the fuller expression of potential, toward what the writings call the progressive revelation of divine attributes in created things.
-The direction of becoming --- from less to more integrated, from simpler to richer relational organization --- is not reversible.
-Forms that dissolve do not simply reassemble.
-The history of the universe is not symmetric.
-The past is fixed; the future is open to new and richer forms of relational organization.
+\subsection*{The Rose and the Atom}
 
-There is also a theme in the \bahai writings that bears directly on what I called the ``relational record'' --- the trace that a dissolved form leaves in the world.
-The writings consistently affirm that the effects of every act, every relation, every form that has existed, persist in the world beyond the form's dissolution.
-This is not merely a moral claim (actions have consequences).
-It is an ontological claim: the relational bonds that a form participated in while it existed alter the relational landscape permanently.
+The Evanston talk does not leave the principle abstract, and its illustrations repay close reading because they show exactly what \AbdulBaha takes to perish and what he takes to persist.
+He describes existence as the grouping of elements into a form or body, and nonexistence as the decomposing of those groupings.
+He then follows a single atom of soil on its way through the kingdoms of nature: taken up into a plant, eaten by an animal, incorporated at last into a human body.
+At each transition, he says, the atom may be said to have died to the kingdom it left, but it has undergone transformation and not annihilation.
+Death, on this account, names a change of relational setting, a passage from one form of composition into another.
+
+The second illustration is closer to hand.
+Holding a flower, he tells his audience: ``This rose in my hand will become disintegrated and its symmetry destroyed, but the elements of its composition remain changeless''~\citep[Talk 38]{PUP}.
+What is destroyed in that sentence is the symmetry, the ordered arrangement of the parts.
+The rose as a rose is a pattern, and the pattern goes.
+What remains are the constituents, now free to enter new compositions.
+
+Two further points in the same talk bear on the convergence.
+The first is that \AbdulBaha treats nonexistence as relative.
+Dust, he says, is nonexistent compared with a living human being, yet in its own sphere it has its mineral being.
+To call something nonexistent is to measure it against a richer degree of organization and find it lacking; it is not to say that nothing is there.
+This is a close structural cousin of the physicist's statement that a decohered system has lost its quantum form relative to any local observer while the global state remains intact.
+In both cases ``gone'' is a judgment made from a particular standpoint about a particular level of organization.
+
+The second point concerns direction.
+\AbdulBaha describes the atom's passage through the kingdoms as an ascent, and says that the perfections of the lower kingdom reappear in the higher, attaining a fuller degree in the upward change~\citep[Talk 38]{PUP}.
+Composition, on this view, has a direction: toward richer and more integrated forms of relational organization.
+Forms that dissolve do not simply reassemble, and the history of created things is not symmetric.
+I would not press this into an exact parallel with the physical arrow of time, which has its own explanation in thermodynamics and cosmology.
+But it shares with physics and with Whitehead the refusal to treat past and future as interchangeable.
+
+I want to be careful here about one step that the talk itself takes and that this chapter does not.
+The Evanston address moves from the conservation of the elements to a conclusion about the human being: that there is no death for man, who is everlasting.
+In the talk the argument runs through the journey of the atom, but elsewhere the \bahai writings ground human survival more deeply, in the teaching that the soul is not a composite of elements and therefore not subject to decomposition at all.
+Either way, it is not something decoherence could establish, and the convergence I am describing does not carry it.
+I take up that teaching in Chapter~\ref{ch:paradigm-required}, and I mention it here only to fence it off.
+
+There is also a theme that bears on what I called the ``relational record'' --- the trace that a dissolved form leaves in the world.
+I read the principle that total annihilation is impossible as extending naturally to relations as well as to elements.
+The relational bonds that a form participated in while it existed alter the relational landscape, and that alteration does not vanish when the form does.
 The world is different because the form existed, and it remains different after the form has gone.
+This is my interpretive extension of the Evanston passage, not a paraphrase of it: \AbdulBaha's own examples concern elements, and the extension to relational traces is the step that brings the principle into contact with quantum information.
 
 This maps onto the quantum informational picture with striking precision.
 Quantum information is conserved.
 The coherence that was the quantum form is not annihilated; it is distributed into the world's entanglements.
 The world retains, encoded in its correlations, the record of every quantum interaction that has occurred.
 The form is gone; its informational trace persists.
-The \bahai claim that total annihilation is impossible, read in this light, is a precise structural claim: the informational trace of every form is conserved in the relational structure of the world, even after the form itself has dissolved.
+The \bahai claim that total annihilation is impossible, read in this light, becomes a structural claim: the informational trace of every form is conserved in the relational structure of the world, even after the form itself has dissolved.
 
 \section{The Structural Isomorphism: Forms Dissolve; Reality Persists}
 \label{sec:ch10-convergence}
@@ -301,12 +405,35 @@ It is a structural feature of how reality is organized.
 A relational universe in which information is conserved, in which the past is objective and inalterable, in which no form's contribution to the relational whole is truly erased --- that is the universe all three traditions are describing.
 Whether the register is the density matrix, the objective past of perished occasions, or the principle that total annihilation is impossible, the architecture is the same.
 
+\subsection*{The Strongest Objection, and the Limits of the Claim}
+
+The most serious objection to this convergence is that the shared structure is too generic to mean much.
+Almost any serious account of change says that things fall apart while something underneath them persists.
+Lavoisier's conservation of mass says it; so does the first law of thermodynamics.
+And \AbdulBaha's own illustration, atoms passing unchanged from rock to tree to animal, sounds more like the chemistry of his day than like quantum information.
+On this view, I have found a very common idea in three places and called it a convergence.
+
+I think the objection is partly right, and I want to concede that part plainly.
+The Evanston talk does not speak of coherence, phase, or entanglement, and it would be a misreading to find quantum information theory in it.
+What survives the objection is the specific shape the three accounts share.
+In each, the thing that perishes is located in relational organization rather than in material, as the dephasing qubit showed: its probabilities never changed, only the relation between its alternatives.
+In each, what is conserved includes the record of relations, not only the stuff that was related; this holds directly for quantum information and for Whitehead's objective past, and for the \bahai text through the interpretive extension I flagged.
+And in each, perishing is asymmetric in time.
+Conservation of mass has none of these features.
+The convergence is modest, but it is more specific than the objection allows.
+
+It is also worth saying what the convergence does not claim.
+It does not claim that decoherence explains death, or that the dissolution of an organism is a quantum process in any useful sense.
+It does not claim that information conserved in the environment is recoverable, or that it preserves anything like the identity, memory, or meaning of the form that left it.
+And it does not claim that the conservation of quantum information supports personal survival.
+The question of the soul turns on whether the soul is a composite form at all, which is a different question, taken up in Chapter~\ref{ch:paradigm-required}.
+
 \begin{convergencemoment}{Decoherence and Decomposition: When Relationships Dissolve}
 Quantum decoherence~\citep{Zurek2003} describes the process by which a quantum system's coherent superposition --- its local quantum form --- disperses into environmental entanglements.
 The off-diagonal density-matrix elements that represent quantum coherence decay toward zero as the system's internal degrees of freedom become correlated with those of its environment.
 The quantum form is lost.
 But the quantum information is globally conserved: distributed throughout the system-environment entanglements, inaccessible locally, but not annihilated.
-In the Relational Coherence Framework~\citep{AdamsRCT}, this is the collapse of the Affinity Operator: $\alpha \to 0$ as relational affinity is extinguished and the system's quantum relational being dissolves into classical separateness.
+In the Relational Coherence Framework~\citep{AdamsRCT}, this is the decay of the scalar affinity: $\bar{\alpha} \to 0$ as relational affinity is extinguished and the system's quantum relational being dissolves into classical separateness.
 
 In process philosophy~\citep{Whitehead1929}, actual occasions perish upon achieving their definite character through concrescence.
 Their perishing is not annihilation but transition: the completed occasion becomes objective datum, part of the permanently settled past from which future occasions will prehend.
