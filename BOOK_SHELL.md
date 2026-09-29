@@ -73,7 +73,7 @@ gone stale; word counts recomputed directly from the `.tex` sources with LaTeX m
 | §7 non-decoherent-soul | Internal/external relational distinction, Leibniz | Ch. 13a §2 (used ✓) |
 | §8 conclusion | Synthesis, what the convergence establishes | Ch. 15 |
 
-### pub3 (Mahabbat and the Affinity Tensor)
+### pub3 (Mahabbat and the Two Wings)
 `pub3-bahai-studies/sections/`
 
 | Pub section | Content | → Book chapter |
