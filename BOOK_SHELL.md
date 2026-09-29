@@ -20,7 +20,7 @@
 | 5 | Why QM Requires Process Ontology | 8,000 | **Complete** (5,986 w) | Low | pub2 §2–3 |
 | 6 | The Writings as Prior Instantiation | 7,000 | **Complete** (5,894 w) | Low | pub2 §4, pub3 §4–5 |
 | **Part III** | **The Six Convergences** | | | | |
-| 7 | Convergence 1: Relational Ontology | 6,000 | **Complete** (4,733 w) | Low | pub2 §5.1, pub3 §3.1 |
+| 7 | Convergence 1: Relational Ontology | 6,000 | **Complete** (6,125 w) | Low | pub2 §5.1, pub3 §3.1 |
 | 8 | Convergence 2: Nonlocal Interconnection | 6,000 | **Complete** (5,069 w) | Low | pub2 §5.2, pub3 §3.2 |
 | 9 | Convergence 3: Observer-Dependence | 6,000 | **Complete** (6,134 w) | Low | pub2 §5.3, pub3 §3.3 |
 | 10 | Convergence 4: Decoherence | 6,000 | **Complete** (6,063 w) | Low | pub2 §5.4, pub3 §3.4, pub1 §3 |
