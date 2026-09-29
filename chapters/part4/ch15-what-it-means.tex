@@ -14,10 +14,11 @@ identical description of reality.  The description has three interlocking parts.
 First: existence is not a property of isolated things but an achievement of
 relationship.  Nothing exists in isolation; things have the properties they have
 by virtue of their relational situation.  Bell's theorem \citep{Bell1964} and the
-experiments it spawned \citep{Aspect1982,Zeilinger2023Nobel} establish this for
+experiments it spawned \citep{Aspect1982,Zeilinger2023Nobel} support this for
 the quantum domain not as philosophical preference but as empirical constraint:
-no theory that assigns definite pre-relational properties to separated particles
-can reproduce what nature actually does.  Whitehead reaches the same conclusion
+no theory that assigns definite pre-relational properties to separated particles,
+and lets each particle answer only to its local surroundings, can reproduce
+what nature actually does.  Whitehead reaches the same conclusion
 from the analysis of process: every actual occasion is constituted by its
 prehensions --- its relational absorptions of what has come before --- and has
 no existence prior to or independent of that relational act
@@ -33,38 +34,54 @@ of quantum states --- these are not embarrassments to be explained away but
 symptoms of something real: properties are not in things waiting to be read
 off; they are realized through relational encounters.  Relational quantum
 mechanics \citep{Rovelli1996} makes this precise.  The Affinity Operator formalism
-I develop in \citet{AdamsRCT} gives it a mathematical representation.  Process
+I develop in \citet{AdamsRCT} gives one part of it a mathematical representation:
+it tracks how far a system's encounters with its environment have settled a
+definite property, and how much indefiniteness remains.  Process
 philosophy says the same thing: the determinate character of an actual occasion
 is achieved only in its completion; what it ``is'' emerges from what it
 \emph{does} relationally.  The \bahai texts: motion is the expression of
 life, and the kind of being something achieves is the kind of relational motion
 it undergoes.
 
-Third: there is a single relational principle --- a force, a drive, a creative
-ground --- that performs, in each tradition's vocabulary, the same structural
-work of sustaining integrated being against dissolution.  Quantum physics
-measures this with decoherence rates and entanglement fidelities and
-formalizes it as the Affinity Operator.  Whitehead calls it \emph{eros}: the
+Third: there is a single relational principle --- a drive, a creative
+ground --- that forms integrated being and sustains it against dissolution.
+Whitehead calls it \emph{eros}: the
 creative advance into novelty, the lure toward richer relational integration,
 the force that prevents reality from collapsing into mere multiplicity
 \citep{Whitehead1933}.  The \bahai writings call it \mahabbat: the creative
 foundation that, in its most rarefied form, is the love of God overflowing
 into creation, and that, at every lesser degree, is what holds things in
 coherence, in life, and in motion toward their fulfillment \citep{PUP,SummonsLordHosts}.
+Physics has no force or drive of this kind.  What it has is the matching
+structure without the drive:
+interaction knits quantum systems into wholes that cannot be described part by
+part, and the same kind of interaction, with an environment no one keeps track
+of, disperses a system's local coherence into correlations with its
+surroundings, which is the dissolution of quantum form that decoherence theory
+describes \citep{Zurek2003}.  The Affinity Operator keeps the books on that
+exchange \citep{AdamsRCT}.
 
 The convergence is not analogical.  I am not saying that quantum entanglement
 \emph{resembles} love in some evocative, impressionistic way.  I am saying
 that the formal structure that physics, process philosophy, and the \bahai
 writings each deploy to describe the constitution of existence is the same
 formal structure.  The three traditions are not borrowing from each other;
-they arrive independently.  And the convergence is not approximate: it is
-precise enough to formalize --- precise enough that the Affinity Operator
-serves, without modification, as the mathematical model of what all three
-traditions describe.
+they arrive, for the most part, independently.  And the convergence is precise
+enough that part of it can be formalized: on the physics side, the Affinity
+Operator gives exact bookkeeping for how local coherence is spent in relation
+and conserved in the spending.  That covers the physics, not the whole
+convergence, and I will say in what follows where the formal part stops.
 
 That is the finding.
 
 The question now is: what does it mean?
+
+I will take the question in four parts, for four audiences who overlap more
+than they usually admit: scientists, philosophers, people of faith, and
+individual human beings who want to know what to make of their lives.  Along
+the way I will also say what the argument does not establish, what would count
+against it, and what it leaves open.  A book that asks its readers to take a
+convergence seriously owes them an account of how it could fail.
 
 
 \section{What It Means for Science}
@@ -98,7 +115,7 @@ relational rather than absolute, that properties are realized only in the contex
 of interactions, and that the non-locality revealed by Bell's theorem reflects
 the genuinely relational constitution of physical reality --- is, on my reading,
 not merely one interpretation among several equally viable options.  It is the
-interpretation that is independently confirmed by two other traditions.
+interpretation that has independent support from two other traditions.
 
 That matters.  Confirmation by an independent method is the gold standard of
 scientific reasoning.  We believe that the speed of light is constant not because
@@ -115,45 +132,75 @@ are not empirical investigations of quantum systems.  But they are independent
 investigations of the nature of reality, carried out by independent methods
 (metaphysical analysis and revealed theology, respectively), and they arrive at
 the same structural description that the relational interpretation of quantum
-mechanics proposes.  That is a form of independent confirmation.  It does not
-prove the relational interpretation.  It does make the interpretive landscape
+mechanics proposes.  That is a form of independent support, though not of the
+kind the cosmological examples illustrate.  Those are independent measurements
+of one quantity.  The rival interpretations of quantum mechanics make the same
+predictions, so agreement with a non-experimental tradition cannot make one of
+them better confirmed by experiment than another; the support is
+philosophical, a matter of which reading of the formalism fits a coherent
+account of the world as a whole.  It does not prove the relational
+interpretation, and the companion physics paper, more reserved still, adopts
+that reading as its conceptual setting without arguing that Bell's theorem
+singles it out \citep{AdamsRCT}.  What the convergence does is make the
+interpretive landscape
 look different: the relational interpretation is no longer just one choice among
 several equally arbitrary options.  It has company --- serious, independent,
 historically sophisticated company --- in ways the other interpretations do not.
 
 The Relational Coherence Framework developed in \citet{AdamsRCT} and extended
-in \citet{AdamsThreePaths} provides a new operational handle on this.  The
-Affinity Operator $\mathcal{A}_{ij}$ is not a restatement of existing quantum
-formalism; it is a representation of the relational structure that underlies
-decoherence and entanglement and that can, in principle, be probed experimentally
-through two-qubit gate fidelity measurements.  This translates the abstract
-philosophical claim --- that relational coherence is fundamental --- into a
-concrete research program.
+in \citet{AdamsThreePaths} provides an operational handle on part of this, and
+I want to describe it at its actual size.  It restates standard results of
+decoherence theory in one vocabulary.  Its Affinity Operator $\alpha(S,E)$
+collects the off-diagonal entries of a system's density matrix in the basis the
+environment singles out, and the scalar affinity $\bar{\alpha}$, a number
+between $0$ and $1$, summarizes how much local coherence the system retains.
+None of this changes a prediction of quantum mechanics.  What the framework
+adds is a way of treating the coherence a two-qubit gate spends as a cost, and
+one engineering result built on that cost: a rule for scheduling how strongly
+to entangle at each layer of a circuit.  In eight-layer density-matrix
+simulations, not runs on quantum hardware, the rule improved final-state
+fidelity by up to 0.040 over a single full-strength entangling gate, and by
+0.025 over equal angles when the noise varied between layers.  The gains assume
+that the gate angle can be calibrated directly; where the gate must be built
+from fixed native gates, they may shrink or disappear.  When the coherence
+itself varies between layers, weighting the cost by $\bar{\alpha}$ helps only
+modestly and sometimes does harm \citep{AdamsRCT}.  This is a small piece of
+engineering, and it leaves untested the claim that relational coherence is
+fundamental.  What it does show is that the vocabulary of that claim can do
+honest work on a well-defined problem, which is where a research program
+starts.
 
-That research program is not finished.  It is barely started.  But the
-convergence establishes what the program is looking for.  In quantum biology,
-the framework predicts that the relational coherence it identifies should play
-a functional role in biological processes whose efficiency resists classical
-explanation --- photosynthetic energy transfer, enzyme-catalyzed tunneling,
-and the candidate quantum-coherent neural structures of the Penrose-Hameroff
-program, among others.  Whether the Affinity Operator formalism extends usefully
-into those systems is an open question that the framework makes well-posed.  That
-is itself an achievement: one of the things a good theoretical framework does is
-tell you where to look.
+That research program is not finished.  It is barely started, and I should
+not promise more than it delivers: the framework makes no prediction about
+biology.  Whether long-lived quantum coherence plays a functional role in
+photosynthetic energy
+transfer is an active and contested question; whether it plays any role in the
+brain is more doubtful still, since estimates of decoherence times there fall
+far below the timescales of neural processing \citep{Tegmark2000}, which is the
+main obstacle facing proposals such as the Penrose--Hameroff program
+\citep{HameroffPenrose2014}.  Whether the Affinity Operator formalism extends
+usefully into any of these systems is an open question.  Stating it precisely
+is a small achievement, but a real one: a good theoretical framework tells you
+where to look, and what would count as finding nothing.
 
 There is also an implication that runs in the opposite direction --- not from
 the framework toward new research, but from the framework toward the
 philosophy of science itself.
 
 The decoherence objection against the non-composite soul, which I examined
-carefully in Chapter 12, is not a refutation of the \bahai metaphysics of the
-soul.  It is a category error.  Decoherence is the mechanism by which composite
-quantum systems --- systems with internal degrees of freedom that can become
-correlated with environmental degrees of freedom --- lose their quantum coherence
-to environmental interaction.  A non-composite entity has, by definition, no
-internal degrees of freedom to become correlated in this way.  The decoherence
-mechanism simply does not apply to it.  The objection mistakes the domain of
-applicability of a physical mechanism for a universal constraint.
+in Chapter~\ref{ch:paradigm-required}, is not a refutation of the \bahai
+metaphysics of the soul.  It is a category error, though for a more specific
+reason than is sometimes given.  Decoherence is the process by which a physical
+system --- anything with a quantum state and a physical coupling to other
+degrees of freedom --- loses its local coherence as those degrees of freedom
+take a record of it.  Having no parts does not by itself exempt anything: an
+electron has no parts, and its spin decoheres.  What the objection presupposes
+is that the soul is a physical system of that kind, and that is precisely what
+the \bahai account denies.  On that account the soul is non-composite and not
+part of the physical order at all: there is no quantum state of it for an
+environment to monitor.  The
+objection mistakes the domain of applicability of a physical mechanism for a
+universal constraint.
 
 This matters for science not because it proves the soul exists --- it does not ---
 but because it shows that the scientific concept of decoherence, correctly
@@ -168,15 +215,39 @@ rigor.  It is a precondition for rigorous engagement with it.  The progress of
 science has repeatedly required recognizing that a question previously thought
 to belong to one domain actually requires the resources of another.  The
 question of the arrow of time cannot be answered by mechanics alone; it requires
-statistical mechanics and, ultimately, cosmological initial conditions.  The
-question of what ``information'' means in quantum mechanics cannot be answered by
-quantum mechanics alone; it requires something like the philosophical analysis of
-what it means for a physical process to be representational.  The question of
+statistical mechanics and, ultimately, cosmological initial conditions.  The question of
 non-composite entities and the limits of decoherence belongs in that same
 frontier zone.
 
 Science thrives at its frontiers.  The convergence documented in this book points
 toward several of them.
+
+\subsection*{What the Affinity Operator Measures}
+
+The Affinity Operator returns later in this chapter, so let me fix what it
+measures; it is easy to get backwards.
+
+The scalar affinity $\bar{\alpha}$ measures one system's local coherence: its
+capacity to show interference on its own, in the basis its environment picks
+out.  It can reach its maximum of $1$ only when the system is entangled with
+nothing.  As the environment takes a record of the system, the two become
+entangled and $\bar{\alpha}$ falls: decoherence builds system--environment
+entanglement while $\bar{\alpha}$ drops toward $0$.  So $\bar{\alpha}$ is not a
+measure of the bond between two things.  A pair of particles in a maximally
+entangled state, the paradigm of quantum connection, gives each particle an
+affinity of exactly zero, while a lone particle in an equal superposition of
+its pointer states, entangled with nothing, has an affinity of one
+\citep{AdamsRCT}.  In the companion paper's framing, $\bar{\alpha}$ is a local
+relational potential, and the entanglement that decoherence builds is that
+potential spent into correlation with the world.  It is not a force, and it is
+not a measure of love.
+
+That leaves real questions for physics.  The Affinity Operator is a one-system
+quantity, and a relational ontology will eventually need an account of how
+coherence and correlation are distributed across many systems at once, which
+the companion paper leaves to later work.  And the engineering claim needs
+hardware: whether the scheduling advantage survives on real devices, with
+their calibration errors and fixed gate sets, only experiment can say.
 
 
 \section{What It Means for Philosophy}
@@ -194,8 +265,8 @@ reacting --- takes the basic furniture of reality to be independently existing
 things with intrinsic properties.  On that view, the mind-body problem is the
 problem of how two kinds of stuff --- physical stuff and mental stuff --- interact
 causally.  Descartes gave the problem its canonical form; three centuries of
-subsequent philosophy have demonstrated, convincingly, that the canonical form
-has no good solution.  The interaction problem for dualism has never been
+subsequent philosophy have not found a good solution to it in that form.  The
+interaction problem for dualism has never been
 adequately answered.  The explanatory gap problem for physicalism (the ``hard
 problem'' in Chalmers's formulation) has not been adequately answered either.
 
@@ -220,7 +291,8 @@ conditions under which experience arises --- which is a different kind of
 project, with different methodological tools.
 
 The transceiver model --- the suggestion, developed as a research direction rather
-than an established conclusion in Chapter 13, that the brain may function as a
+than an established conclusion in Chapter~\ref{ch:paradigm-required}, that the
+brain may function as a
 transceiver mediating between the non-composite soul and the physical world ---
 is one way of approaching this reframing.  I want to be precise about its status.
 The transceiver model is not an established scientific result.  It is a
@@ -230,22 +302,32 @@ up, not one that the convergence proves.  The value of the model is not that it
 solves the hard problem but that it shows why the hard problem looks different
 from a relational ontology: not as the problem of causal interaction between two
 kinds of substance, but as the problem of the relational structure through which
-a non-composite entity engages a composite physical world.
+a non-composite entity engages a composite physical world.  I know of no
+observation yet that would tell the model apart from the view that the brain
+produces the mind, since both expect damage to the brain to disrupt mental
+life.  Until there is one, the model frames a question rather than answering it.
 
 This matters for the reception of process philosophy as a metaphysical framework.
 Process philosophy has been, for much of the twentieth century, treated as a
 minority position --- philosophically sophisticated, certainly, but lacking the
-independent confirmation that would make it more than one option among many.  The
-argument of this book provides that confirmation, from two independent directions.
+independent support that would make it more than one option among many.  The
+argument of this book offers that support, from two independent directions.
 
-Quantum mechanics, on the relational interpretation, is a process ontology.  This
-is not a matter of philosophical taste; it follows from what the experimental
-record requires.  Bell's theorem, the violations of Bell inequalities, and the
+Quantum mechanics, on the relational interpretation, is a process ontology.  The
+experimental record does not force that interpretation, but it narrows the
+field.  Bell's theorem, the violations of Bell inequalities, and the
 loophole-free tests of those violations \citep{Aspect1982,Zeilinger2023Nobel}
-close the door on local hidden variable theories --- theories that assign
-definite pre-relational intrinsic properties to separated particles.  Any
-interpretation of quantum mechanics that does justice to these results is, on my
-reading, either explicitly a process ontology or reducible to one.
+close the door on local hidden-variable theories --- theories that assign
+definite pre-relational intrinsic properties to separated particles and let
+each answer only to its local surroundings.  Every surviving interpretation
+gives something up: pilot-wave theory gives up locality, many-worlds gives up
+single outcomes, and the relational reading gives up absolute,
+observer-independent states.  Even the pilot-wave option, as I argued in
+Chapter~\ref{ch:qm-requires-process}, makes each particle's motion depend on
+the configuration of the whole.  On my reading, then, any interpretation that
+does justice to these results either is a process ontology or rests on
+relational structure at its core; that is a philosophical judgment about the
+options, not a theorem.
 
 The \bahai writings, as I have argued throughout this book, instantiate a process
 ontology in their metaphysics of \mahabbat \citep{PUP,SAQ,SummonsLordHosts}.  The structure
@@ -256,11 +338,13 @@ difficult to attribute to coincidence, given the independence of the two
 traditions.
 
 What this means for process philosophy is that it now has two independent
-confirmations from very different intellectual directions.  That should matter
+lines of support from very different intellectual directions.  That should matter
 for how philosophers receive it.  The Whiteheadian framework is not just the
-personal vision of a creative metaphysician; it is the description of reality
-that quantum physics and \bahai metaphysics independently arrived at using
-their own methods and their own vocabularies.
+personal vision of a creative metaphysician; its central structural claims are
+ones that quantum physics, on the relational reading, and \bahai metaphysics
+arrived at by their own methods and in their own vocabularies.  The rest of
+Whitehead's system, from eternal objects to his doctrine of God, gets no
+support from physics, and I claim none for it.
 
 The dual-aspect monism associated with Pauli and Jung offers a further
 meta-framework for holding these threads together.  On that view, the physical
@@ -273,20 +357,64 @@ different angles and seeing different aspects of what is ultimately one thing.
 That one thing, on the argument of this book, is a relational structure whose
 animating principle is love.
 
-There is one further implication for philosophy that I want to name directly.
-The decoherence objection against immaterial substance --- which forms the
-strongest current scientific challenge to the philosophical viability of
-substance dualism or hylomorphism --- is a category error.  That is not a
-small point.  It means that the scientific case against immaterial substance
-is weaker than it is often taken to be.  It does not mean that immaterial
-substance exists.  It means that the question of whether immaterial substance
-exists is genuinely open --- not foreclosed by physics.
+There is one further implication for philosophy that I want to name directly,
+and keep at its proper size.  The decoherence objection --- pressed with good
+reason against quantum theories of mind, and sometimes stretched into an
+argument against any immaterial soul --- is, in that stretched form, a
+category error.  That removes one scientific argument against immaterial
+substance.  It leaves the older and stronger ones where they were: the close
+dependence of mental life on the brain, and the question of how anything
+non-physical could make a difference in a physical world whose energy
+accounts, as far as anyone has measured, balance.  It does not mean that
+immaterial substance exists.  It means that decoherence does not foreclose the
+question.
 
 A question that is genuinely open is a question worth investigating.  The
-convergence of three independent traditions on a metaphysical framework that
-includes a non-composite soul is not proof that such a soul exists.  But it is
-a reason to take the question seriously, with the full resources of philosophy,
-physics, and theology together.  That is the posture this book recommends.
+convergence of three traditions on a relational metaphysics is not proof that
+a non-composite soul exists.  Only one of the three teaches such a soul;
+Whitehead's nearest analogue is an enduring pattern of occasions
+(Chapter~\ref{ch:process-ontology}), and how an enduring, non-composite soul
+fits within an ontology of events is one of the questions this book leaves
+open.  But the convergence is a reason to take the question seriously, with
+the full resources of philosophy, physics, and theology together.  That is the
+posture this book recommends.
+
+\subsection*{What Would Change My Mind}
+
+A convergence argument that could not fail would not be worth making, so let
+me say what would count against this one.
+
+The first defeater would come from physics.  Bell's theorem assumes, among
+other things, that the settings an experimenter chooses are statistically
+independent of whatever fixes the outcomes.  Theories that deny this, usually
+called superdeterministic, could in principle keep local, pre-existing
+properties after all.  At present they are more a logical possibility than a
+worked-out physics.  If one became a theory with confirmed predictions of its
+own, the physical leg of this book would be badly weakened.
+
+The second would come from the texts.  Many of the passages I have relied on
+come from talks preserved in notes taken by listeners, some of them Persian
+notes, rather than from texts \AbdulBaha wrote himself.  If work on the
+originals, and on the writings read whole rather than in selected passages,
+showed them subordinating relation to substance as clearly as my passages
+subordinate substance to relation, the textual leg would weaken in the same
+way.  The writings even call the soul a substance
+(Chapter~\ref{ch:paradigm-required}); I read that as a claim about
+non-compositeness, but it is a reading.
+
+The third would be methodological.  The interpretive latitude I have used
+should not be able to produce an equally good convergence between quantum
+mechanics and a tradition with the opposite metaphysics.  If a critic could
+map the physics onto a strict atomism, nothing but indivisible bodies in the
+void, as convincingly as I have mapped it onto process ontology, that would
+show my method finding whatever it looks for.
+
+The tradition I have drawn on does not ask to be spared this scrutiny.
+Speaking in Washington in April 1912, \AbdulBaha put the principle without
+qualification: ``Every religion which is not in accordance with established
+science is superstition'' \citep[Talk 26]{PUP}.  If the relational picture
+were overturned, that principle would oblige the writings' readers, this one
+included, to revise whatever depended on it.
 
 
 \section{What It Means for the Science-Religion Question}
@@ -320,9 +448,10 @@ tradition with a particular cosmological model.  Galileo's conflict was with a
 specific institutional reading of a few passages of Scripture, not with Scripture
 or with religious inquiry as such.  Darwin's conflict was with a specific
 interpretation of Genesis as natural history, not with the tradition of theological
-reflection on creation as such.  Einstein's conflict was with nothing religious
-at all; it was with the philosophical presuppositions of the physicists who
-resisted quantum mechanics.
+reflection on creation as such.  Einstein's most famous dispute had nothing
+religious in it at all; it was with Bohr and his colleagues, over whether
+quantum mechanics gives a complete description of physical reality
+\citep{Einstein1935EPR}.
 
 What the science-religion narrative obscures, in its crude form, is the
 possibility of what \citet{ParisTalks} calls the two wings: the principle that
@@ -357,8 +486,8 @@ metaphysical argument.  The \bahai writings establish the metaphysics of
 \mahabbat by theological reasoning and spiritual insight.  No tradition needs the
 others to establish its core conclusions.
 
-What the convergence establishes is that all three traditions are tracking the
-same structural feature of reality.  They are three instruments pointed at the
+What the convergence supports, on the argument of this book, is that all three
+traditions are tracking the same structural feature of reality.  They are three instruments pointed at the
 same signal.  And when three independent instruments register the same signal,
 the confidence that the signal is real is substantially higher than any single
 instrument can provide.
@@ -389,13 +518,46 @@ right, then sustained, rigorous, structurally specific engagement between
 scientific and religious inquiry should, in the domains where both have genuine
 traction, produce convergence.  This book offers one domain where it has.
 
-That it has done so is not a small thing.  It vindicates an approach --- the
+That it has done so is not a small thing.  It supports an approach --- the
 approach of taking both traditions with full seriousness and investigating whether
 they converge --- that has been dismissed by those on both sides of the supposed
 conflict as naive.  It is not naive.  It is what intellectual honesty requires,
 and what the two-wings principle predicts.
 
-The two wings are confirmed.
+In one domain, at least, the two wings have been tested, and they have held.
+
+\subsection*{Evidence, Not Proof}
+
+I should be exact about how much weight the image of three instruments can
+bear.  Agreement among instruments
+raises the probability that what they register is real, by an amount that
+depends on three things.
+
+The first is independence, which here is real but not total.  Whitehead built
+his metaphysics partly in response to relativity and the early quantum theory,
+and the language of affinity and cohesion in \AbdulBaha's talks of 1912 echoes
+the chemistry of the day.  The independence is cleanest where it matters most:
+neither Whitehead nor \AbdulBaha could draw on Bell's theorem, decoherence
+theory, or the relational interpretation, all of which came decades later.  The
+second is specificity.  A match on a structure that almost any serious
+metaphysics shares proves little, and I conceded in
+Chapter~\ref{ch:decoherence-decomposition} that the objection from genericity
+is partly right.  The third is the translator's freedom.  Every convergence in
+this book required a decision about which term in one vocabulary answers to
+which in another, and the more freedom such decisions allow, the less their
+success shows.
+
+One further limit bears on the title of this book.  Physics registers the
+relational constitution of properties and the redistribution of coherence when
+forms dissolve.  It registers nothing about value or direction.  The
+identification of the relational principle with love comes from the other two
+instruments; the convergence on relational structure is three-way, and the
+convergence on love is two-way.
+
+None of this defeats the argument.  It fixes its size.  The convergence is
+evidence, not proof: enough, I think, to make the relational reading of reality
+the most reasonable one available, and not enough to compel a reader who weighs
+the same evidence differently.
 
 
 \section{What It Means for You}
@@ -418,18 +580,22 @@ The framework established in these pages is not a new language for feelings
 you already have.  It is not a scientific legitimation of something you believed
 anyway.  It is a structural finding: three independent traditions have arrived,
 by independent routes, at the same description of what reality is made of, and
-that description says that the most fundamental organizing principle of existence
-is, at every degree, an expression of love.
+that description, completed by the two traditions that speak of value, says
+that the most fundamental organizing principle of existence is, at every
+degree, an expression of love.
 
 That claim is precise.  Let me make it more precise still.
 
 The quantum-mechanical finding is that the properties of particles are not
-intrinsic but relational: they are determined through the relational interactions
-that constitute measurement and entanglement.  The Affinity Operator $\mathcal{A}_{ij}$
-represents the degree of relational coherence between systems: the extent to which
-their states are constituted through mutual engagement rather than existing
-independently.  High affinity is coherence; low affinity is isolation; perfect
-isolation is, in the limit, nonexistence.
+intrinsic but relational: on the reading I have defended, they become definite
+through the interactions that constitute measurement and entanglement.  The
+Affinity Operator $\alpha(S,E)$ adds one piece of exact bookkeeping.  It
+tracks a system's local coherence, not its bond with anything else; that
+coherence falls as the system becomes entangled with its surroundings, and
+what it loses is redistributed into correlation rather than destroyed
+\citep{AdamsRCT}.  The physics gives no warrant for calling high affinity love
+and low affinity isolation.  Its own lesson is plainer: relation is paid for out
+of the coherence a thing holds on its own, and what is paid is not lost.
 
 The Whiteheadian finding is that actual occasions are constituted by prehension ---
 by relational absorptions of the world that has been --- and that the creative
@@ -452,16 +618,19 @@ Now: when you love someone --- not in the easy moments when love is effortless,
 but in the difficult moments when it requires everything you have --- you are not
 performing a private emotional transaction.  You are participating in the most
 fundamental principle of existence.  You are enacting, at the level of conscious
-human experience, the same relational dynamic that holds quantum systems in
-coherence, that constitutes existence at every degree, that three independent
-traditions have independently identified as the ground and animating force of
-being.
+human experience, the relational structure that constitutes existence at every
+degree: the structure physics describes in its own terms, and that Whitehead
+and the \bahai writings identify as the ground and animating force of being.
 
-That is not a metaphor.  It is a structural identification.  The love you
-express in a marriage, in a friendship, in a moment of genuine compassion for
-a stranger --- is an instance of the same formal structure that the Affinity
-Tensor measures, that Whitehead calls \emph{eros}, that the \bahai writings
-call \mahabbat.  The formal structure is the same.  What changes across the
+That is not a metaphor.  It is a structural identification, and I should say
+exactly what is identified.  Nothing in physics measures love.  What is
+identified is a role with
+three parts: things become what they are through their relations; what they
+give in relation is not lost but carried into what comes after; and, in
+Whitehead and the \bahai writings though not in physics, there is a drive
+toward richer integration, which Whitehead calls \emph{eros} and the writings
+call \mahabbat.  The love you express in a marriage, in a friendship, in a
+moment of genuine compassion for a stranger has all three.  What changes across the
 degrees of being is the intensity, the consciousness, the specific mode in
 which that structure is expressed.  In human beings, it is expressed at its
 most intense and most conscious level.  That is what the \bahai writings mean
@@ -474,11 +643,13 @@ This has a direct bearing on the question of the soul and its development ---
 a question I have not, in this book, been able to answer fully, but whose
 contours the framework illuminates.
 
-The soul, on the \bahai account, is non-composite.  It has no internal parts,
-no internal degrees of freedom that can become entangled with the environment
-and decohere.  It is immune from the degradation that all composite physical
-systems undergo as they interact with the world.  But non-compositeness does not
-mean isolation.  The soul is relationally embedded --- constituted not by its
+The soul, on the \bahai account, is non-composite.  It has no parts, and it is
+not a physical system at all, so there is nothing in it for an environment to
+become entangled with and decohere.  That places it outside the reach of the
+degradation that composite physical systems undergo as they interact with the
+world, though it does not by itself show that the soul survives the body; the
+writings argue that on their own grounds (Chapter~\ref{ch:paradigm-required}).
+But non-compositeness does not mean isolation.  The soul is relationally embedded --- constituted not by its
 internal structure (it has none) but by the quality and depth of its external
 relational engagements \citep{GleaningsBahaullah,SAQ}.
 
@@ -518,22 +689,31 @@ toward a lesser degree of being.  The soul does not have an intrinsic trajectory
 it has a relational one, and the direction of that trajectory is determined by
 the quality of the loves it chooses.
 
-I am aware that this sounds demanding.  It is.  The \Bahaullah does not offer an
+I am aware that this sounds demanding.  It is.  \Bahaullah does not offer an
 easy account of the spiritual life \citep{GleaningsBahaullah,HiddenWords}.  Nor
 does Whitehead offer an easy account of what full relational integration requires:
 every actual occasion must take account of the entire actual world in constituting
 itself, and the richest occasions are those that achieve the greatest integration
-of the widest range of experience \citep{Whitehead1929}.  The quantum system that
-maintains the highest entanglement fidelity in the most demanding environmental
-conditions is not the one that retreats from interaction; it is the one that
-sustains coherence under pressure.
+of the widest range of experience \citep{Whitehead1929}.  Physics, for its part,
+offers no moral here, and I will not manufacture one.  A qubit keeps its local
+coherence by being shielded from its surroundings, and the entangling gates
+that make it useful spend that coherence on purpose.  The demand comes from the other two
+traditions, not from the laboratory.
 
 But demanding is not the same as impossible.  The \bahai writings are saturated
 with the conviction that the soul is capable of this deepening --- that the
 relational principle of existence is not an external demand imposed on the soul
 from outside but the innermost constitution of the soul itself.  ``Love is the
-light that guideth in darkness,'' the \textit{Hidden Words} says \citep{HiddenWords}.  The
+light that guideth in darkness,'' \AbdulBaha writes \citep[\S 12]{SelectionsAbdul}.  The
 light is already there.  The question is whether we are willing to follow it.
+
+In practice, following it is less dramatic than the language of this chapter
+may suggest, and its practical consequences owe nothing to physics.  If people
+become what they are partly through their relations, attention is the ordinary
+means by which we form one another, and the useful question at the end of a
+day is whom I actually attended to, and how well.  No one, oneself included,
+is a finished thing whose nature was fixed in advance, and no one should be
+treated as one.
 
 I want to say one more thing about this, because it is the thing that matters most.
 
@@ -543,8 +723,10 @@ accompanies the real forces of reality and then fades.  It is the name for the
 most fundamental organizing principle of existence, experienced at its most
 conscious and most intense level in human beings.  Three independent traditions
 --- each with its own methodology, its own vocabulary, its own historical
-development --- have converged on this identification.  When three instruments
-point at the same signal, the signal is real.
+development --- have converged on the relational structure, and the two that
+speak of value at all have named its principle love.  When independent
+instruments point at the same signal, that is good reason, though not proof,
+to think the signal is real.
 
 Yes: love matters.  Love is what matters.  In the most literal sense available:
 love is what \emph{constitutes} what matters.  The relational fabric of reality ---
@@ -555,7 +737,8 @@ attention and full relational coherence and full fidelity to the divine attribut
 through which love expresses itself --- is to participate, consciously and
 deliberately, in the principle that holds the universe together.
 
-That is not mysticism.  It is physics, philosophy, and theology, in convergence.
+That is not mysticism.  It is what physics, philosophy, and theology converge
+on when each is read carefully and none is asked to say more than it does.
 
 Live accordingly.
 
@@ -593,22 +776,27 @@ the abandonment of scientific rigor.
 
 But when three instruments --- each with its own domain, its own calibration,
 its own sources of noise --- point at the same feature of reality and register
-the same signal, the probability that the signal is real is very high.  The
+the same signal, the probability that the signal is real is far higher than any
+one of them could establish alone.  The
 instruments' independence is precisely what makes the convergence meaningful.
 If they were reading off each other --- if the \bahai metaphysics had been
 constructed to match quantum mechanics, or if process philosophy had been
 reverse-engineered from the \bahai writings --- the convergence would prove
-nothing.  It is because they are independent that their agreement carries weight.
+nothing.  It is because they are largely independent that their agreement
+carries weight.
 
 The signal they agree on is this: the universe is, at its most fundamental
-level, a relational structure held together by love.
+level, a relational structure --- one that physics describes, and that the
+other two instruments find to be held together by love.
 
-\emph{The Physics of Love} is not a poetic title.  It is a claim.  The force
-that holds atoms in coherence, that constitutes existence at every degree of
-being, that quantum physics measures with the Affinity Operator, that Whitehead
-calls \emph{eros}, that the \bahai writings call \mahabbat --- is the same force
-that, in its most conscious and fully experienced form, human beings call love.
-It is not a metaphor for love.  It is not an analogy to love.  It is love ---
+\emph{The Physics of Love} is not a poetic title.  It is a claim.  The
+relational principle that constitutes existence at every degree of being ---
+whose structure quantum physics describes, which Whitehead calls \emph{eros},
+which the \bahai writings call \mahabbat --- is, on the argument of this book,
+the same principle that, in its most conscious and fully experienced form,
+human beings call love.  The claim concerns structure.  Atoms do not love, and
+love is not a quantum effect.  Love is the conscious form of a structure that
+runs through the whole of the world ---
 expressed at different degrees of intensity, different degrees of consciousness,
 different degrees of structural complexity, but structurally the same across all
 of them.
@@ -626,13 +814,15 @@ One signal.
 \textbf{From quantum mechanics:} Bell's theorem and its experimental confirmations
 \citep{Bell1964,Aspect1982,Zeilinger2023Nobel} close the door on local substance
 ontology: no theory that assigns definite pre-relational intrinsic properties to
-separated particles can reproduce what nature actually does.  Properties are
-relational; they are constituted through interaction.  The relational quantum
-vacuum is not empty; it is the field of potential relational constitution from
-which actual events emerge.  The Affinity Operator $\mathcal{A}_{ij}$
-\citep{AdamsRCT} is the formal representation of the coherence that constitutes
-existence: high affinity is integrated being; zero affinity is isolation and,
-in the limit, nonexistence.
+separated particles, and keeps every influence local, can reproduce what nature
+actually does.  On the relational reading, properties are constituted through
+interaction.  Decoherence disperses a system's local coherence into
+correlations with its environment \citep{Zurek2003}, and the Affinity Operator
+$\alpha(S,E)$ keeps the books \citep{AdamsRCT}: its scalar summary
+$\bar{\alpha}$ can be at its maximum only when a system is entangled with
+nothing, and falls as system--environment entanglement grows, while what it
+loses is redistributed, not destroyed.  Physics describes the relational
+structure; it does not measure love.
 
 \textbf{From process philosophy:} Actual occasions are constituted by prehension
 --- by relational absorptions of the actual world that has been
@@ -645,8 +835,10 @@ constitution of events.
 
 \textbf{From the \bahai writings:} Existence is relational affinity; motion is
 life; the creative foundation at every degree of being is an expression of love
-\citep{PUP,SAQ,SummonsLordHosts}.  The soul is non-composite and therefore immune from
-internal decoherence, and relationally embedded, developing through the
+\citep{PUP,SAQ,SummonsLordHosts}.  The soul is non-composite and not a physical
+system, so decoherence has nothing in it to act on; that is a claim about one
+mechanism of dissolution, not a proof of immortality.  The soul is relationally
+embedded, developing through the
 progressive deepening of its external relational engagements with God, other
 souls, and creation \citep{GleaningsBahaullah,SAQ}.  The divine attributes ---
 love, justice, wisdom, compassion --- are not optional moral ornaments but the
@@ -654,7 +846,8 @@ specific modes through which the soul deepens its participation in the relationa
 principle of existence \citep{HiddenWords,SelectionsAbdul}.
 
 \textbf{Three vocabularies, one signal:} The universe is, at its most fundamental
-level, a relational structure held together by love.  The soul develops by
+level, a relational structure, which physics describes and which process
+philosophy and the \bahai writings find to be held together by love.  The soul develops by
 participating in that love more fully, in all its specific modes, across the
 entire range of its relational engagements.  What you do matters, not as the
 performance of duty, but as the mechanism of being.
